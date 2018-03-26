@@ -136,7 +136,6 @@ type
     ToolButton1: TToolButton;
     DBEdit_CD_ALI_1: TDBEdit;
     BtnConsultaEmitente: TSpeedButton;
-    Edit1: TEdit;
     procedure DBEdit_ID_CLIENTEKeyPress(Sender: TObject; var Key: Char);
     procedure DBEdit_ID_BANCOKeyPress(Sender: TObject; var Key: Char);
     procedure DBEdit2KeyPress(Sender: TObject; var Key: Char);
