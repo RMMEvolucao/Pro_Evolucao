@@ -53,7 +53,8 @@ uses
   UfrmTransChqPDparaBX in 'UfrmTransChqPDparaBX.pas' {FormTransPDparaBX},
   UfrmTransChqBxparaDV in 'UfrmTransChqBxparaDV.pas' {FormTransBXparaDV},
   UFrmTransDVparaDB in 'UFrmTransDVparaDB.pas' {FormTransDVparaDB},
-  UFrmTransPPparaDV in 'UFrmTransPPparaDV.pas' {FormTransPPparaDV};
+  UFrmTransPPparaDV in 'UFrmTransPPparaDV.pas' {FormTransPPparaDV},
+  UFrmRlt_Chq_PD in 'UFrmRlt_Chq_PD.pas' {FormRlt_Chq_PD};
 
 {$R *.res}
 
@@ -65,15 +66,5 @@ begin
   Application.CreateForm(TFormCadPadrao, FormCadPadrao);
   Application.CreateForm(TDMcadastro, DMcadastro);
   Application.CreateForm(TFormUsuario, FormUsuario);
-  Application.CreateForm(TFormHistCons, FormHistCons);
-  Application.CreateForm(TFormCadProduto, FormCadProduto);
-  Application.CreateForm(TFormObsNTF, FormObsNTF);
-  Application.CreateForm(TFormCadPlanoPagamento, FormCadPlanoPagamento);
-  Application.CreateForm(TFormCadRotas, FormCadRotas);
-  Application.CreateForm(TFormTransBXparaPD, FormTransBXparaPD);
-  Application.CreateForm(TFormTransPDparaBX, FormTransPDparaBX);
-  Application.CreateForm(TFormTransBXparaDV, FormTransBXparaDV);
-  Application.CreateForm(TFormTransDVparaDB, FormTransDVparaDB);
-  Application.CreateForm(TFormTransPPparaDV, FormTransPPparaDV);
   Application.Run;
 end.

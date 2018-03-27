@@ -174,6 +174,7 @@ type
     procedure BtnChequesClick(Sender: TObject);
     procedure AlimentaCampsEmitenteCliente;
     procedure DBCombo_SN_TCRExit(Sender: TObject);
+    procedure AcImprimirExecute(Sender: TObject);
   private
     procedure ConsultaEmitente;
     procedure ConsultaBancoAgenciaContaNoCheque;
@@ -220,7 +221,7 @@ implementation
 
 uses UDmCadastro, UFrmFornecedor, uFrmClientes, UFrmPrincipal,
   UfrmTransChqBxparaPD, UfrmTransChqPDparaBX, UfrmTransChqBxparaDV,
-  UFrmTransDVparaDB, UFuncoes, UFrmTransPPparaDV;
+  UFrmTransDVparaDB, UFuncoes, UFrmTransPPparaDV, UFrmRlt_Chq_PD;
 
 procedure TFormChqPdt.DBEdit_IDEnter(Sender: TObject);
 begin
@@ -1071,6 +1072,23 @@ procedure TFormChqPdt.AcEditarExecute(Sender: TObject);
 begin
   inherited;
   DBEdit_DS_BDA.OnExit(sender);
+end;
+
+procedure TFormChqPdt.AcImprimirExecute(Sender: TObject);
+begin
+  inherited;
+
+ if STCheque = 'PD' then
+   begin
+    try
+    Application.CreateForm(TFormRlt_Chq_PD,FormRlt_Chq_PD);
+    FormRlt_Chq_PD.ShowModal;
+    finally
+    FreeAndNil(FormRlt_Chq_PD);
+    end;
+
+   end;
+
 end;
 
 procedure TFormChqPdt.AcIncluirExecute(Sender: TObject);

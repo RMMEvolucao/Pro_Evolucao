@@ -3,7 +3,7 @@ object FormPrincipal: TFormPrincipal
   Top = 0
   BorderStyle = bsDialog
   Caption = 'Menu Principal'
-  ClientHeight = 666
+  ClientHeight = 626
   ClientWidth = 1107
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
@@ -19,14 +19,14 @@ object FormPrincipal: TFormPrincipal
   OnShow = FormShow
   DesignSize = (
     1107
-    666)
+    626)
   PixelsPerInch = 96
   TextHeight = 13
   object dsHost: TdxDockSite
     Left = 0
     Top = 124
     Width = 1107
-    Height = 522
+    Height = 482
     Color = clBtnFace
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clWindowText
@@ -38,12 +38,12 @@ object FormPrincipal: TFormPrincipal
     Align = alClient
     DockingType = 5
     OriginalWidth = 1107
-    OriginalHeight = 522
+    OriginalHeight = 482
     object dxLayoutDockSite4: TdxLayoutDockSite
       Left = 0
       Top = 0
       Width = 1051
-      Height = 522
+      Height = 482
       DockingType = 0
       OriginalWidth = 300
       OriginalHeight = 200
@@ -51,7 +51,7 @@ object FormPrincipal: TFormPrincipal
         Left = 0
         Top = 0
         Width = 814
-        Height = 522
+        Height = 482
         DockingType = 0
         OriginalWidth = 300
         OriginalHeight = 200
@@ -59,7 +59,7 @@ object FormPrincipal: TFormPrincipal
           Left = 0
           Top = 0
           Width = 814
-          Height = 522
+          Height = 482
           DockingType = 0
           OriginalWidth = 300
           OriginalHeight = 200
@@ -68,7 +68,7 @@ object FormPrincipal: TFormPrincipal
           Left = 0
           Top = 0
           Width = 814
-          Height = 522
+          Height = 482
           AllowFloating = False
           AutoHide = False
           CaptionButtons = []
@@ -88,12 +88,12 @@ object FormPrincipal: TFormPrincipal
             Style.BorderStyle = ebsNone
             Style.Edges = []
             TabOrder = 0
-            Height = 518
+            Height = 478
             Width = 810
             object Image1: TImage
               AlignWithMargins = True
               Left = 5
-              Top = 387
+              Top = 347
               Width = 800
               Height = 109
               Margins.Top = 0
@@ -443,7 +443,7 @@ object FormPrincipal: TFormPrincipal
               Left = 2
               Top = 2
               Width = 806
-              Height = 385
+              Height = 345
               Cursor = crHandPoint
               Margins.Left = 0
               Margins.Top = 0
@@ -9120,7 +9120,7 @@ object FormPrincipal: TFormPrincipal
         Left = 814
         Top = 0
         Width = 237
-        Height = 522
+        Height = 482
         Visible = False
         ActiveChildIndex = -1
         AllowFloating = True
@@ -9133,7 +9133,7 @@ object FormPrincipal: TFormPrincipal
           Left = 0
           Top = 0
           Width = 237
-          Height = 0
+          Height = 482
           Visible = False
           AllowFloating = False
           AutoHide = True
@@ -9150,13 +9150,13 @@ object FormPrincipal: TFormPrincipal
             Left = 0
             Top = 0
             Width = 233
-            Height = 643
+            Height = 413
             Align = alClient
             TabOrder = 0
           end
           object Panel4: TcxGroupBox
             Left = 0
-            Top = -41
+            Top = 413
             Align = alBottom
             PanelStyle.Active = True
             Style.BorderStyle = ebsNone
@@ -9170,9 +9170,9 @@ object FormPrincipal: TFormPrincipal
           Left = 0
           Top = 0
           Width = 237
-          Height = 0
+          Height = 482
           Visible = False
-          ActiveChildIndex = 0
+          ActiveChildIndex = 1
           AllowFloating = False
           AutoHide = True
           CaptionButtons = [cbHide]
@@ -9186,7 +9186,7 @@ object FormPrincipal: TFormPrincipal
             Left = 0
             Top = 0
             Width = 233
-            Height = 0
+            Height = 454
             AllowFloating = True
             AutoHide = False
             Caption = 'Solution Explorer'
@@ -9200,7 +9200,7 @@ object FormPrincipal: TFormPrincipal
               Left = 0
               Top = 0
               Width = 233
-              Height = 0
+              Height = 454
               Align = alClient
               TabOrder = 0
               ReadOnly = True
@@ -9210,7 +9210,7 @@ object FormPrincipal: TFormPrincipal
             Left = 0
             Top = 0
             Width = 233
-            Height = 0
+            Height = 454
             AllowFloating = True
             AutoHide = False
             Caption = 'Class View'
@@ -9224,7 +9224,7 @@ object FormPrincipal: TFormPrincipal
               Left = 0
               Top = 0
               Width = 233
-              Height = 0
+              Height = 454
               Align = alClient
               TabOrder = 0
             end
@@ -9236,7 +9236,7 @@ object FormPrincipal: TFormPrincipal
       Left = -170
       Top = 0
       Width = 170
-      Height = 0
+      Height = 573
       Visible = False
       AllowFloating = True
       AutoHide = True
@@ -9439,7 +9439,7 @@ object FormPrincipal: TFormPrincipal
   end
   object StatusBarPrincipal: TdxStatusBar
     Left = 0
-    Top = 646
+    Top = 606
     Width = 1107
     Height = 20
     Panels = <
@@ -11352,7 +11352,7 @@ object FormPrincipal: TFormPrincipal
     Left = 72
     Top = 529
     Bitmap = {
-      494C010109005000F00210001000FFFFFFFFFF10FFFFFFFFFFFFFFFF424D3600
+      494C010109005000F80210001000FFFFFFFFFF10FFFFFFFFFFFFFFFF424D3600
       0000000000003600000028000000400000003000000001002000000000000030
       0000000000000000000000000000000000000000000000000000000000000000
       0000000000000000000000000000000000000000000000000000000000000000
