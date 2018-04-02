@@ -16,7 +16,7 @@ uses
   Datasnap.DBClient, cxMemo, cxGroupBox, dxSkinLiquidSky, dxSkinOffice2007Black,
   dxSkinOffice2013LightGray, dxSkinVisualStudio2013Light, Vcl.Menus, frxClass,
   frxDBSet, frxExportPDF, frxExportXLSX, frxExportXLS, frxExportText,
-  frxDMPExport;
+  frxDMPExport, Vcl.ToolWin;
 
 type
   TFormRepresentante = class(TFormCadPadrao)

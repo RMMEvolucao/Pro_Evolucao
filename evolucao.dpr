@@ -54,17 +54,18 @@ uses
   UfrmTransChqBxparaDV in 'UfrmTransChqBxparaDV.pas' {FormTransBXparaDV},
   UFrmTransDVparaDB in 'UFrmTransDVparaDB.pas' {FormTransDVparaDB},
   UFrmTransPPparaDV in 'UFrmTransPPparaDV.pas' {FormTransPPparaDV},
-  UFrmRlt_Chq_PD in 'UFrmRlt_Chq_PD.pas' {FormRlt_Chq_PD};
+  UFrmRlt_Chq_PD in 'UFrmRlt_Chq_PD.pas' {FormRlt_Chq_PD},
+  UfrmRlt_Chq_BX in 'UfrmRlt_Chq_BX.pas' {FormRlt_Chq_BX};
 
 {$R *.res}
 
 begin
   Application.Initialize;
   Application.MainFormOnTaskbar := True;
-  TStyleManager.TrySetStyle('Iceberg Classico');
   Application.CreateForm(TFormPrincipal, FormPrincipal);
   Application.CreateForm(TFormCadPadrao, FormCadPadrao);
   Application.CreateForm(TDMcadastro, DMcadastro);
   Application.CreateForm(TFormUsuario, FormUsuario);
+  Application.CreateForm(TFormRlt_Chq_BX, FormRlt_Chq_BX);
   Application.Run;
 end.

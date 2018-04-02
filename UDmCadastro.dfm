@@ -5339,7 +5339,7 @@ object DMcadastro: TDMcadastro
     end
     object CDSClientesNO_FON: TStringField
       FieldName = 'NO_FON'
-      EditMask = '!\(99\) #####-####;0;_'
+      EditMask = '!\(99\) ####-####;0;_'
       Size = 14
     end
     object CDSClientesNO_FAX: TStringField

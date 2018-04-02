@@ -345,7 +345,7 @@ implementation
 
 uses rest.types,system.json,UDmCadastro, UFrmCep, UFuncoes, uFrmChqPdt,
   System.AnsiStrings, UFrmHistCons, UFrmConsultaCNPJ, uFrmContasPagar,
-  uFrmContasReceber, UFrmRelCtarec;
+  uFrmContasReceber, UFrmRelCtarec, UFrmRlt_Chq_PD, UfrmRlt_Chq_BX;
 
 procedure TFormClientes.AcEditarExecute(Sender: TObject);
 begin
@@ -532,11 +532,26 @@ begin
     exit;
     end;
 
+  if FormRlt_Chq_PD <> nil  then
+    begin
+    FormRlt_Chq_PD.EdCodCli.Text  := DMcadastro.CDSClientesId.asstring;
+    FormRlt_Chq_PD.EdCliente.Text := DMcadastro.CDSClientesNM_CLI.AsString;
+    close;
+    exit;
+    end;
+
+  if FormRlt_Chq_BX <> nil then
+     begin
+     FormRlt_Chq_BX.EdCodCli.Text  := DMcadastro.CDSClientesId.asstring;
+     FormRlt_Chq_BX.EdCliente.Text := DMcadastro.CDSClientesNM_CLI.AsString;
+     close;
+     exit;
+     end;
+
  if (FormContasReceber <> nil) then
     begin
     CTARECClientes(sender);
     close;
-
     end else
 
  if (FormChqPdt <> nil) and (FormChqPdt.PageControl1.ActivePage = FormChqPdt.TabCadastro) then

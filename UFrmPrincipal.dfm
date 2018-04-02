@@ -1,10 +1,11 @@
 object FormPrincipal: TFormPrincipal
   Left = 0
   Top = 0
-  BorderStyle = bsDialog
+  BorderIcons = [biSystemMenu]
+  BorderStyle = bsSingle
   Caption = 'Menu Principal'
-  ClientHeight = 626
-  ClientWidth = 1107
+  ClientHeight = 834
+  ClientWidth = 1346
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
@@ -14,19 +15,20 @@ object FormPrincipal: TFormPrincipal
   Menu = MenuSistema
   OldCreateOrder = False
   Position = poDesktopCenter
+  WindowState = wsMaximized
   OnPaint = FormPaint
   OnResize = FormResize
   OnShow = FormShow
   DesignSize = (
-    1107
-    626)
+    1346
+    834)
   PixelsPerInch = 96
   TextHeight = 13
   object dsHost: TdxDockSite
     Left = 0
     Top = 124
-    Width = 1107
-    Height = 482
+    Width = 1346
+    Height = 671
     Color = clBtnFace
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clWindowText
@@ -36,30 +38,35 @@ object FormPrincipal: TFormPrincipal
     ManagerColor = False
     ManagerFont = False
     Align = alClient
+    ExplicitTop = 130
+    ExplicitHeight = 664
     DockingType = 5
-    OriginalWidth = 1107
-    OriginalHeight = 482
+    OriginalWidth = 1346
+    OriginalHeight = 671
     object dxLayoutDockSite4: TdxLayoutDockSite
       Left = 0
       Top = 0
-      Width = 1051
-      Height = 482
+      Width = 1290
+      Height = 671
+      ExplicitHeight = 664
       DockingType = 0
       OriginalWidth = 300
       OriginalHeight = 200
       object dxLayoutDockSite1: TdxLayoutDockSite
         Left = 0
         Top = 0
-        Width = 814
-        Height = 482
+        Width = 1053
+        Height = 671
         DockingType = 0
         OriginalWidth = 300
         OriginalHeight = 200
         object dxLayoutDockSite3: TdxLayoutDockSite
           Left = 0
           Top = 0
-          Width = 814
-          Height = 482
+          Width = 1053
+          Height = 671
+          ExplicitWidth = 939
+          ExplicitHeight = 664
           DockingType = 0
           OriginalWidth = 300
           OriginalHeight = 200
@@ -67,8 +74,8 @@ object FormPrincipal: TFormPrincipal
         object dpStartPage: TdxDockPanel
           Left = 0
           Top = 0
-          Width = 814
-          Height = 482
+          Width = 1053
+          Height = 671
           AllowFloating = False
           AutoHide = False
           CaptionButtons = []
@@ -77,6 +84,8 @@ object FormPrincipal: TFormPrincipal
           ShowCaption = False
           TabsProperties.CustomButtons.Buttons = <>
           TabsProperties.Rotate = True
+          ExplicitWidth = 939
+          ExplicitHeight = 664
           DockingType = 0
           OriginalWidth = 470
           OriginalHeight = 285
@@ -88,13 +97,15 @@ object FormPrincipal: TFormPrincipal
             Style.BorderStyle = ebsNone
             Style.Edges = []
             TabOrder = 0
-            Height = 478
-            Width = 810
+            ExplicitWidth = 935
+            ExplicitHeight = 660
+            Height = 667
+            Width = 1049
             object Image1: TImage
               AlignWithMargins = True
               Left = 5
-              Top = 347
-              Width = 800
+              Top = 536
+              Width = 1039
               Height = 109
               Margins.Top = 0
               Margins.Bottom = 20
@@ -442,8 +453,8 @@ object FormPrincipal: TFormPrincipal
               AlignWithMargins = True
               Left = 2
               Top = 2
-              Width = 806
-              Height = 345
+              Width = 1045
+              Height = 534
               Cursor = crHandPoint
               Margins.Left = 0
               Margins.Top = 0
@@ -452,6 +463,9 @@ object FormPrincipal: TFormPrincipal
               OptionsView.CenterContentHorz = True
               OptionsView.CenterContentVert = True
               TabOrder = 0
+              ExplicitLeft = 0
+              ExplicitWidth = 1051
+              ExplicitHeight = 563
               object dxTileControl1Group1: TdxTileControlGroup
                 Index = 0
               end
@@ -9117,10 +9131,10 @@ object FormPrincipal: TFormPrincipal
         end
       end
       object dxVertContainerDockSite1: TdxVertContainerDockSite
-        Left = 814
+        Left = 1053
         Top = 0
         Width = 237
-        Height = 482
+        Height = 671
         Visible = False
         ActiveChildIndex = -1
         AllowFloating = True
@@ -9133,7 +9147,7 @@ object FormPrincipal: TFormPrincipal
           Left = 0
           Top = 0
           Width = 237
-          Height = 482
+          Height = 20
           Visible = False
           AllowFloating = False
           AutoHide = True
@@ -9150,13 +9164,13 @@ object FormPrincipal: TFormPrincipal
             Left = 0
             Top = 0
             Width = 233
-            Height = 413
+            Height = 99
             Align = alClient
             TabOrder = 0
           end
           object Panel4: TcxGroupBox
             Left = 0
-            Top = 413
+            Top = -41
             Align = alBottom
             PanelStyle.Active = True
             Style.BorderStyle = ebsNone
@@ -9170,9 +9184,9 @@ object FormPrincipal: TFormPrincipal
           Left = 0
           Top = 0
           Width = 237
-          Height = 482
+          Height = 20
           Visible = False
-          ActiveChildIndex = 1
+          ActiveChildIndex = 0
           AllowFloating = False
           AutoHide = True
           CaptionButtons = [cbHide]
@@ -9186,7 +9200,7 @@ object FormPrincipal: TFormPrincipal
             Left = 0
             Top = 0
             Width = 233
-            Height = 454
+            Height = 0
             AllowFloating = True
             AutoHide = False
             Caption = 'Solution Explorer'
@@ -9200,7 +9214,7 @@ object FormPrincipal: TFormPrincipal
               Left = 0
               Top = 0
               Width = 233
-              Height = 454
+              Height = 0
               Align = alClient
               TabOrder = 0
               ReadOnly = True
@@ -9210,7 +9224,7 @@ object FormPrincipal: TFormPrincipal
             Left = 0
             Top = 0
             Width = 233
-            Height = 454
+            Height = 0
             AllowFloating = True
             AutoHide = False
             Caption = 'Class View'
@@ -9224,7 +9238,7 @@ object FormPrincipal: TFormPrincipal
               Left = 0
               Top = 0
               Width = 233
-              Height = 454
+              Height = 0
               Align = alClient
               TabOrder = 0
             end
@@ -9236,7 +9250,7 @@ object FormPrincipal: TFormPrincipal
       Left = -170
       Top = 0
       Width = 170
-      Height = 573
+      Height = 20
       Visible = False
       AllowFloating = True
       AutoHide = True
@@ -9398,49 +9412,10 @@ object FormPrincipal: TFormPrincipal
       end
     end
   end
-  object dxRibbon1: TdxRibbon
-    Left = 0
-    Top = 0
-    Width = 1107
-    Height = 124
-    BarManager = dxBarManager1
-    Style = rs2013
-    ColorSchemeAccent = rcsaBlue
-    ColorSchemeName = 'Office2013White'
-    Contexts = <>
-    TabOrder = 1
-    TabStop = False
-    object dxCadastros: TdxRibbonTab
-      Active = True
-      Caption = 'Cadastros'
-      Groups = <
-        item
-          Caption = 'Cadastro Geral'
-          ToolbarName = 'dxBarManager1Bar1'
-        end
-        item
-        end
-        item
-          ToolbarName = 'dxBarManager1Bar3'
-        end
-        item
-          ToolbarName = 'dxBarManager1Bar4'
-        end>
-      Index = 0
-    end
-    object dxRibbon1Tab2: TdxRibbonTab
-      Caption = 'Sistema'
-      Groups = <
-        item
-          ToolbarName = 'dxBarManager1Bar2'
-        end>
-      Index = 1
-    end
-  end
   object StatusBarPrincipal: TdxStatusBar
     Left = 0
-    Top = 606
-    Width = 1107
+    Top = 814
+    Width = 1346
     Height = 20
     Panels = <
       item
@@ -9477,6 +9452,679 @@ object FormPrincipal: TFormPrincipal
     Font.Height = -11
     Font.Name = 'Tahoma'
     Font.Style = []
+    ExplicitTop = 626
+    ExplicitWidth = 1107
+  end
+  object dxRibbon1: TdxRibbon
+    Left = 0
+    Top = 0
+    Width = 1346
+    Height = 124
+    BarManager = dxBarManager1
+    Style = rs2013
+    ColorSchemeAccent = rcsaBlue
+    ColorSchemeName = 'Office2013White'
+    Contexts = <>
+    TabOrder = 6
+    TabStop = False
+    ExplicitWidth = 1107
+    object dxCadastros: TdxRibbonTab
+      Active = True
+      Caption = 'Cadastros'
+      Groups = <
+        item
+          Caption = 'Cadastro Geral'
+          ToolbarName = 'dxBarManager1Bar1'
+        end
+        item
+        end
+        item
+          ToolbarName = 'dxBarManager1Bar3'
+        end
+        item
+          ToolbarName = 'dxBarManager1Bar4'
+        end>
+      Index = 0
+    end
+    object dxRibbon1Tab2: TdxRibbonTab
+      Caption = 'Sistema'
+      Groups = <
+        item
+          ToolbarName = 'dxBarManager1Bar2'
+        end>
+      Index = 1
+    end
+  end
+  object StatusBar1: TStatusBar
+    Left = 0
+    Top = 795
+    Width = 1346
+    Height = 19
+    Panels = <>
+    ExplicitLeft = 680
+    ExplicitTop = 432
+    ExplicitWidth = 0
+  end
+  object MenuSistema: TMainMenu
+    Left = 720
+    Top = 367
+    object Cadastro1: TMenuItem
+      Caption = 'Cadastro'
+      object Cliente1: TMenuItem
+        Caption = 'Clientes'
+        OnClick = ActCadClientesExecute
+      end
+      object Fornecedores1: TMenuItem
+        Caption = 'ActCadFornecedor'
+        OnClick = ActCadFornecedorExecute
+      end
+      object N2: TMenuItem
+        Caption = '-'
+      end
+      object N1: TMenuItem
+        Caption = 'ActCadCategoria'
+        OnClick = ActCadCategoriaExecute
+      end
+      object DiversosEndereos1: TMenuItem
+        Caption = 'Diversos Endere'#231'os'
+        object Pases1: TMenuItem
+          Caption = 'Cadastro Pa'#237'ses'
+          OnClick = ActPaisExecute
+        end
+        object UnidadeFederativa1: TMenuItem
+          Caption = 'Unidade Federativa'
+          OnClick = ActUFederativaExecute
+        end
+        object Cidade1: TMenuItem
+          Caption = 'Cidades'
+          OnClick = ActCidadesExecute
+        end
+        object Cep1: TMenuItem
+          Caption = 'ActCadCep'
+          OnClick = ActCadCepExecute
+        end
+      end
+      object N3: TMenuItem
+        Caption = '-'
+      end
+      object ContasaReceber1: TMenuItem
+        Caption = 'Contas a Receber'
+        object Duplicatas1: TMenuItem
+          Caption = 'Duplicatas'
+          OnClick = ActContasReceberExecute
+        end
+        object N4: TMenuItem
+          Caption = '-'
+        end
+        object ChequesprdatadosAbertos1: TMenuItem
+          Caption = 'Cheques pr'#233'-datados Abertos'
+          OnClick = Act_chqpdtAbertoExecute
+        end
+        object ChequesprdatadosBaixados1: TMenuItem
+          Caption = 'Cheques pr'#233'-datados Baixados'
+          OnClick = AcChqBXExecute
+        end
+        object N5: TMenuItem
+          Caption = '-'
+        end
+        object Chequesprdatadosprdevolvidos1: TMenuItem
+          Caption = 'Cheques pr'#233'-datados pr'#233' devolvidos'
+          OnClick = AcChqPPExecute
+        end
+        object ChequesprdatadosDevolvidos1: TMenuItem
+          Caption = 'Cheques pr'#233'-datados Devolvidos'
+          OnClick = AcChqDVExecute
+        end
+        object ChequesprdatadosDevolvidosBaixados1: TMenuItem
+          Caption = 'Cheques pr'#233'-datados Devolvidos Baixados'
+          OnClick = AcChqDBExecute
+        end
+      end
+      object ContasaPagar1: TMenuItem
+        Caption = 'Contas a Pagar'
+        OnClick = ActContasPagarExecute
+      end
+      object PrevisodePagamento1: TMenuItem
+        Caption = 'Previs'#227'o de Pagamento'
+      end
+      object N6: TMenuItem
+        Caption = '-'
+      end
+      object Produtos1: TMenuItem
+        Caption = 'Produtos'
+        object Produtos2: TMenuItem
+          Caption = 'Produtos'
+          OnClick = Produtos2Click
+        end
+        object N8: TMenuItem
+          Caption = '-'
+        end
+        object FamliadeProdutos1: TMenuItem
+          Caption = 'Fam'#237'lia de Produtos'
+          OnClick = FamliadeProdutos1Click
+        end
+        object GrupodeProdutos1: TMenuItem
+          Caption = 'Grupo de Produtos'
+          OnClick = GrupodeProdutos1Click
+        end
+        object UnidadedeProdutos: TMenuItem
+          Caption = 'ActUnidadeProduto'
+          OnClick = ActCadUnidadeProdutoExecute
+        end
+        object EmbalagemProduto1: TMenuItem
+          Caption = 'Embalagem de Produto'
+          OnClick = ActCadEmbalagemExecute
+        end
+        object N9: TMenuItem
+          Caption = '-'
+        end
+        object GnerodeItemdeMercadoriaServio1: TMenuItem
+          Caption = 'ActCadGenItem'
+          OnClick = ActCadGenItemExecute
+        end
+        object N10: TMenuItem
+          Caption = '-'
+        end
+        object KitdeProduto1: TMenuItem
+          Caption = 'Kit de Produto'
+        end
+      end
+      object N7: TMenuItem
+        Caption = '-'
+      end
+      object DiversosFinanceior1: TMenuItem
+        Caption = 'Diversos Financeiro'
+        object LocaldeCobrana1: TMenuItem
+          Caption = 'Local de Cobran'#231'a'
+          OnClick = ActLocalCobrancaExecute
+        end
+        object Moedas1: TMenuItem
+          Caption = 'Moedas'
+        end
+        object N12: TMenuItem
+          Caption = '-'
+        end
+        object PlanodeContas1: TMenuItem
+          Caption = 'Plano de Contas'
+        end
+        object N13: TMenuItem
+          Caption = '-'
+        end
+        object PlanodePagamentos1: TMenuItem
+          Caption = 'Plano de Pagamentos'
+          OnClick = AcPLNPGTExecute
+        end
+        object N14: TMenuItem
+          Caption = '-'
+        end
+        object Feriados1: TMenuItem
+          Caption = 'Feriados'
+        end
+      end
+      object N11: TMenuItem
+        Caption = '-'
+      end
+      object DiversosFiscais1: TMenuItem
+        Caption = 'Diversos Fiscais'
+        object UnidadeFederativa2: TMenuItem
+          Caption = 'Unidade Federativa'
+          OnClick = ActUFederativaExecute
+        end
+        object AlquotadeICMS1: TMenuItem
+          Caption = 'Al'#237'quota de ICMS'
+          OnClick = AlquotadeICMS1Click
+        end
+        object CFOP1: TMenuItem
+          Caption = 'CFOP'
+          OnClick = Act_CFOPExecute
+        end
+        object N15: TMenuItem
+          Caption = '-'
+        end
+        object CEST1: TMenuItem
+          Caption = 'Cest'
+          OnClick = ActCestExecute
+        end
+        object NBM1: TMenuItem
+          Caption = 'NBM'
+          OnClick = Act_NBMExecute
+        end
+        object N16: TMenuItem
+          Caption = '-'
+        end
+        object ObservaodeNotaFiscal1: TMenuItem
+          Caption = 'Observa'#231#227'o de Nota Fiscal'
+          OnClick = AcObsNTFExecute
+        end
+      end
+      object N17: TMenuItem
+        Caption = '-'
+      end
+      object Funcionrios1: TMenuItem
+        Caption = 'Funcion'#225'rios'
+        object Funcionrios2: TMenuItem
+          Caption = 'Cadastro de Funcion'#225'rios'
+          OnClick = ActCadFuncionarioExecute
+        end
+        object SetordeTrabalho1: TMenuItem
+          Caption = 'Setor de Trabalho'
+          OnClick = ActCadSetorExecute
+        end
+      end
+      object Vendedor1: TMenuItem
+        Caption = 'Vendedor da Empresa'
+        object Vendedor2: TMenuItem
+          Caption = 'Vendedor'
+          OnClick = Vendedor2Click
+        end
+        object Rotas1: TMenuItem
+          Caption = 'Rotas'
+          OnClick = AcCadRotasExecute
+        end
+        object N18: TMenuItem
+          Caption = '-'
+        end
+        object GrupodeMetasdeVendas1: TMenuItem
+          Caption = 'Grupo de Metas de Vendas'
+          OnClick = GrupodeMetasdeVendas1Click
+        end
+      end
+      object RepresentantedeFornecedor1: TMenuItem
+        Caption = 'ActRepresentantes'
+        OnClick = ActRepresentantesExecute
+      end
+      object N19: TMenuItem
+        Caption = '-'
+      end
+      object ransportadoras1: TMenuItem
+        Caption = 'Transportadoras'
+        OnClick = ActCadTransportadoraExecute
+      end
+      object N20: TMenuItem
+        Caption = '-'
+      end
+      object NotaFiscalFaturada1: TMenuItem
+        Caption = 'Nota Fiscal Faturada'
+      end
+      object LanamentodeCartodeCrdito1: TMenuItem
+        Caption = 'Lan'#231'amento de Cart'#227'o de Cr'#233'dito'
+      end
+      object ReduoZ1: TMenuItem
+        Caption = 'Redu'#231#227'o Z'
+      end
+      object N21: TMenuItem
+        Caption = '-'
+      end
+      object NotaFiscaldeEntrada1: TMenuItem
+        Caption = 'Nota Fiscal de Entrada'
+      end
+      object N22: TMenuItem
+        Caption = '-'
+      end
+      object Oramento1: TMenuItem
+        Caption = 'Or'#231'amento'
+      end
+      object N23: TMenuItem
+        Caption = '-'
+      end
+      object PrOrdemdeRequisio1: TMenuItem
+        Caption = 'Pr'#233'-Ordem de Requisi'#231#227'o'
+        object Cores1: TMenuItem
+          Caption = 'Cores'
+          OnClick = ActCoresExecute
+        end
+        object PrOrdemdeRequisio2: TMenuItem
+          Caption = 'Pr'#233'-Ordem de Requisi'#231#227'o'
+        end
+      end
+      object RequisiodeMaterial1: TMenuItem
+        Caption = 'Requisi'#231#227'o de Material'
+      end
+      object N24: TMenuItem
+        Caption = '-'
+      end
+      object OrdemdeProduodeTerceiros1: TMenuItem
+        Caption = 'Ordem de Produ'#231#227'o de Terceiros'
+      end
+    end
+    object Lanamentos1: TMenuItem
+      Caption = 'Faturamento'
+      object PedidosparaFaturar1: TMenuItem
+        Caption = 'Pedidos para Faturar'
+      end
+      object N25: TMenuItem
+        Caption = '-'
+      end
+      object LotedePedidosparaFaturar1: TMenuItem
+        Caption = 'Lote de Pedidos para Faturar'
+      end
+      object EmitirNotaFiscalparaoLote1: TMenuItem
+        Caption = 'Emitir Nota Fiscal para o Lote'
+      end
+      object N26: TMenuItem
+        Caption = '-'
+      end
+      object EmitirEtiquetasde1: TMenuItem
+        Caption = 'Emitir Etiquetas de Volume'
+      end
+    end
+    object Processamentos1: TMenuItem
+      Caption = 'Processamentos'
+      object ContasaReceber2: TMenuItem
+        Caption = 'Contas a Receber'
+        object LotedeRemessa1: TMenuItem
+          Caption = 'Lote de Remessa'
+        end
+        object GeraRemessa1: TMenuItem
+          Caption = 'Gera Remessa'
+        end
+        object RetornoRemessa1: TMenuItem
+          Caption = 'Retorno Remessa'
+        end
+        object N28: TMenuItem
+          Caption = '-'
+        end
+        object RetornodeRemessaBrasil1: TMenuItem
+          Caption = 'Retorno de Remessa Brasil via Arquivo BBT'
+        end
+      end
+      object N27: TMenuItem
+        Caption = '-'
+      end
+      object ControledeCheques1: TMenuItem
+        Caption = 'Controle de Cheques'
+        object Gerar1: TMenuItem
+          Caption = 'Gerar baixa de cheques pr'#233'-datados'
+        end
+        object N31: TMenuItem
+          Caption = '-'
+        end
+        object Processarbaixadechequesprdatados1: TMenuItem
+          Caption = 'Processar baixa de cheques pr'#233'-datados'
+        end
+      end
+      object N29: TMenuItem
+        Caption = '-'
+      end
+      object CalcularEstoqueMnimoeMximo1: TMenuItem
+        Caption = 'Calcular Estoque M'#237'nimo e M'#225'ximo'
+      end
+      object N30: TMenuItem
+        Caption = '-'
+      end
+      object ReajustarPreodeVendas1: TMenuItem
+        Caption = 'Reajustar Pre'#231'o de Venda'
+      end
+    end
+    object Fiscal1: TMenuItem
+      Caption = 'Fiscal'
+      object SaldoInicial1: TMenuItem
+        Caption = 'Saldo Inicial'
+      end
+      object ReprocessarEstoque1: TMenuItem
+        Caption = 'Reprocessar Estoque'
+      end
+      object FecharEstoque1: TMenuItem
+        Caption = 'Fechar Estoque'
+      end
+      object N32: TMenuItem
+        Caption = '-'
+      end
+      object SINTEGRA1: TMenuItem
+        Caption = 'SINTEGRA'
+      end
+      object N33: TMenuItem
+        Caption = '-'
+      end
+      object CONTABILIDADE1: TMenuItem
+        Caption = 'CONTABILIDADE'
+        object PlanilhaST1: TMenuItem
+          Caption = 'Planilha ST para Entradas'
+        end
+        object PlanilhaSTparaSadas1: TMenuItem
+          Caption = 'Planilha ST para Sa'#237'das'
+        end
+        object PlanilhaSTparaRestituio1: TMenuItem
+          Caption = 'Planilha ST para Restitui'#231#227'o'
+        end
+        object N35: TMenuItem
+          Caption = '-'
+        end
+        object PlanilhaSubstituioTributria1: TMenuItem
+          Caption = 'Planilha Substitui'#231#227'o Tribut'#225'ria'
+        end
+        object ProdutosPlanilhaSubstituioTributria1: TMenuItem
+          Caption = 'Produtos Planilha Substitui'#231#227'o Tribut'#225'ria'
+        end
+        object RegistroInventrioContabilidade1: TMenuItem
+          Caption = 'Registro Invent'#225'rio (Contabilidade)'
+        end
+      end
+      object N34: TMenuItem
+        Caption = '-'
+      end
+      object AcertarCustoMdio1: TMenuItem
+        Caption = 'Acertar Custo M'#233'dio'
+      end
+    end
+    object ImportarExportar1: TMenuItem
+      Caption = 'Importar / Exportar'
+      object ImportarPedidosVendasExternas1: TMenuItem
+        Caption = 'Importar Pedidos Vendas Externas'
+      end
+      object N36: TMenuItem
+        Caption = '-'
+      end
+      object Importar1: TMenuItem
+        Caption = 'Importar Clientes de Vendas Externas'
+      end
+      object N37: TMenuItem
+        Caption = '-'
+      end
+      object ExportarCadastrodeProdutos1: TMenuItem
+        Caption = 'Exportar Cadastro de Produtos'
+      end
+    end
+    object Relatrios1: TMenuItem
+      Caption = 'Relat'#243'rios'
+      object MalaDiretaClientes1: TMenuItem
+        Caption = 'Mala Direta Clientes'
+      end
+      object N38: TMenuItem
+        Caption = '-'
+      end
+      object Produtos3: TMenuItem
+        Caption = 'Produtos'
+        object RelaodeProdutos1: TMenuItem
+          Caption = 'Rela'#231#227'o de Produtos'
+        end
+        object N40: TMenuItem
+          Caption = '-'
+        end
+        object RelaodeProdutosporSituaoFiscal1: TMenuItem
+          Caption = 'Rela'#231#227'o de Produtos por Situa'#231#227'o Fiscal'
+        end
+        object RelaodeProdutosporTIPI1: TMenuItem
+          Caption = 'Rela'#231#227'o de Produtos por TIPI (Receita Federal)'
+        end
+        object N41: TMenuItem
+          Caption = '-'
+        end
+        object EtiquetasdeProdutos1: TMenuItem
+          Caption = 'Etiquetas de Produtos'
+        end
+        object N42: TMenuItem
+          Caption = '-'
+        end
+        object ContagemparaInventrio1: TMenuItem
+          Caption = 'Contagem para Invent'#225'rio'
+        end
+        object N43: TMenuItem
+          Caption = '-'
+        end
+        object abeladePreo1: TMenuItem
+          Caption = 'Tabela de Pre'#231'o'
+        end
+        object N44: TMenuItem
+          Caption = '-'
+        end
+        object Estatsticas1: TMenuItem
+          Caption = 'Estat'#237'sticas'
+          object CurvaABCProdutos1: TMenuItem
+            Caption = 'Curva ABC Produtos'
+          end
+          object ProdutosVendidos1: TMenuItem
+            Caption = 'Produtos Vendidos num Per'#237'odo'
+          end
+        end
+        object N45: TMenuItem
+          Caption = '-'
+        end
+        object Estoque1: TMenuItem
+          Caption = 'Estoque'
+          object MovimentaoSinttica1: TMenuItem
+            Caption = 'Movimenta'#231#227'o Sint'#233'tica'
+          end
+          object MovimentaoAnaltica1: TMenuItem
+            Caption = 'Movimenta'#231#227'o Anal'#237'tica'
+          end
+          object N47: TMenuItem
+            Caption = '-'
+          end
+          object FaturadoCompradonosltimos6meses1: TMenuItem
+            Caption = 'Faturado/Comprado nos '#250'ltimos 6 meses/Estoque M'#237'nimo e M'#225'ximo'
+          end
+          object MovimentaoEstoqueltimos12meses1: TMenuItem
+            Caption = 'Movimenta'#231#227'o Estoque '#218'ltimos 12 meses'
+          end
+        end
+        object N46: TMenuItem
+          Caption = '-'
+        end
+        object LivrosFiscais1: TMenuItem
+          Caption = 'Livros Fiscais'
+          object RCPE1: TMenuItem
+            Caption = 'RCPE'
+          end
+          object RCPE2: TMenuItem
+            Caption = 'RCPE de Fabrica'#231#227'o com Terceiros'
+          end
+          object N48: TMenuItem
+            Caption = '-'
+          end
+          object LivrodeInventrio1: TMenuItem
+            Caption = 'Livro de Invent'#225'rio'
+          end
+          object C1: TMenuItem
+            Caption = 'Confer'#234'ncia Livro de Invent'#225'rio'
+          end
+          object N49: TMenuItem
+            Caption = '-'
+          end
+          object LivrodeNBM1: TMenuItem
+            Caption = 'Livro de NBM'
+          end
+          object N50: TMenuItem
+            Caption = '-'
+          end
+          object FichadeSadasdeInsumos1: TMenuItem
+            Caption = 'Ficha de Sa'#237'das de Insumos por Valor'
+          end
+          object FichadeRemententesdeInsumos1: TMenuItem
+            Caption = 'Ficha de Rementente de Insumos por Valor'
+          end
+          object N51: TMenuItem
+            Caption = '-'
+          end
+          object FichadeEntradadeInsumos1: TMenuItem
+            Caption = 'Ficha de Entrada de Insumos para Destinat'#225'rio (Ficha 38)'
+          end
+          object FichadeEntradadeInsumos2: TMenuItem
+            Caption = 'Ficha de Entrada de Insumos de Produtos por IPI (Ficha 39)'
+          end
+          object FichadeSadadeInsumosparaDestinatrioFicha401: TMenuItem
+            Caption = 'Ficha de Sa'#237'da de Insumos para Destinat'#225'rio (Ficha 40)'
+          end
+          object FichadeEntradadeInsumosdeProdutosporIPIFicha391: TMenuItem
+            Caption = 'Ficha de Sa'#237'da de Insumos de Produtos por IPI (Ficha 41)'
+          end
+        end
+      end
+      object N39: TMenuItem
+        Caption = '-'
+      end
+      object NotasFaturadas1: TMenuItem
+        Caption = 'Notas Faturadas'
+        object NotasdoPerdoResumoMatriz1: TMenuItem
+          Caption = 'Notas do Per'#237'do Resumo (Matriz)'
+        end
+        object N52: TMenuItem
+          Caption = '-'
+        end
+        object NotasdoPerodoRegimeEspecial1: TMenuItem
+          Caption = 'Notas do Per'#237'odo (Regime Especial)'
+        end
+        object N53: TMenuItem
+          Caption = '-'
+        end
+        object NotasFaturadasXDuplictas1: TMenuItem
+          Caption = 'Notas Faturadas X Duplicatas (Matriz)'
+        end
+        object N54: TMenuItem
+          Caption = '-'
+        end
+        object ResumoPreoMnimo1: TMenuItem
+          Caption = 'Resumo Pre'#231'o M'#237'nimo / M'#225'ximo num Per'#237'odo'
+        end
+      end
+    end
+    object Utilitrios1: TMenuItem
+      Caption = 'Utilit'#225'rios'
+      object ParmetrosdaEmpresa1: TMenuItem
+        Caption = 'Par'#226'metros da Empresa'
+        object ParmentrosdaEmpresa1: TMenuItem
+          Caption = 'Empresa'
+          OnClick = AcEmpresaExecute
+        end
+        object N57: TMenuItem
+          Caption = '-'
+        end
+        object NumeraoNotaFiscal1: TMenuItem
+          Caption = 'Numera'#231#227'o Nota Fiscal'
+        end
+        object N58: TMenuItem
+          Caption = '-'
+        end
+        object NumeraoRequisio1: TMenuItem
+          Caption = 'Numera'#231#227'o Requisi'#231#227'o'
+        end
+        object N59: TMenuItem
+          Caption = '-'
+        end
+        object NumeraoOramento1: TMenuItem
+          Caption = 'Numera'#231#227'o Or'#231'amento'
+        end
+      end
+      object N55: TMenuItem
+        Caption = '-'
+      end
+      object Usurios1: TMenuItem
+        Caption = 'Cadastro Usu'#225'rio'
+        OnClick = ActCadUsuariosExecute
+      end
+      object N56: TMenuItem
+        Caption = '-'
+      end
+      object Calculadora1: TMenuItem
+        Caption = 'Calculadora'
+      end
+      object Calendrio1: TMenuItem
+        Caption = 'Calend'#225'rio'
+      end
+    end
+    object Informao1: TMenuItem
+      Caption = 'Informa'#231#227'o'
+    end
   end
   object dxBarManager1: TdxBarManager
     Font.Charset = DEFAULT_CHARSET
@@ -9509,8 +10157,8 @@ object FormPrincipal: TFormPrincipal
       DockedTop = 0
       FloatLeft = 733
       FloatTop = 8
-      FloatClientWidth = 80
-      FloatClientHeight = 213
+      FloatClientWidth = 76
+      FloatClientHeight = 114
       ItemLinks = <
         item
           Visible = True
@@ -9525,7 +10173,7 @@ object FormPrincipal: TFormPrincipal
           ItemName = 'BtnCategorias'
         end>
       OneOnRow = False
-      Row = 0
+      Row = 1
       UseOwnFont = False
       Visible = True
       WholeRow = False
@@ -9537,8 +10185,8 @@ object FormPrincipal: TFormPrincipal
       DockedTop = 0
       FloatLeft = 1142
       FloatTop = 8
-      FloatClientWidth = 0
-      FloatClientHeight = 0
+      FloatClientWidth = 61
+      FloatClientHeight = 76
       ItemLinks = <
         item
           Visible = True
@@ -9561,8 +10209,8 @@ object FormPrincipal: TFormPrincipal
       DockedTop = 0
       FloatLeft = 1131
       FloatTop = 8
-      FloatClientWidth = 0
-      FloatClientHeight = 0
+      FloatClientWidth = 91
+      FloatClientHeight = 114
       ItemLinks = <
         item
           Visible = True
@@ -9577,7 +10225,7 @@ object FormPrincipal: TFormPrincipal
           ItemName = 'dxBarLargeButton5'
         end>
       OneOnRow = False
-      Row = 0
+      Row = 1
       UseOwnFont = False
       Visible = True
       WholeRow = False
@@ -9589,8 +10237,8 @@ object FormPrincipal: TFormPrincipal
       DockedTop = 0
       FloatLeft = 1131
       FloatTop = 8
-      FloatClientWidth = 0
-      FloatClientHeight = 0
+      FloatClientWidth = 71
+      FloatClientHeight = 76
       ItemLinks = <
         item
           Visible = True
@@ -9600,7 +10248,7 @@ object FormPrincipal: TFormPrincipal
           Visible = True
           ItemName = 'dxBarLargeButton7'
         end>
-      OneOnRow = False
+      OneOnRow = True
       Row = 0
       UseOwnFont = False
       Visible = True
@@ -11882,608 +12530,6 @@ object FormPrincipal: TFormPrincipal
     object AcChqDB: TAction
       Caption = 'Cheques pr'#233'-datados Devolvidos Baixados'
       OnExecute = AcChqDBExecute
-    end
-  end
-  object dxSkinController1: TdxSkinController
-    Kind = lfOffice11
-    SkinName = 'VisualStudio2013Light'
-    Left = 392
-    Top = 463
-  end
-  object MenuSistema: TMainMenu
-    Left = 720
-    Top = 367
-    object Cadastro1: TMenuItem
-      Caption = 'Cadastro'
-      object Cliente1: TMenuItem
-        Action = ActCadClientes
-      end
-      object Fornecedores1: TMenuItem
-        Action = ActCadFornecedor
-        Caption = '&Fornecedor'
-      end
-      object N2: TMenuItem
-        Caption = '-'
-      end
-      object N1: TMenuItem
-        Action = ActCadCategoria
-        Caption = 'Categoria'
-      end
-      object DiversosEndereos1: TMenuItem
-        Caption = 'Diversos Endere'#231'os'
-        object Pases1: TMenuItem
-          Action = ActPais
-        end
-        object UnidadeFederativa1: TMenuItem
-          Action = ActUFederativa
-        end
-        object Cidade1: TMenuItem
-          Action = ActCidades
-        end
-        object Cep1: TMenuItem
-          Action = ActCadCep
-          Caption = 'CEP'
-        end
-      end
-      object N3: TMenuItem
-        Caption = '-'
-      end
-      object ContasaReceber1: TMenuItem
-        Caption = 'Contas a Receber'
-        object Duplicatas1: TMenuItem
-          Action = ActContasReceber
-        end
-        object N4: TMenuItem
-          Caption = '-'
-        end
-        object ChequesprdatadosAbertos1: TMenuItem
-          Action = Act_chqpdtAberto
-        end
-        object ChequesprdatadosBaixados1: TMenuItem
-          Action = AcChqBX
-        end
-        object N5: TMenuItem
-          Caption = '-'
-        end
-        object Chequesprdatadosprdevolvidos1: TMenuItem
-          Action = AcChqPP
-        end
-        object ChequesprdatadosDevolvidos1: TMenuItem
-          Action = AcChqDV
-        end
-        object ChequesprdatadosDevolvidosBaixados1: TMenuItem
-          Action = AcChqDB
-        end
-      end
-      object ContasaPagar1: TMenuItem
-        Action = ActContasPagar
-      end
-      object PrevisodePagamento1: TMenuItem
-        Caption = 'Previs'#227'o de Pagamento'
-      end
-      object N6: TMenuItem
-        Caption = '-'
-      end
-      object Produtos1: TMenuItem
-        Caption = 'Produtos'
-        object Produtos2: TMenuItem
-          Caption = 'Produtos'
-          OnClick = Produtos2Click
-        end
-        object N8: TMenuItem
-          Caption = '-'
-        end
-        object FamliadeProdutos1: TMenuItem
-          Caption = 'Fam'#237'lia de Produtos'
-          OnClick = FamliadeProdutos1Click
-        end
-        object GrupodeProdutos1: TMenuItem
-          Caption = 'Grupo de Produtos'
-          OnClick = GrupodeProdutos1Click
-        end
-        object UnidadedeProdutos: TMenuItem
-          Action = ActCadUnidadeProduto
-          Caption = 'Unidade de Produtos'
-        end
-        object EmbalagemProduto1: TMenuItem
-          Action = ActCadEmbalagem
-        end
-        object N9: TMenuItem
-          Caption = '-'
-        end
-        object GnerodeItemdeMercadoriaServio1: TMenuItem
-          Action = ActCadGenItem
-          Caption = 'G'#234'nero do Item de Mercadoria/Servi'#231'o'
-        end
-        object N10: TMenuItem
-          Caption = '-'
-        end
-        object KitdeProduto1: TMenuItem
-          Caption = 'Kit de Produto'
-        end
-      end
-      object N7: TMenuItem
-        Caption = '-'
-      end
-      object DiversosFinanceior1: TMenuItem
-        Caption = 'Diversos Financeiro'
-        object LocaldeCobrana1: TMenuItem
-          Action = ActLocalCobranca
-        end
-        object Moedas1: TMenuItem
-          Caption = 'Moedas'
-        end
-        object N12: TMenuItem
-          Caption = '-'
-        end
-        object PlanodeContas1: TMenuItem
-          Caption = 'Plano de Contas'
-        end
-        object N13: TMenuItem
-          Caption = '-'
-        end
-        object PlanodePagamentos1: TMenuItem
-          Action = AcPLNPGT
-        end
-        object N14: TMenuItem
-          Caption = '-'
-        end
-        object Feriados1: TMenuItem
-          Caption = 'Feriados'
-        end
-      end
-      object N11: TMenuItem
-        Caption = '-'
-      end
-      object DiversosFiscais1: TMenuItem
-        Caption = 'Diversos Fiscais'
-        object UnidadeFederativa2: TMenuItem
-          Action = ActUFederativa
-        end
-        object AlquotadeICMS1: TMenuItem
-          Caption = 'Al'#237'quota de ICMS'
-          OnClick = AlquotadeICMS1Click
-        end
-        object CFOP1: TMenuItem
-          Action = Act_CFOP
-        end
-        object N15: TMenuItem
-          Caption = '-'
-        end
-        object CEST1: TMenuItem
-          Action = ActCest
-        end
-        object NBM1: TMenuItem
-          Action = Act_NBM
-        end
-        object N16: TMenuItem
-          Caption = '-'
-        end
-        object ObservaodeNotaFiscal1: TMenuItem
-          Action = AcObsNTF
-        end
-      end
-      object N17: TMenuItem
-        Caption = '-'
-      end
-      object Funcionrios1: TMenuItem
-        Caption = 'Funcion'#225'rios'
-        object Funcionrios2: TMenuItem
-          Action = ActCadFuncionario
-        end
-        object SetordeTrabalho1: TMenuItem
-          Action = ActCadSetor
-        end
-      end
-      object Vendedor1: TMenuItem
-        Caption = 'Vendedor da Empresa'
-        object Vendedor2: TMenuItem
-          Caption = 'Vendedor'
-          OnClick = Vendedor2Click
-        end
-        object Rotas1: TMenuItem
-          Action = AcCadRotas
-        end
-        object N18: TMenuItem
-          Caption = '-'
-        end
-        object GrupodeMetasdeVendas1: TMenuItem
-          Caption = 'Grupo de Metas de Vendas'
-          OnClick = GrupodeMetasdeVendas1Click
-        end
-      end
-      object RepresentantedeFornecedor1: TMenuItem
-        Action = ActRepresentantes
-        Caption = 'Representante de Fornecedor'
-      end
-      object N19: TMenuItem
-        Caption = '-'
-      end
-      object ransportadoras1: TMenuItem
-        Action = ActCadTransportadora
-      end
-      object N20: TMenuItem
-        Caption = '-'
-      end
-      object NotaFiscalFaturada1: TMenuItem
-        Caption = 'Nota Fiscal Faturada'
-      end
-      object LanamentodeCartodeCrdito1: TMenuItem
-        Caption = 'Lan'#231'amento de Cart'#227'o de Cr'#233'dito'
-      end
-      object ReduoZ1: TMenuItem
-        Caption = 'Redu'#231#227'o Z'
-      end
-      object N21: TMenuItem
-        Caption = '-'
-      end
-      object NotaFiscaldeEntrada1: TMenuItem
-        Caption = 'Nota Fiscal de Entrada'
-      end
-      object N22: TMenuItem
-        Caption = '-'
-      end
-      object Oramento1: TMenuItem
-        Caption = 'Or'#231'amento'
-      end
-      object N23: TMenuItem
-        Caption = '-'
-      end
-      object PrOrdemdeRequisio1: TMenuItem
-        Caption = 'Pr'#233'-Ordem de Requisi'#231#227'o'
-        object Cores1: TMenuItem
-          Action = ActCores
-        end
-        object PrOrdemdeRequisio2: TMenuItem
-          Caption = 'Pr'#233'-Ordem de Requisi'#231#227'o'
-        end
-      end
-      object RequisiodeMaterial1: TMenuItem
-        Caption = 'Requisi'#231#227'o de Material'
-      end
-      object N24: TMenuItem
-        Caption = '-'
-      end
-      object OrdemdeProduodeTerceiros1: TMenuItem
-        Caption = 'Ordem de Produ'#231#227'o de Terceiros'
-      end
-    end
-    object Lanamentos1: TMenuItem
-      Caption = 'Faturamento'
-      object PedidosparaFaturar1: TMenuItem
-        Caption = 'Pedidos para Faturar'
-      end
-      object N25: TMenuItem
-        Caption = '-'
-      end
-      object LotedePedidosparaFaturar1: TMenuItem
-        Caption = 'Lote de Pedidos para Faturar'
-      end
-      object EmitirNotaFiscalparaoLote1: TMenuItem
-        Caption = 'Emitir Nota Fiscal para o Lote'
-      end
-      object N26: TMenuItem
-        Caption = '-'
-      end
-      object EmitirEtiquetasde1: TMenuItem
-        Caption = 'Emitir Etiquetas de Volume'
-      end
-    end
-    object Processamentos1: TMenuItem
-      Caption = 'Processamentos'
-      object ContasaReceber2: TMenuItem
-        Caption = 'Contas a Receber'
-        object LotedeRemessa1: TMenuItem
-          Caption = 'Lote de Remessa'
-        end
-        object GeraRemessa1: TMenuItem
-          Caption = 'Gera Remessa'
-        end
-        object RetornoRemessa1: TMenuItem
-          Caption = 'Retorno Remessa'
-        end
-        object N28: TMenuItem
-          Caption = '-'
-        end
-        object RetornodeRemessaBrasil1: TMenuItem
-          Caption = 'Retorno de Remessa Brasil via Arquivo BBT'
-        end
-      end
-      object N27: TMenuItem
-        Caption = '-'
-      end
-      object ControledeCheques1: TMenuItem
-        Caption = 'Controle de Cheques'
-        object Gerar1: TMenuItem
-          Caption = 'Gerar baixa de cheques pr'#233'-datados'
-        end
-        object N31: TMenuItem
-          Caption = '-'
-        end
-        object Processarbaixadechequesprdatados1: TMenuItem
-          Caption = 'Processar baixa de cheques pr'#233'-datados'
-        end
-      end
-      object N29: TMenuItem
-        Caption = '-'
-      end
-      object CalcularEstoqueMnimoeMximo1: TMenuItem
-        Caption = 'Calcular Estoque M'#237'nimo e M'#225'ximo'
-      end
-      object N30: TMenuItem
-        Caption = '-'
-      end
-      object ReajustarPreodeVendas1: TMenuItem
-        Caption = 'Reajustar Pre'#231'o de Venda'
-      end
-    end
-    object Fiscal1: TMenuItem
-      Caption = 'Fiscal'
-      object SaldoInicial1: TMenuItem
-        Caption = 'Saldo Inicial'
-      end
-      object ReprocessarEstoque1: TMenuItem
-        Caption = 'Reprocessar Estoque'
-      end
-      object FecharEstoque1: TMenuItem
-        Caption = 'Fechar Estoque'
-      end
-      object N32: TMenuItem
-        Caption = '-'
-      end
-      object SINTEGRA1: TMenuItem
-        Caption = 'SINTEGRA'
-      end
-      object N33: TMenuItem
-        Caption = '-'
-      end
-      object CONTABILIDADE1: TMenuItem
-        Caption = 'CONTABILIDADE'
-        object PlanilhaST1: TMenuItem
-          Caption = 'Planilha ST para Entradas'
-        end
-        object PlanilhaSTparaSadas1: TMenuItem
-          Caption = 'Planilha ST para Sa'#237'das'
-        end
-        object PlanilhaSTparaRestituio1: TMenuItem
-          Caption = 'Planilha ST para Restitui'#231#227'o'
-        end
-        object N35: TMenuItem
-          Caption = '-'
-        end
-        object PlanilhaSubstituioTributria1: TMenuItem
-          Caption = 'Planilha Substitui'#231#227'o Tribut'#225'ria'
-        end
-        object ProdutosPlanilhaSubstituioTributria1: TMenuItem
-          Caption = 'Produtos Planilha Substitui'#231#227'o Tribut'#225'ria'
-        end
-        object RegistroInventrioContabilidade1: TMenuItem
-          Caption = 'Registro Invent'#225'rio (Contabilidade)'
-        end
-      end
-      object N34: TMenuItem
-        Caption = '-'
-      end
-      object AcertarCustoMdio1: TMenuItem
-        Caption = 'Acertar Custo M'#233'dio'
-      end
-    end
-    object ImportarExportar1: TMenuItem
-      Caption = 'Importar / Exportar'
-      object ImportarPedidosVendasExternas1: TMenuItem
-        Caption = 'Importar Pedidos Vendas Externas'
-      end
-      object N36: TMenuItem
-        Caption = '-'
-      end
-      object Importar1: TMenuItem
-        Caption = 'Importar Clientes de Vendas Externas'
-      end
-      object N37: TMenuItem
-        Caption = '-'
-      end
-      object ExportarCadastrodeProdutos1: TMenuItem
-        Caption = 'Exportar Cadastro de Produtos'
-      end
-    end
-    object Relatrios1: TMenuItem
-      Caption = 'Relat'#243'rios'
-      object MalaDiretaClientes1: TMenuItem
-        Caption = 'Mala Direta Clientes'
-      end
-      object N38: TMenuItem
-        Caption = '-'
-      end
-      object Produtos3: TMenuItem
-        Caption = 'Produtos'
-        object RelaodeProdutos1: TMenuItem
-          Caption = 'Rela'#231#227'o de Produtos'
-        end
-        object N40: TMenuItem
-          Caption = '-'
-        end
-        object RelaodeProdutosporSituaoFiscal1: TMenuItem
-          Caption = 'Rela'#231#227'o de Produtos por Situa'#231#227'o Fiscal'
-        end
-        object RelaodeProdutosporTIPI1: TMenuItem
-          Caption = 'Rela'#231#227'o de Produtos por TIPI (Receita Federal)'
-        end
-        object N41: TMenuItem
-          Caption = '-'
-        end
-        object EtiquetasdeProdutos1: TMenuItem
-          Caption = 'Etiquetas de Produtos'
-        end
-        object N42: TMenuItem
-          Caption = '-'
-        end
-        object ContagemparaInventrio1: TMenuItem
-          Caption = 'Contagem para Invent'#225'rio'
-        end
-        object N43: TMenuItem
-          Caption = '-'
-        end
-        object abeladePreo1: TMenuItem
-          Caption = 'Tabela de Pre'#231'o'
-        end
-        object N44: TMenuItem
-          Caption = '-'
-        end
-        object Estatsticas1: TMenuItem
-          Caption = 'Estat'#237'sticas'
-          object CurvaABCProdutos1: TMenuItem
-            Caption = 'Curva ABC Produtos'
-          end
-          object ProdutosVendidos1: TMenuItem
-            Caption = 'Produtos Vendidos num Per'#237'odo'
-          end
-        end
-        object N45: TMenuItem
-          Caption = '-'
-        end
-        object Estoque1: TMenuItem
-          Caption = 'Estoque'
-          object MovimentaoSinttica1: TMenuItem
-            Caption = 'Movimenta'#231#227'o Sint'#233'tica'
-          end
-          object MovimentaoAnaltica1: TMenuItem
-            Caption = 'Movimenta'#231#227'o Anal'#237'tica'
-          end
-          object N47: TMenuItem
-            Caption = '-'
-          end
-          object FaturadoCompradonosltimos6meses1: TMenuItem
-            Caption = 'Faturado/Comprado nos '#250'ltimos 6 meses/Estoque M'#237'nimo e M'#225'ximo'
-          end
-          object MovimentaoEstoqueltimos12meses1: TMenuItem
-            Caption = 'Movimenta'#231#227'o Estoque '#218'ltimos 12 meses'
-          end
-        end
-        object N46: TMenuItem
-          Caption = '-'
-        end
-        object LivrosFiscais1: TMenuItem
-          Caption = 'Livros Fiscais'
-          object RCPE1: TMenuItem
-            Caption = 'RCPE'
-          end
-          object RCPE2: TMenuItem
-            Caption = 'RCPE de Fabrica'#231#227'o com Terceiros'
-          end
-          object N48: TMenuItem
-            Caption = '-'
-          end
-          object LivrodeInventrio1: TMenuItem
-            Caption = 'Livro de Invent'#225'rio'
-          end
-          object C1: TMenuItem
-            Caption = 'Confer'#234'ncia Livro de Invent'#225'rio'
-          end
-          object N49: TMenuItem
-            Caption = '-'
-          end
-          object LivrodeNBM1: TMenuItem
-            Caption = 'Livro de NBM'
-          end
-          object N50: TMenuItem
-            Caption = '-'
-          end
-          object FichadeSadasdeInsumos1: TMenuItem
-            Caption = 'Ficha de Sa'#237'das de Insumos por Valor'
-          end
-          object FichadeRemententesdeInsumos1: TMenuItem
-            Caption = 'Ficha de Rementente de Insumos por Valor'
-          end
-          object N51: TMenuItem
-            Caption = '-'
-          end
-          object FichadeEntradadeInsumos1: TMenuItem
-            Caption = 'Ficha de Entrada de Insumos para Destinat'#225'rio (Ficha 38)'
-          end
-          object FichadeEntradadeInsumos2: TMenuItem
-            Caption = 'Ficha de Entrada de Insumos de Produtos por IPI (Ficha 39)'
-          end
-          object FichadeSadadeInsumosparaDestinatrioFicha401: TMenuItem
-            Caption = 'Ficha de Sa'#237'da de Insumos para Destinat'#225'rio (Ficha 40)'
-          end
-          object FichadeEntradadeInsumosdeProdutosporIPIFicha391: TMenuItem
-            Caption = 'Ficha de Sa'#237'da de Insumos de Produtos por IPI (Ficha 41)'
-          end
-        end
-      end
-      object N39: TMenuItem
-        Caption = '-'
-      end
-      object NotasFaturadas1: TMenuItem
-        Caption = 'Notas Faturadas'
-        object NotasdoPerdoResumoMatriz1: TMenuItem
-          Caption = 'Notas do Per'#237'do Resumo (Matriz)'
-        end
-        object N52: TMenuItem
-          Caption = '-'
-        end
-        object NotasdoPerodoRegimeEspecial1: TMenuItem
-          Caption = 'Notas do Per'#237'odo (Regime Especial)'
-        end
-        object N53: TMenuItem
-          Caption = '-'
-        end
-        object NotasFaturadasXDuplictas1: TMenuItem
-          Caption = 'Notas Faturadas X Duplicatas (Matriz)'
-        end
-        object N54: TMenuItem
-          Caption = '-'
-        end
-        object ResumoPreoMnimo1: TMenuItem
-          Caption = 'Resumo Pre'#231'o M'#237'nimo / M'#225'ximo num Per'#237'odo'
-        end
-      end
-    end
-    object Utilitrios1: TMenuItem
-      Caption = 'Utilit'#225'rios'
-      object ParmetrosdaEmpresa1: TMenuItem
-        Caption = 'Par'#226'metros da Empresa'
-        object ParmentrosdaEmpresa1: TMenuItem
-          Action = AcEmpresa
-        end
-        object N57: TMenuItem
-          Caption = '-'
-        end
-        object NumeraoNotaFiscal1: TMenuItem
-          Caption = 'Numera'#231#227'o Nota Fiscal'
-        end
-        object N58: TMenuItem
-          Caption = '-'
-        end
-        object NumeraoRequisio1: TMenuItem
-          Caption = 'Numera'#231#227'o Requisi'#231#227'o'
-        end
-        object N59: TMenuItem
-          Caption = '-'
-        end
-        object NumeraoOramento1: TMenuItem
-          Caption = 'Numera'#231#227'o Or'#231'amento'
-        end
-      end
-      object N55: TMenuItem
-        Caption = '-'
-      end
-      object Usurios1: TMenuItem
-        Action = ActCadUsuarios
-        Caption = 'Cadastro Usu'#225'rios'
-      end
-      object N56: TMenuItem
-        Caption = '-'
-      end
-      object Calculadora1: TMenuItem
-        Caption = 'Calculadora'
-      end
-      object Calendrio1: TMenuItem
-        Caption = 'Calend'#225'rio'
-      end
-    end
-    object Informao1: TMenuItem
-      Caption = 'Informa'#231#227'o'
     end
   end
   object ApplicationEvents1: TApplicationEvents

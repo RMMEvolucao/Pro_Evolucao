@@ -13,6 +13,8 @@ function GetBuildInfo(Prog: string): string;
 function TiraAcentos(str: char): string;
 function PreencheZeroEsquerda(Texto: string; Quant: integer): String;
 function lettersNotAccents(Str:String):String;
+function FormatoBanco(valor : string ) : string;
+procedure DigitaApenasNumero(var Key: Char);
 
 
 
@@ -87,6 +89,40 @@ begin
     isCNPJ := false
   end;
 end;
+
+
+function FormatoBanco(valor: string): string;
+var
+s : string;
+v : double;
+I : integer;
+begin
+//1º Passo : se o edit estiver vazio, nada pode ser feito.
+If (valor = emptystr) then
+valor := '0,00';
+
+//2º Passo : obter o texto do edit, SEM a virgula e SEM o ponto decimal:
+s := '';
+for I := 1 to length(valor) do
+if (valor[I] in ['0'..'9']) then
+s := s + valor[I];
+
+//3º Passo : fazer com que o conteúdo do edit apresente 2 casas decimais:
+v := strtofloat(s);
+v := (v /100); // para criar 2 casa decimais
+
+//4º Passo : Formata o valor de (V) para aceitar valores do tipo 0,10.
+valor := FormatFloat('###,##0.00',v);
+result := valor;
+end;
+
+procedure DigitaApenasNumero(var Key: Char);
+begin
+  if (not (Key in ['0'..'9'])) and (Key <> #8) then
+    Key := #0;
+end;
+
+
 
 function imprimeCNPJ(CNPJ: string): string;
 begin

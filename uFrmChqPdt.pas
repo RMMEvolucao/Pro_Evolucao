@@ -221,7 +221,8 @@ implementation
 
 uses UDmCadastro, UFrmFornecedor, uFrmClientes, UFrmPrincipal,
   UfrmTransChqBxparaPD, UfrmTransChqPDparaBX, UfrmTransChqBxparaDV,
-  UFrmTransDVparaDB, UFuncoes, UFrmTransPPparaDV, UFrmRlt_Chq_PD;
+  UFrmTransDVparaDB, UFuncoes, UFrmTransPPparaDV, UFrmRlt_Chq_PD,
+  UfrmRlt_Chq_BX;
 
 procedure TFormChqPdt.DBEdit_IDEnter(Sender: TObject);
 begin
@@ -1086,8 +1087,19 @@ begin
     finally
     FreeAndNil(FormRlt_Chq_PD);
     end;
-
    end;
+
+  if STCheque = 'BX' then
+    begin
+     try
+     Application.CreateForm(TFormRlt_Chq_BX,FormRlt_Chq_BX);
+     FormRlt_Chq_BX.ShowModal;
+     finally
+     FreeAndNil(FormRlt_Chq_BX);
+     end;
+
+    end;
+
 
 end;
 

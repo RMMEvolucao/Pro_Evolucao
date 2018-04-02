@@ -10,7 +10,6 @@ inherited FormClientes: TFormClientes
   inherited PageControl1: TPageControl
     Width = 1008
     Height = 755
-    ActivePage = TabCadastro
     ExplicitWidth = 1008
     ExplicitHeight = 755
     inherited TabConsulta: TTabSheet
@@ -113,6 +112,8 @@ inherited FormClientes: TFormClientes
       end
     end
     inherited TabCadastro: TTabSheet
+      ExplicitLeft = 4
+      ExplicitTop = 27
       ExplicitWidth = 1000
       ExplicitHeight = 724
       inherited Panel2: TPanel
@@ -2778,7 +2779,7 @@ inherited FormClientes: TFormClientes
     Left = 944
     Top = 440
     Bitmap = {
-      494C010107000800280010001000FFFFFFFF2110FFFFFFFFFFFFFFFF424D3600
+      494C0101070008003C0010001000FFFFFFFF2110FFFFFFFFFFFFFFFF424D3600
       0000000000003600000028000000400000002000000001002000000000000020
       000000000000000000000000000000000000FF2900FFFF4925FFFF2900FFFF49
       25FFFF2900FFFF4925FFFF2900FFFF4925FFFF2900FFFF4925FFFF2900FFFF49
