@@ -38,8 +38,6 @@ object FormPrincipal: TFormPrincipal
     ManagerColor = False
     ManagerFont = False
     Align = alClient
-    ExplicitTop = 130
-    ExplicitHeight = 664
     DockingType = 5
     OriginalWidth = 1346
     OriginalHeight = 671
@@ -48,7 +46,6 @@ object FormPrincipal: TFormPrincipal
       Top = 0
       Width = 1290
       Height = 671
-      ExplicitHeight = 664
       DockingType = 0
       OriginalWidth = 300
       OriginalHeight = 200
@@ -65,8 +62,6 @@ object FormPrincipal: TFormPrincipal
           Top = 0
           Width = 1053
           Height = 671
-          ExplicitWidth = 939
-          ExplicitHeight = 664
           DockingType = 0
           OriginalWidth = 300
           OriginalHeight = 200
@@ -84,8 +79,6 @@ object FormPrincipal: TFormPrincipal
           ShowCaption = False
           TabsProperties.CustomButtons.Buttons = <>
           TabsProperties.Rotate = True
-          ExplicitWidth = 939
-          ExplicitHeight = 664
           DockingType = 0
           OriginalWidth = 470
           OriginalHeight = 285
@@ -97,8 +90,6 @@ object FormPrincipal: TFormPrincipal
             Style.BorderStyle = ebsNone
             Style.Edges = []
             TabOrder = 0
-            ExplicitWidth = 935
-            ExplicitHeight = 660
             Height = 667
             Width = 1049
             object Image1: TImage
@@ -463,9 +454,6 @@ object FormPrincipal: TFormPrincipal
               OptionsView.CenterContentHorz = True
               OptionsView.CenterContentVert = True
               TabOrder = 0
-              ExplicitLeft = 0
-              ExplicitWidth = 1051
-              ExplicitHeight = 563
               object dxTileControl1Group1: TdxTileControlGroup
                 Index = 0
               end
@@ -9147,7 +9135,7 @@ object FormPrincipal: TFormPrincipal
           Left = 0
           Top = 0
           Width = 237
-          Height = 20
+          Height = 671
           Visible = False
           AllowFloating = False
           AutoHide = True
@@ -9164,13 +9152,13 @@ object FormPrincipal: TFormPrincipal
             Left = 0
             Top = 0
             Width = 233
-            Height = 99
+            Height = 602
             Align = alClient
             TabOrder = 0
           end
           object Panel4: TcxGroupBox
             Left = 0
-            Top = -41
+            Top = 602
             Align = alBottom
             PanelStyle.Active = True
             Style.BorderStyle = ebsNone
@@ -9184,9 +9172,9 @@ object FormPrincipal: TFormPrincipal
           Left = 0
           Top = 0
           Width = 237
-          Height = 20
+          Height = 671
           Visible = False
-          ActiveChildIndex = 0
+          ActiveChildIndex = 1
           AllowFloating = False
           AutoHide = True
           CaptionButtons = [cbHide]
@@ -9200,7 +9188,7 @@ object FormPrincipal: TFormPrincipal
             Left = 0
             Top = 0
             Width = 233
-            Height = 0
+            Height = 643
             AllowFloating = True
             AutoHide = False
             Caption = 'Solution Explorer'
@@ -9214,7 +9202,7 @@ object FormPrincipal: TFormPrincipal
               Left = 0
               Top = 0
               Width = 233
-              Height = 0
+              Height = 643
               Align = alClient
               TabOrder = 0
               ReadOnly = True
@@ -9224,7 +9212,7 @@ object FormPrincipal: TFormPrincipal
             Left = 0
             Top = 0
             Width = 233
-            Height = 0
+            Height = 643
             AllowFloating = True
             AutoHide = False
             Caption = 'Class View'
@@ -9238,7 +9226,7 @@ object FormPrincipal: TFormPrincipal
               Left = 0
               Top = 0
               Width = 233
-              Height = 0
+              Height = 643
               Align = alClient
               TabOrder = 0
             end
@@ -9250,7 +9238,7 @@ object FormPrincipal: TFormPrincipal
       Left = -170
       Top = 0
       Width = 170
-      Height = 20
+      Height = 573
       Visible = False
       AllowFloating = True
       AutoHide = True
@@ -9452,8 +9440,6 @@ object FormPrincipal: TFormPrincipal
     Font.Height = -11
     Font.Name = 'Tahoma'
     Font.Style = []
-    ExplicitTop = 626
-    ExplicitWidth = 1107
   end
   object dxRibbon1: TdxRibbon
     Left = 0
@@ -9467,7 +9453,6 @@ object FormPrincipal: TFormPrincipal
     Contexts = <>
     TabOrder = 6
     TabStop = False
-    ExplicitWidth = 1107
     object dxCadastros: TdxRibbonTab
       Active = True
       Caption = 'Cadastros'
@@ -9501,9 +9486,6 @@ object FormPrincipal: TFormPrincipal
     Width = 1346
     Height = 19
     Panels = <>
-    ExplicitLeft = 680
-    ExplicitTop = 432
-    ExplicitWidth = 0
   end
   object MenuSistema: TMainMenu
     Left = 720
@@ -10173,7 +10155,7 @@ object FormPrincipal: TFormPrincipal
           ItemName = 'BtnCategorias'
         end>
       OneOnRow = False
-      Row = 1
+      Row = 0
       UseOwnFont = False
       Visible = True
       WholeRow = False
@@ -10225,7 +10207,7 @@ object FormPrincipal: TFormPrincipal
           ItemName = 'dxBarLargeButton5'
         end>
       OneOnRow = False
-      Row = 1
+      Row = 0
       UseOwnFont = False
       Visible = True
       WholeRow = False
@@ -10248,7 +10230,7 @@ object FormPrincipal: TFormPrincipal
           Visible = True
           ItemName = 'dxBarLargeButton7'
         end>
-      OneOnRow = True
+      OneOnRow = False
       Row = 0
       UseOwnFont = False
       Visible = True
@@ -12000,7 +11982,7 @@ object FormPrincipal: TFormPrincipal
     Left = 72
     Top = 529
     Bitmap = {
-      494C010109005000F80210001000FFFFFFFFFF10FFFFFFFFFFFFFFFF424D3600
+      494C010109005000FC0210001000FFFFFFFFFF10FFFFFFFFFFFFFFFF424D3600
       0000000000003600000028000000400000003000000001002000000000000030
       0000000000000000000000000000000000000000000000000000000000000000
       0000000000000000000000000000000000000000000000000000000000000000

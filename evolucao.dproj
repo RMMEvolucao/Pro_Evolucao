@@ -292,6 +292,10 @@
             <Form>FormRlt_Chq_BX</Form>
             <FormType>dfm</FormType>
         </DCCReference>
+        <DCCReference Include="UfrmRlt_Chq_DB.pas">
+            <Form>FormRlt_Chq_DB</Form>
+            <FormType>dfm</FormType>
+        </DCCReference>
         <BuildConfiguration Include="Release">
             <Key>Cfg_2</Key>
             <CfgParent>Base</CfgParent>

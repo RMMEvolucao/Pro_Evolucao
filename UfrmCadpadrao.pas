@@ -60,8 +60,8 @@ type
     SpeedButton3: TSpeedButton;
     bbtnConsultar: TSpeedButton;
     Panel2: TPanel;
-    btnCancelar: TSpeedButton;
-    btnGravar: TSpeedButton;
+    btnCancelar1: TSpeedButton;
+    btnGravar1: TSpeedButton;
     SpeedButton9: TSpeedButton;
     SpeedButton1: TSpeedButton;
     DBGrid1: TDBGrid;
@@ -81,6 +81,10 @@ type
     ToolButton10: TToolButton;
     btnConsultar: TToolButton;
     ToolButton12: TToolButton;
+    ToolBar2: TToolBar;
+    btnGravar: TToolButton;
+    btnCancelar: TToolButton;
+    ToolButton16: TToolButton;
     procedure AcGravarExecute(Sender: TObject);
     procedure AcIncluirExecute(Sender: TObject);
     procedure AcEditarExecute(Sender: TObject);

@@ -13,7 +13,7 @@ uses
   cxCalendar, cxDBEdit, cxTextEdit, cxMaskEdit, cxDropDownEdit, cxCalc,
   Vcl.DBCtrls, ACBrBase,StrUtils, ACBrValidador, MoneyEdit, dbmnyed,
   cxCurrencyEdit, frxClass, frxDBSet, dxCore,DateUtils, cxDateUtils, Vcl.Menus,
-  Vcl.ToolWin;
+  Vcl.ToolWin, cxButtons;
 
 type
   TFormChqPdt = class(TFormCadPadrao)
@@ -135,7 +135,8 @@ type
     BtnCheques: TToolButton;
     ToolButton1: TToolButton;
     DBEdit_CD_ALI_1: TDBEdit;
-    BtnConsultaEmitente: TSpeedButton;
+    cxImageList1: TcxImageList;
+    BtnCliente: TcxButton;
     procedure DBEdit_ID_CLIENTEKeyPress(Sender: TObject; var Key: Char);
     procedure DBEdit_ID_BANCOKeyPress(Sender: TObject; var Key: Char);
     procedure DBEdit2KeyPress(Sender: TObject; var Key: Char);
@@ -175,6 +176,7 @@ type
     procedure AlimentaCampsEmitenteCliente;
     procedure DBCombo_SN_TCRExit(Sender: TObject);
     procedure AcImprimirExecute(Sender: TObject);
+    procedure BtnClienteClick(Sender: TObject);
   private
     procedure ConsultaEmitente;
     procedure ConsultaBancoAgenciaContaNoCheque;
@@ -222,7 +224,7 @@ implementation
 uses UDmCadastro, UFrmFornecedor, uFrmClientes, UFrmPrincipal,
   UfrmTransChqBxparaPD, UfrmTransChqPDparaBX, UfrmTransChqBxparaDV,
   UFrmTransDVparaDB, UFuncoes, UFrmTransPPparaDV, UFrmRlt_Chq_PD,
-  UfrmRlt_Chq_BX;
+  UfrmRlt_Chq_BX, UfrmRlt_Chq_DB;
 
 procedure TFormChqPdt.DBEdit_IDEnter(Sender: TObject);
 begin
@@ -597,6 +599,20 @@ begin
   inherited;
       vPonto := BtnCheques.ClientToScreen(Point(0, BtnCheques.Height));
       pop.Popup(vPonto.X, vPonto.Y);
+end;
+
+procedure TFormChqPdt.BtnClienteClick(Sender: TObject);
+begin
+  inherited;
+ if DMcadastro.CDSChqPdtSN_TCR.AsString = 'NAO'  then
+    begin
+       try
+         Application.CreateForm(TFormClientes,FormClientes);
+         formclientes.ShowModal;
+       finally
+         FreeAndNil(FormClientes);
+       end;
+    end;
 end;
 
 procedure TFormChqPdt.BtnConsultaEmitenteClick(Sender: TObject);
@@ -1099,6 +1115,19 @@ begin
      end;
 
     end;
+
+  if STCheque = 'DB' then
+    begin
+     try
+     Application.CreateForm(TFormRlt_Chq_DB,FormRlt_Chq_DB);
+     FormRlt_Chq_DB.ShowModal;
+     finally
+     FreeAndNil(FormRlt_Chq_DB);
+     end;
+    end;
+
+
+
 
 
 end;

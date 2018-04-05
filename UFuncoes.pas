@@ -15,12 +15,25 @@ function PreencheZeroEsquerda(Texto: string; Quant: integer): String;
 function lettersNotAccents(Str:String):String;
 function FormatoBanco(valor : string ) : string;
 procedure DigitaApenasNumero(var Key: Char);
-
+function TirarMascara(Valor: string): double;
 
 
 implementation
 
 
+
+
+function TirarMascara(Valor: string): double;
+var
+  I: Integer;
+  s: string;
+begin
+for I := 1 to length(valor) do
+ if (valor[I] in ['0'..'9',',']) then
+     s := s + valor[I];
+
+ Result := StrToFloat(s);
+end;
 
 
 function PreencheZeroEsquerda(Texto: string; Quant: integer): String;
