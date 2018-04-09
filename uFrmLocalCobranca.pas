@@ -11,7 +11,8 @@ uses
   cxContainer, cxEdit, dxSkinsCore, dxSkinGlassOceans, dxSkinOffice2013White,
   dxSkinWhiteprint, cxDropDownEdit, cxDBEdit, cxTextEdit, cxMaskEdit,
   cxCalendar, Vcl.DBCtrls, cxLabel, cxDBLabel, dxSkinLiquidSky,
-  dxSkinOffice2007Black, dxSkinOffice2013LightGray, dxSkinVisualStudio2013Light;
+  dxSkinOffice2007Black, dxSkinOffice2013LightGray, dxSkinVisualStudio2013Light,
+  Vcl.ToolWin;
 
 type
   TFormLocalCobranca = class(TFormCadPadrao)

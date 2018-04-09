@@ -344,24 +344,17 @@ inherited FormChqPdt: TFormChqPdt
       ExplicitTop = 27
       ExplicitWidth = 980
       ExplicitHeight = 670
-      inherited Panel2: TPanel
-        Top = 616
-        Width = 980
-        ExplicitTop = 616
-        ExplicitWidth = 980
-      end
       inherited ToolBar2: TToolBar
-        Top = 575
+        Top = 631
         Width = 980
-        TabOrder = 2
-        ExplicitTop = 575
+        ExplicitTop = 631
         ExplicitWidth = 980
       end
       object GroupBoxGeral: TGroupBox
         Left = 0
         Top = 0
         Width = 980
-        Height = 575
+        Height = 631
         Align = alClient
         Caption = ' Dados do Cheque '
         TabOrder = 1
@@ -909,7 +902,7 @@ inherited FormChqPdt: TFormChqPdt
         end
         object PageTpCheques: TPageControl
           Left = 2
-          Top = 427
+          Top = 483
           Width = 976
           Height = 146
           ActivePage = TabPreDevolvidos
@@ -917,6 +910,10 @@ inherited FormChqPdt: TFormChqPdt
           TabOrder = 5
           object TabPreDatado: TTabSheet
             Caption = 'Pr'#233' Datado/baixado'
+            ExplicitLeft = 0
+            ExplicitTop = 0
+            ExplicitWidth = 0
+            ExplicitHeight = 0
             object GroupBox6: TGroupBox
               AlignWithMargins = True
               Left = 3
@@ -1116,6 +1113,10 @@ inherited FormChqPdt: TFormChqPdt
               object TabSheet3: TTabSheet
                 Caption = 'Vencimento'
                 ImageIndex = 1
+                ExplicitLeft = 0
+                ExplicitTop = 0
+                ExplicitWidth = 0
+                ExplicitHeight = 0
                 object GroupBox8: TGroupBox
                   Left = 0
                   Top = 0
@@ -1223,6 +1224,10 @@ inherited FormChqPdt: TFormChqPdt
               object TabSheet4: TTabSheet
                 Caption = 'Obs/Inclus'#227'o/Vendedor'
                 ImageIndex = 2
+                ExplicitLeft = 0
+                ExplicitTop = 0
+                ExplicitWidth = 0
+                ExplicitHeight = 0
                 object GroupBox9: TGroupBox
                   Left = 0
                   Top = 0
@@ -1319,7 +1324,7 @@ inherited FormChqPdt: TFormChqPdt
     Left = 720
     Top = 232
     Bitmap = {
-      494C01010800B800680010001000FFFFFFFF2110FFFFFFFFFFFFFFFF424D3600
+      494C01010800B8006C0010001000FFFFFFFF2110FFFFFFFFFFFFFFFF424D3600
       0000000000003600000028000000400000003000000001002000000000000030
       0000000000000000000000000000000000000000000000000000000000000000
       0000000000000000000000000000000000000000000000000000000000000000
@@ -1742,6 +1747,9 @@ inherited FormChqPdt: TFormChqPdt
       end>
     StoredProcName = 'SP_GEN_DB_CHQPDT_ID'
     Left = 860
+  end
+  inherited cxImagePadrao: TcxImageList
+    FormatVersion = 1
   end
   object dsCobranca: TDataSource
     DataSet = DMcadastro.CDSLocalCobranca

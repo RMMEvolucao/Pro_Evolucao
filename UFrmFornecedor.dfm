@@ -1,9 +1,9 @@
 inherited FormFornecedor: TFormFornecedor
   Caption = 'Cadastro de Fornecedores'
-  ClientHeight = 734
+  ClientHeight = 731
   ClientWidth = 1018
   ExplicitWidth = 1024
-  ExplicitHeight = 763
+  ExplicitHeight = 760
   PixelsPerInch = 96
   TextHeight = 16
   object Img_fundo: TcxImage [0]
@@ -164,13 +164,13 @@ inherited FormFornecedor: TFormFornecedor
   end
   inherited PageControl1: TPageControl
     Width = 1018
-    Height = 734
+    Height = 731
     Margins.Left = 0
     Margins.Top = 0
     Margins.Right = 0
     Margins.Bottom = 0
     ExplicitWidth = 1018
-    ExplicitHeight = 693
+    ExplicitHeight = 734
     inherited TabConsulta: TTabSheet
       ExplicitWidth = 1010
       ExplicitHeight = 703
@@ -202,7 +202,7 @@ inherited FormFornecedor: TFormFornecedor
       end
       inherited DBGrid1: TDBGrid
         Width = 1010
-        Height = 549
+        Height = 546
         DataSource = DSpadrao
         Columns = <
           item
@@ -272,38 +272,13 @@ inherited FormFornecedor: TFormFornecedor
       end
     end
     inherited TabCadastro: TTabSheet
-      ExplicitLeft = 4
-      ExplicitTop = 27
       ExplicitWidth = 1010
-      ExplicitHeight = 662
-      inherited Panel2: TPanel
-        Top = 651
-        Width = 1010
-        Height = 52
-        TabOrder = 3
-        ExplicitTop = 610
-        ExplicitWidth = 1010
-        ExplicitHeight = 52
-        inherited btnCancelar1: TSpeedButton
-          Height = 50
-        end
-        inherited btnGravar1: TSpeedButton
-          Height = 50
-        end
-        inherited SpeedButton9: TSpeedButton
-          Height = 52
-          ExplicitHeight = 52
-        end
-        inherited SpeedButton1: TSpeedButton
-          Height = 52
-          ExplicitHeight = 52
-        end
-      end
+      ExplicitHeight = 703
       inherited ToolBar2: TToolBar
-        Top = 610
+        Top = 661
         Width = 1010
-        TabOrder = 4
-        ExplicitTop = 569
+        TabOrder = 3
+        ExplicitTop = 612
         ExplicitWidth = 1010
       end
       object PageControlCadastro: TPageControl
@@ -312,7 +287,7 @@ inherited FormFornecedor: TFormFornecedor
         Top = 197
         Width = 1004
         Height = 406
-        ActivePage = TabSheetCadastro
+        ActivePage = TabSheetObservacao
         Align = alTop
         TabOrder = 2
         object TabSheetCadastro: TTabSheet
@@ -439,7 +414,7 @@ inherited FormFornecedor: TFormFornecedor
               Top = 85
               Width = 357
               Height = 24
-              Color = 16773077
+              Color = clInfoBk
               DataField = 'UF_CID'
               DataSource = DSpadrao
               Enabled = False
@@ -450,7 +425,7 @@ inherited FormFornecedor: TFormFornecedor
               Top = 118
               Width = 357
               Height = 24
-              Color = 16773077
+              Color = clInfoBk
               DataField = 'NM_CID'
               DataSource = DSpadrao
               Enabled = False
@@ -461,7 +436,7 @@ inherited FormFornecedor: TFormFornecedor
               Top = 151
               Width = 357
               Height = 24
-              Color = 16773077
+              Color = clInfoBk
               DataField = 'NM_RUA'
               DataSource = DSpadrao
               Enabled = False
@@ -511,7 +486,7 @@ inherited FormFornecedor: TFormFornecedor
               Top = 151
               Width = 272
               Height = 24
-              Color = 16773077
+              Color = clInfoBk
               DataField = 'NM_BAI'
               DataSource = DSpadrao
               Enabled = False
@@ -551,7 +526,7 @@ inherited FormFornecedor: TFormFornecedor
               Top = 19
               Width = 121
               Height = 24
-              Color = 16773077
+              Color = clInfoBk
               DataField = 'NO_CEP'
               DataSource = DSpadrao
               Enabled = False
@@ -572,41 +547,8 @@ inherited FormFornecedor: TFormFornecedor
               Top = 17
               Width = 28
               Height = 27
-              OptionsImage.Glyph.Data = {
-                36040000424D3604000000000000360000002800000010000000100000000100
-                2000000000000004000000000000000000000000000000000000000000000000
-                0000000000000000000000000000000000000000000000000000000000000000
-                0000000000000000000000000000000000000000000000000000000000000000
-                0000000000000000000000000000000000000000000000000000000000000000
-                000000000000000000000000000000000060000000A000000000000000000000
-                0000000000000000000000000000000000000000000000000000000000000000
-                0000000000000000000000000060000000FF0000006000000000000000000000
-                0000000000000000000000000000000000000000000000000000000000000000
-                00000000000000000060000000FF000000600000000000000000000000000000
-                0000000000000000000000000060000000B000000080000000A0000000700000
-                001000000060000000FF00000060000000000000000000000000000000000000
-                000000000010000000B00000005F000000000000000000000000000000200000
-                00A0000000FF0000006000000000000000000000000000000000000000000000
-                0000000000B00000003000000000000000000000000000000000000000000000
-                0000000000A00000003000000000000000000000000000000000000000000000
-                0040000000600000000000000000000000000000000000000000000000000000
-                000000000010000000A000000000000000000000000000000000000000000000
-                00A0000000100000000000000000000000000000000000000000000000000000
-                000000000000000000A000000000000000000000000000000000000000000000
-                00C0000000000000000000000000000000000000000000000000000000000000
-                0000000000000000008000000020000000000000000000000000000000000000
-                00A0000000000000000000000000000000000000000000000000000000000000
-                0000000000000000009000000000000000000000000000000000000000000000
-                0060000000500000000000000000000000000000000000000000000000000000
-                000000000000000000B000000000000000000000000000000000000000000000
-                0000000000B00000001000000000000000000000000000000000000000000000
-                0000000000700000004000000000000000000000000000000000000000000000
-                000000000030000000B000000020000000000000000000000000000000100000
-                0080000000600000000000000000000000000000000000000000000000000000
-                000000000000000000100000008F000000B0000000A0000000C0000000A00000
-                0040000000000000000000000000000000000000000000000000000000000000
-                0000000000000000000000000000000000000000000000000000000000000000
-                0000000000000000000000000000000000000000000000000000}
+              OptionsImage.ImageIndex = 0
+              OptionsImage.Images = cxImagePadrao
               SpeedButtonOptions.CanBeFocused = False
               TabOrder = 14
               OnClick = btn_cons_cepClick
@@ -898,12 +840,12 @@ inherited FormFornecedor: TFormFornecedor
               OnKeyPress = EdCodbancoKeyPress
             end
             object Dbedit_NM_LOC_COB: TDBEdit
-              Left = 211
+              Left = 209
               Top = 30
               Width = 191
               Height = 24
               CharCase = ecUpperCase
-              Color = 16773077
+              Color = clInfoBk
               DataField = 'NM_LOC_COB'
               DataSource = DSCobranca
               Enabled = False
@@ -1122,7 +1064,7 @@ inherited FormFornecedor: TFormFornecedor
     Left = 576
     Top = 648
     Bitmap = {
-      494C010108005000300010001000FFFFFFFF2110FFFFFFFFFFFFFFFF424D3600
+      494C010108005000340010001000FFFFFFFF2110FFFFFFFFFFFFFFFF424D3600
       0000000000003600000028000000400000003000000001002000000000000030
       0000000000000000000000000000000000000000000000000000000000000000
       0000000000000000000000000000000000000000000000000000000000000000
@@ -1546,6 +1488,48 @@ inherited FormFornecedor: TFormFornecedor
     StoredProcName = 'SP_GEN_DB_FORNECEDOR_ID'
     Left = 692
     Top = 526
+  end
+  inherited cxImagePadrao: TcxImageList
+    FormatVersion = 1
+    DesignInfo = 17826192
+    ImageInfo = <
+      item
+        Image.Data = {
+          36040000424D3604000000000000360000002800000010000000100000000100
+          2000000000000004000000000000000000000000000000000000000000000000
+          0000000000000000000000000000000000000000000000000000000000000000
+          000000000000000000020000000E0B14308329448DFB1D2F58A5000000000000
+          0000000000000000000000000000000000000000000000000000000000000000
+          0000000000020000000E0D1937883C6DB2FF5BB1F9FF325196F4000000000000
+          00000000000100000004000000090000000D0000000F0000000F0000000C0000
+          00070000000E0F1D3C864A7CBCFF73C4FFFF467CC3FF17254485000000000000
+          0002000000081C130F465A3B31BC7C5043F87F5244FF7B4E42FA57382FC11E14
+          1059112142875686C2FF88D0FFFF5186C7FF142343880000000F000000010302
+          02104A332C91946B5DFDC6ACA1FFE4D1C6FFEDDDD2FFE2D0C5FFC0A599FF855C
+          50FF6E6B7EFF98D4F8FF5B8ECBFF152545840000000D00000002000000076046
+          3DA6B39288FFE9DAD0FFDAC0A1FFCBA87AFFC49B66FFCCAA7EFFDCC2A5FFE5D2
+          C6FF9A766AFF736A77FF162747850000000E00000002000000002A201D4AAE88
+          7CFFEFE6DFFFCDA67CFFCDA26BFFE3C28CFFEDD5A2FFE7CD9EFFD3B182FFD0AE
+          88FFE7D5CAFF885F53FF25181464000000070000000000000000755B53ACDFCE
+          C9FFDDC1A8FFC99865FFE8BE83FFE9C388FFEDCA97FFEFD3A7FFF2D9B0FFD5B1
+          87FFDBBEA6FFC5ACA2FF5A3D33C10000000C0000000000000000A9877CE9F8F4
+          F2FFC79873FFDEAB77FFEFCDABFFF0D0B1FFEDC9A1FFECC69AFFEFCFA9FFE9C9
+          A4FFC89B77FFE6D6CEFF7C5448F10000000F0000000000000000C09C90FFFDFD
+          FCFFBE875FFFEDCFB9FFF5DFD2FFF2D6C1FFF1CFB4FFEDC6A4FFECC19BFFEFC8
+          A6FFC08B67FFF1E6DFFF8B6154FF0000000F0000000000000000AF9186E6F9F5
+          F4FFC69474FFE8CDC3FFF9E8E4FFF6DED2FFF3D4C2FFF0CBB2FFEBB78EFFE5B7
+          92FFC59172FFEBDFD9FF866055EE0000000D0000000000000000876F68B0E7D9
+          D4FFE2C6B7FFC89072FFFAEFF2FFF9E7E4FFF6DDD3FFF1C8B2FFEBAF88FFC98E
+          6CFFDCBBAAFFD3C0B7FF6B4F46BC00000009000000000000000026201E36CCAF
+          A7FAFBF8F7FFCF9F88FFC78E72FFE9CDC6FFEDC7B5FFDD9F79FFC88865FFCE9D
+          84FFF5EFEBFFB39387FF2A201D52000000040000000000000000000000036454
+          4F84D9C2BAFFFDFBFAFFE2C6B8FFCB977EFFC08163FFCB977DFFE0C4B4FFFAF6
+          F5FFC9B0A7FF6B564EA700000009000000010000000000000000000000000202
+          020762534D81CEB2A9FAEADDD8FFF9F5F4FFFFFFFFFFF9F5F4FFE9DCD7FFC8AC
+          A2FC62504B900404031000000002000000000000000000000000000000000000
+          000000000003241F1D3486726BADB69B91E6CCADA1FFB99C92E988736CB22822
+          1F3E000000060000000100000000000000000000000000000000}
+      end>
   end
   object DSCategoria: TDataSource
     DataSet = DMcadastro.CDSCategoria

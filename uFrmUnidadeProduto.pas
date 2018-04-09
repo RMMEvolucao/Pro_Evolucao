@@ -11,7 +11,7 @@ uses
   cxContainer, cxEdit, dxSkinsCore, dxSkinLiquidSky, dxSkinOffice2007Black,
   dxSkinOffice2013LightGray, dxSkinVisualStudio2013Light, dxSkinWhiteprint,
   Vcl.DBCtrls, cxLabel, cxDBLabel, frxClass, frxDBSet, frxExportPDF, Vcl.Menus,
-  frxExportXLS, frxDMPExport;
+  frxExportXLS, frxDMPExport, Vcl.ToolWin;
 
 type
   TFormUnidadeProduto = class(TFormCadPadrao)
@@ -36,7 +36,6 @@ type
     FR_UnidadeProduto_Matricial: TfrxReport;
     frxDotMatrixExport1: TfrxDotMatrixExport;
     procedure BtConsultarClick(Sender: TObject);
-    procedure AcGravarExecute(Sender: TObject);
     procedure EdconsultaKeyPress(Sender: TObject; var Key: Char);
     procedure FormClose(Sender: TObject; var Action: TCloseAction);
     procedure FormCreate(Sender: TObject);
@@ -71,14 +70,6 @@ procedure TFormUnidadeProduto.AcEditarExecute(Sender: TObject);
 begin
   inherited;
 DBEdit_NM_UNI_RDZ.SetFocus;
-end;
-
-procedure TFormUnidadeProduto.AcGravarExecute(Sender: TObject);
-begin
- panel2.SetFocus;
- if Verifica_Campos_Em_Branco then begin
-  inherited;
- end;
 end;
 
 procedure TFormUnidadeProduto.AcIncluirExecute(Sender: TObject);

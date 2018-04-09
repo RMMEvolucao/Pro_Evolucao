@@ -5,6 +5,7 @@ inherited FormGeneroItem: TFormGeneroItem
   PixelsPerInch = 96
   TextHeight = 16
   inherited PageControl1: TPageControl
+    ActivePage = TabConsulta
     inherited TabConsulta: TTabSheet
       inherited PanelConsulta: TPanel
         inherited cbConsulta: TComboBox
@@ -47,7 +48,7 @@ inherited FormGeneroItem: TFormGeneroItem
       ExplicitWidth = 871
       ExplicitHeight = 584
       inherited ToolBar2: TToolBar
-        TabOrder = 2
+        ExplicitTop = 545
       end
       object GroupBox1: TGroupBox
         Left = 0
@@ -94,7 +95,7 @@ inherited FormGeneroItem: TFormGeneroItem
   inherited ImageList1: TImageList
     Top = 200
     Bitmap = {
-      494C010108006800680010001000FFFFFFFF2110FFFFFFFFFFFFFFFF424D3600
+      494C010108006800700010001000FFFFFFFF2110FFFFFFFFFFFFFFFF424D3600
       0000000000003600000028000000400000003000000001002000000000000030
       0000000000000000000000000000000000000000000000000000000000000000
       0000000000000000000000000000000000000000000000000000000000000000
@@ -519,6 +520,9 @@ inherited FormGeneroItem: TFormGeneroItem
     Left = 332
     Top = 198
   end
+  inherited cxImagePadrao: TcxImageList
+    FormatVersion = 1
+  end
   object PopupMenu1: TPopupMenu
     Left = 44
     Top = 413
@@ -939,7 +943,7 @@ inherited FormGeneroItem: TFormGeneroItem
         end
         object Date: TfrxDMPMemoView
           Align = baRight
-          Left = 547.200000000000100000
+          Left = 547.200000000000000000
           Top = 17.000000000000000000
           Width = 115.200000000000000000
           Height = 17.000000000000000000

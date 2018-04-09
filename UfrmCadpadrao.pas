@@ -59,14 +59,7 @@ type
     SpeedButton4: TSpeedButton;
     SpeedButton3: TSpeedButton;
     bbtnConsultar: TSpeedButton;
-    Panel2: TPanel;
-    btnCancelar1: TSpeedButton;
-    btnGravar1: TSpeedButton;
-    SpeedButton9: TSpeedButton;
-    SpeedButton1: TSpeedButton;
     DBGrid1: TDBGrid;
-    LbH: TLabel;
-    LbW: TLabel;
     AcTeste: TAction;
     ToolBar1: TToolBar;
     btnFechar: TToolButton;
@@ -85,6 +78,9 @@ type
     btnGravar: TToolButton;
     btnCancelar: TToolButton;
     ToolButton16: TToolButton;
+    cxImagePadrao: TcxImageList;
+    LbH: TLabel;
+    LbW: TLabel;
     procedure AcGravarExecute(Sender: TObject);
     procedure AcIncluirExecute(Sender: TObject);
     procedure AcEditarExecute(Sender: TObject);

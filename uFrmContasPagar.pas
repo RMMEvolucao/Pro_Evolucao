@@ -11,7 +11,7 @@ uses
   cxLookAndFeelPainters, cxContainer, cxEdit, cxTextEdit, cxMaskEdit,
   cxDropDownEdit, cxCalendar, cxDBEdit, cxLookupEdit, cxDBLookupEdit,
   cxDBLookupComboBox, dxCore, cxDateUtils, Vcl.Menus,System.MaskUtils, DateUtils,dbclient,
-  dxSkinsCore, dxSkinLiquidSky;
+  dxSkinsCore, dxSkinLiquidSky, Vcl.ToolWin;
 
 type
   TFormContasPagar = class(TFormCadPadrao)

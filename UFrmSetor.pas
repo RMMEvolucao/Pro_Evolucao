@@ -8,7 +8,7 @@ uses
   Data.SqlExpr, System.Actions, Vcl.ActnList, System.ImageList, Vcl.ImgList,
   Vcl.Buttons, Vcl.StdCtrls, Vcl.Mask, Vcl.ExtCtrls, Vcl.Grids, Vcl.DBGrids,
   Vcl.ComCtrls, Vcl.DBCtrls, frxClass, frxDBSet, Vcl.Menus, frxExportPDF,
-  frxExportXLS, frxDMPExport;
+  frxExportXLS, frxDMPExport, cxGraphics, Vcl.ToolWin;
 
 type
   TFormCadSetor = class(TFormCadPadrao)
@@ -28,7 +28,6 @@ type
     frxXLSExport1: TfrxXLSExport;
     FR_Setor_Matricial: TfrxReport;
     frxDotMatrixExport1: TfrxDotMatrixExport;
-    procedure AcGravarExecute(Sender: TObject);
     procedure FormShow(Sender: TObject);
     procedure ImpressoraLaser1Click(Sender: TObject);
     procedure ExportarPDF1Click(Sender: TObject);
@@ -54,14 +53,6 @@ implementation
 {$R *.dfm}
 
 uses UDmCadastro, UFrmPrincipal;
-
-procedure TFormCadSetor.AcGravarExecute(Sender: TObject);
-begin
- panel2.SetFocus;
-
-  inherited;
-
-end;
 
 procedure TFormCadSetor.BtConsultarClick(Sender: TObject);
 begin

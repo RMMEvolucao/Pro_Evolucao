@@ -7,7 +7,7 @@ uses
   Vcl.Controls, Vcl.Forms, Vcl.Dialogs, UfrmCadpadrao, Data.DB, Data.FMTBcd,
   Vcl.DBCtrls, Vcl.StdCtrls, Data.SqlExpr, System.Actions, Vcl.ActnList,
   System.ImageList, Vcl.ImgList, Vcl.Mask, Vcl.Buttons, Vcl.ExtCtrls, Vcl.Grids,
-  Vcl.DBGrids, Vcl.ComCtrls, frxClass, frxDBSet;
+  Vcl.DBGrids, Vcl.ComCtrls, frxClass, frxDBSet, cxGraphics, Vcl.ToolWin;
 
 type
   TFormGruProduto = class(TFormCadPadrao)

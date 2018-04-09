@@ -1045,6 +1045,7 @@ object DMcadastro: TDMcadastro
     Aggregates = <>
     Params = <>
     ProviderName = 'DSPUsuarios'
+    BeforePost = CDSUsuariosBeforePost
     Left = 120
     Top = 125
     object CDSUsuariosID: TIntegerField
@@ -1792,6 +1793,7 @@ object DMcadastro: TDMcadastro
     Aggregates = <>
     Params = <>
     ProviderName = 'DSPCategoria'
+    BeforePost = CDSCategoriaBeforePost
     Left = 392
     Top = 136
     object CDSCategoriaID: TIntegerField
@@ -3188,6 +3190,7 @@ object DMcadastro: TDMcadastro
     Aggregates = <>
     Params = <>
     ProviderName = 'DSPGeneroItem'
+    BeforePost = CDSGeneroItemBeforePost
     Left = 1056
     Top = 136
     object CDSGeneroItemID: TIntegerField
@@ -3228,6 +3231,7 @@ object DMcadastro: TDMcadastro
     Aggregates = <>
     Params = <>
     ProviderName = 'DSPUnidadePDT'
+    BeforePost = CDSUnidadePDTBeforePost
     Left = 122
     Top = 316
     object CDSUnidadePDTID: TIntegerField

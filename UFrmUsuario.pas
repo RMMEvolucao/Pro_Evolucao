@@ -14,7 +14,7 @@ uses
   Vcl.ComCtrls, dxSkinLiquidSky, dxSkinOffice2007Black,
   dxSkinOffice2013LightGray, dxSkinVisualStudio2013Light, frxClass, frxDBSet,
   Vcl.Menus, frxExportPDF, frxExportXLS, frxExportText, frxPreview, COMOBJ, SHELLAPI,
-  frxDMPExport;
+  frxDMPExport, Vcl.ToolWin;
 
 type
   TFormUsuario = class(TFormCadPadrao)
@@ -193,7 +193,6 @@ type
     frxDotMatrixExport1: TfrxDotMatrixExport;
     procedure AcIncluirExecute(Sender: TObject);
     procedure TabCadastroShow(Sender: TObject);
-    procedure AcGravarExecute(Sender: TObject);
     procedure CheckRemessaClick(Sender: TObject);
      procedure Ver_Status(Sender:TObject);
      procedure VerificaStatus(Sender:TObject);
@@ -2603,26 +2602,6 @@ begin
   TabCadastro.TabVisible := True;
   TabAcesso.TabVisible := True;
   DBCombo_ST_USU.SetFocus;
-end;
-
-procedure TFormUsuario.AcGravarExecute(Sender: TObject);
-begin
-  panel2.SetFocus;
-  if Verifica_Campos_Em_Branco then begin
-  if EditConfirmaSenha.Text <> DBEditDS_SNH.Text then
-   begin
-    ShowMessage('As senhas nao sao iguais');
-    EditConfirmaSenha.SetFocus;
-    abort;
-   end;
-  tabconsulta.TabVisible := false;
-  tabacesso.TabVisible := False;
-  tabcadastro.TabVisible := False;
-
-  inherited;
-
-
-  end;
 end;
 
 procedure TFormUsuario.AcIncluirExecute(Sender: TObject);

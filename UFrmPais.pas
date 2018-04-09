@@ -11,7 +11,7 @@ uses
   cxContainer, cxEdit, dxSkinsCore, dxSkinLiquidSky, dxSkinOffice2007Black,
   dxSkinOffice2013LightGray, dxSkinVisualStudio2013Light, dxSkinWhiteprint,
   Vcl.DBCtrls, cxLabel, cxDBLabel, Vcl.Menus, frxClass, frxDBSet, frxExportPDF,
-  frxExportXLS, frxDMPExport, dxtree, dxdbtree;
+  frxExportXLS, frxDMPExport, dxtree, dxdbtree, Vcl.ToolWin;
 
 type
   TFormPaises = class(TFormCadPadrao)
@@ -35,7 +35,6 @@ type
     frxDotMatrixExport1: TfrxDotMatrixExport;
     DBText1: TDBText;
     Label1: TLabel;
-    procedure AcGravarExecute(Sender: TObject);
     procedure btnImprimirClick(Sender: TObject);
     procedure TabCadastroShow(Sender: TObject);
     procedure TabConsultaShow(Sender: TObject);
@@ -63,13 +62,6 @@ implementation
 {$R *.dfm}
 
 uses UDmCadastro, UFrmPrincipal;
-
-procedure TFormPaises.AcGravarExecute(Sender: TObject);
-begin
-panel2.SetFocus;
-  inherited;
-
-end;
 
 procedure TFormPaises.BtConsultarClick(Sender: TObject);
 begin

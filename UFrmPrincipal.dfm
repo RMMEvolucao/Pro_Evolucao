@@ -9172,7 +9172,7 @@ object FormPrincipal: TFormPrincipal
           Left = 0
           Top = 0
           Width = 237
-          Height = 0
+          Height = 504
           Visible = False
           ActiveChildIndex = 1
           AllowFloating = False
@@ -9238,7 +9238,7 @@ object FormPrincipal: TFormPrincipal
       Left = -170
       Top = 0
       Width = 170
-      Height = 0
+      Height = 573
       Visible = False
       AllowFloating = True
       AutoHide = True
@@ -11976,7 +11976,7 @@ object FormPrincipal: TFormPrincipal
     Left = 72
     Top = 529
     Bitmap = {
-      494C010109005000040310001000FFFFFFFFFF10FFFFFFFFFFFFFFFF424D3600
+      494C010109005000080310001000FFFFFFFFFF10FFFFFFFFFFFFFFFF424D3600
       0000000000003600000028000000400000003000000001002000000000000030
       0000000000000000000000000000000000000000000000000000000000000000
       0000000000000000000000000000000000000000000000000000000000000000

@@ -11,7 +11,7 @@ uses
   cxContainer, cxEdit, dxSkinsCore, dxSkinLiquidSky, dxSkinOffice2007Black,
   dxSkinOffice2013LightGray, dxSkinVisualStudio2013Light, dxSkinWhiteprint,
   Vcl.DBCtrls, cxLabel, cxDBLabel, frxClass, frxDBSet, Vcl.Menus, frxExportPDF,
-  frxExportXLS, frxDMPExport;
+  frxExportXLS, frxDMPExport, Vcl.ToolWin;
 
 type
   TFormEmbalagem = class(TFormCadPadrao)
@@ -35,7 +35,6 @@ type
     frxDotMatrixExport1: TfrxDotMatrixExport;
     procedure AcIncluirExecute(Sender: TObject);
     procedure AcEditarExecute(Sender: TObject);
-    procedure AcGravarExecute(Sender: TObject);
     procedure btnConsultarClick(Sender: TObject);
     procedure EdconsultaKeyPress(Sender: TObject; var Key: Char);
     procedure FormCreate(Sender: TObject);
@@ -69,13 +68,6 @@ procedure TFormEmbalagem.AcEditarExecute(Sender: TObject);
 begin
   inherited;
 DBEdit_CD_EMB_PDT.SetFocus;
-end;
-
-procedure TFormEmbalagem.AcGravarExecute(Sender: TObject);
-begin
- panel2.SetFocus;
-   inherited;
-
 end;
 
 procedure TFormEmbalagem.AcIncluirExecute(Sender: TObject);
@@ -194,19 +186,19 @@ end;
 procedure TFormEmbalagem.TabCadastroShow(Sender: TObject);
 begin
   inherited;
- FormEmbalagem.Width := 730;
- FormEmbalagem.Height := 230;
- FormEmbalagem.Top := (Screen.DesktopHeight - FormEmbalagem.Height) DIV 2;
- FormEmbalagem.Left := (Screen.DesktopWidth - FormEmbalagem.Width)  DIV 2;
+// FormEmbalagem.Width := 730;
+// FormEmbalagem.Height := 230;
+// FormEmbalagem.Top := (Screen.DesktopHeight - FormEmbalagem.Height) DIV 2;
+// FormEmbalagem.Left := (Screen.DesktopWidth - FormEmbalagem.Width)  DIV 2;
 end;
 
 procedure TFormEmbalagem.TabConsultaShow(Sender: TObject);
 begin
   inherited;
- FormEmbalagem.Width := 1004;
- FormEmbalagem.Height := 758;
- FormEmbalagem.Top := (Screen.DesktopHeight - FormEmbalagem.Height) DIV 2;
- FormEmbalagem.Left := (Screen.DesktopWidth - FormEmbalagem.Width)  DIV 2;
+// FormEmbalagem.Width := 1004;
+// FormEmbalagem.Height := 758;
+// FormEmbalagem.Top := (Screen.DesktopHeight - FormEmbalagem.Height) DIV 2;
+// FormEmbalagem.Left := (Screen.DesktopWidth - FormEmbalagem.Width)  DIV 2;
 end;
 
 end.

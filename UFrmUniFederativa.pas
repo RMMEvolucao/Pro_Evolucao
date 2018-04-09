@@ -12,7 +12,8 @@ uses
   dxSkinOffice2007Black, dxSkinOffice2013LightGray, dxSkinVisualStudio2013Light,
   dxSkinWhiteprint, cxCurrencyEdit, cxDBEdit, cxTextEdit, cxMaskEdit,
   cxDropDownEdit, cxCalc, MoneyEdit, dbmnyed, AdvEdit, advlued, DBAdvLe,
-  Vcl.Menus, frxExportXLS, frxClass, frxExportPDF, frxDBSet, frxDMPExport;
+  Vcl.Menus, frxExportXLS, frxClass, frxExportPDF, frxDBSet, frxDMPExport,
+  Vcl.ToolWin;
 
 type
   TFormUnidadeFederativa = class(TFormCadPadrao)
@@ -38,13 +39,13 @@ type
     ExportarExcel1: TMenuItem;
     FR_UFederativa_Matricial: TfrxReport;
     frxDotMatrixExport1: TfrxDotMatrixExport;
+    Label6: TLabel;
     procedure AcIncluirExecute(Sender: TObject);
     procedure AcEditarExecute(Sender: TObject);
     procedure DBEdit_CD_UNF_IBGKeyPress(Sender: TObject; var Key: Char);
     procedure TabCadastroShow(Sender: TObject);
     procedure TabConsultaShow(Sender: TObject);
     procedure btnImprimirClick(Sender: TObject);
-    procedure AcGravarExecute(Sender: TObject);
     procedure BtConsultarClick(Sender: TObject);
     procedure FReport_UFederativaGetValue(const VarName: string;
       var Value: Variant);
@@ -74,13 +75,6 @@ begin
   inherited;
  DBEdit_CD_UNF.Enabled := False;
  DBEdit_NM_UNF.SetFocus;
-end;
-
-procedure TFormUnidadeFederativa.AcGravarExecute(Sender: TObject);
-begin
-panel2.SetFocus;
-  inherited;
-
 end;
 
 procedure TFormUnidadeFederativa.AcIncluirExecute(Sender: TObject);
@@ -174,19 +168,19 @@ end;
 procedure TFormUnidadeFederativa.TabCadastroShow(Sender: TObject);
 begin
   inherited;
- FormUnidadeFederativa.Width  := 550;
- FormUnidadeFederativa.Height := 300;
- FormUnidadeFederativa.Top    := (Screen.DesktopHeight - FormUnidadeFederativa.Height) DIV 2;
- FormUnidadeFederativa.Left   := (Screen.DesktopWidth  - FormUnidadeFederativa.Width)  DIV 2;
+// FormUnidadeFederativa.Width  := 550;
+// FormUnidadeFederativa.Height := 300;
+// FormUnidadeFederativa.Top    := (Screen.DesktopHeight - FormUnidadeFederativa.Height) DIV 2;
+// FormUnidadeFederativa.Left   := (Screen.DesktopWidth  - FormUnidadeFederativa.Width)  DIV 2;
 end;
 
 procedure TFormUnidadeFederativa.TabConsultaShow(Sender: TObject);
 begin
   inherited;
- FormUnidadeFederativa.Width  := 1014;
- FormUnidadeFederativa.Height := 754;
- FormUnidadeFederativa.Top    := (Screen.DesktopHeight - FormUnidadeFederativa.Height) DIV 2;
- FormUnidadeFederativa.Left   := (Screen.DesktopWidth  - FormUnidadeFederativa.Width)  DIV 2;
+//// FormUnidadeFederativa.Width  := 1014;
+//// FormUnidadeFederativa.Height := 754;
+//// FormUnidadeFederativa.Top    := (Screen.DesktopHeight - FormUnidadeFederativa.Height) DIV 2;
+// FormUnidadeFederativa.Left   := (Screen.DesktopWidth  - FormUnidadeFederativa.Width)  DIV 2;
 end;
 
 end.

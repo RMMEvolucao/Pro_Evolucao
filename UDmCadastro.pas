@@ -2257,6 +2257,10 @@ type
       DisplayText: Boolean);
     procedure CDSChqPdtST_CTRGetText(Sender: TField; var Text: string;
       DisplayText: Boolean);
+    procedure CDSCategoriaBeforePost(DataSet: TDataSet);
+    procedure CDSUsuariosBeforePost(DataSet: TDataSet);
+    procedure CDSGeneroItemBeforePost(DataSet: TDataSet);
+    procedure CDSUnidadePDTBeforePost(DataSet: TDataSet);
 
 
   private
@@ -2277,7 +2281,8 @@ uses UFrmFornecedor, UFrmMetaVen, UFrmVendedor, UFrmEmpresa, UFrmFuncionario,
   UFrmEmbalagem, UFrmPais, UFrmSetor, UFrmRepresentante, uFrmUnidadeProduto,
   UFrmUniFederativa, UFrmCidades, uFrmClientes, UFrmCFOP, UFrmAlicota, UFrmCest,
   uFrmCores, uFrmChqPdt, UFrmNBM, uFrmContasPagar, UFrmPrincipal,
-  uFrmContasReceber, UFrmCadProduto, UFrmCadPlanoPagamento, UFrmCadRotas;
+  uFrmContasReceber, UFrmCadProduto, UFrmCadPlanoPagamento, UFrmCadRotas,
+  UFrmCategoria, UFrmUsuario, UFrmUsuarios, UFrmGeneroItem;
 
 {$R *.dfm}
 
@@ -2453,6 +2458,12 @@ begin
       Text := DMcadastro.CDSUFederativaNM_UNF.AsString;
       DMcadastro.CDSUFederativa.close;
 
+end;
+
+procedure TDMcadastro.CDSCategoriaBeforePost(DataSet: TDataSet);
+begin
+if not Verifica_Campos_Em_Branco then
+abort;
 end;
 
 procedure TDMcadastro.CDSCestBeforePost(DataSet: TDataSet);
@@ -2827,6 +2838,12 @@ begin
   if not FormFuncionario.Verifica_Campos_Em_Branco then begin
   abort;
  end;
+end;
+
+procedure TDMcadastro.CDSGeneroItemBeforePost(DataSet: TDataSet);
+begin
+ if not FormGeneroItem.Verifica_Campos_Em_Branco then
+  abort;
 end;
 
 procedure TDMcadastro.CDSGruMetaAfterInsert(DataSet: TDataSet);
@@ -3223,6 +3240,29 @@ begin
  abort;
  end;
 end;
+
+procedure TDMcadastro.CDSUnidadePDTBeforePost(DataSet: TDataSet);
+begin
+if not FormUnidadeProduto.Verifica_Campos_Em_Branco then
+abort;
+end;
+
+procedure TDMcadastro.CDSUsuariosBeforePost(DataSet: TDataSet);
+begin
+   if not  Verifica_Campos_Em_Branco then
+   abort;
+
+  if formusuario.EditConfirmaSenha.Text <> formusuario.DBEditDS_SNH.Text then
+   begin
+    ShowMessage('As senhas nao sao iguais');
+    formusuario.EditConfirmaSenha.SetFocus;
+    abort;
+   end;
+  formusuario.tabconsulta.TabVisible := false;
+  formusuario.tabacesso.TabVisible   := False;
+  formusuario.tabcadastro.TabVisible := False;
+end;
+
 
 procedure TDMcadastro.CDSVendedorBeforePost(DataSet: TDataSet);
 begin

@@ -11,7 +11,7 @@ uses
   cxEdit, dxSkinsCore, dxSkinGlassOceans, dxSkinOffice2013White,
   dxSkinVisualStudio2013Light, cxDBEdit, cxTextEdit, cxMaskEdit, cxSpinEdit,
   dxSkinWhiteprint, Vcl.Mask, dxSkinLiquidSky, dxSkinOffice2007Black,
-  dxSkinOffice2013LightGray, frxClass, frxDBSet, Vcl.DBCtrls;
+  dxSkinOffice2013LightGray, frxClass, frxDBSet, Vcl.DBCtrls, Vcl.ToolWin;
 
 type
   TFormFamProduto = class(TFormCadPadrao)
@@ -85,10 +85,10 @@ end;
 procedure TFormFamProduto.TabCadastroShow(Sender: TObject);
 begin
   inherited;
-Height := 219;
-Width  := 640;
-FormFamProduto.Top := (Screen.DesktopHeight - FormFamProduto.Height) DIV 2;
-FormFamProduto.Left := (Screen.DesktopWidth - FormFamProduto.Width) DIV 2;
+//Height := 219;
+//Width  := 640;
+//FormFamProduto.Top := (Screen.DesktopHeight - FormFamProduto.Height) DIV 2;
+//FormFamProduto.Left := (Screen.DesktopWidth - FormFamProduto.Width) DIV 2;
  if DSpadrao.DataSet.State in [dsInsert]   then
    DSpadrao.DataSet.FieldByName('DT_CAD').AsDateTime := date
 
@@ -97,10 +97,10 @@ end;
 procedure TFormFamProduto.TabConsultaShow(Sender: TObject);
 begin
   inherited;
-Height := 631;
-Width  := 896;
-FormFamProduto.Top := (Screen.DesktopHeight - FormFamProduto.Height) DIV 2;
-FormFamProduto.Left := (Screen.DesktopWidth - FormFamProduto.Width) DIV 2;
+//Height := 631;
+//Width  := 896;
+//FormFamProduto.Top := (Screen.DesktopHeight - FormFamProduto.Height) DIV 2;
+//FormFamProduto.Left := (Screen.DesktopWidth - FormFamProduto.Width) DIV 2;
 end;
 
 end.

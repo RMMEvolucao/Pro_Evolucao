@@ -12,7 +12,7 @@ uses
   dxSkinOffice2013LightGray, dxSkinVisualStudio2013Light, dxSkinWhiteprint,
   cxTextEdit, cxMaskEdit, cxDropDownEdit, cxLookupEdit, cxDBLookupEdit,
   cxDBLookupComboBox, Vcl.DBCtrls, Vcl.Menus, frxExportXLS, frxClass,
-  frxExportPDF, frxDBSet, frxDMPExport, dxGDIPlusClasses;
+  frxExportPDF, frxDBSet, frxDMPExport, dxGDIPlusClasses, Vcl.ToolWin;
 
 type
   TFormCidades = class(TFormCadPadrao)
@@ -90,7 +90,6 @@ end;
 
 procedure TFormCidades.AcGravarExecute(Sender: TObject);
 begin
- Panel2.SetFocus;
  dmCadastro.CDSCidades.FieldByName('UF_CID').AsString := dmCadastro.CDSUFederativa.FieldByName('CD_UNF').AsString;
   inherited;
 

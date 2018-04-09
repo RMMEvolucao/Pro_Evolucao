@@ -1,21 +1,20 @@
 inherited FormClientes: TFormClientes
   Caption = 'Cadastro de Cliente'
-  ClientHeight = 755
+  ClientHeight = 725
   ClientWidth = 1008
   PopupMenu = PopupMenu1
-  ExplicitTop = -91
   ExplicitWidth = 1014
-  ExplicitHeight = 784
+  ExplicitHeight = 754
   PixelsPerInch = 96
   TextHeight = 16
   inherited PageControl1: TPageControl
     Width = 1008
-    Height = 755
+    Height = 725
     ExplicitWidth = 1008
-    ExplicitHeight = 755
+    ExplicitHeight = 725
     inherited TabConsulta: TTabSheet
       ExplicitWidth = 1000
-      ExplicitHeight = 724
+      ExplicitHeight = 694
       inherited PanelConsulta: TPanel
         Width = 1000
         ExplicitWidth = 1000
@@ -42,7 +41,7 @@ inherited FormClientes: TFormClientes
       end
       inherited DBGrid1: TDBGrid
         Width = 1000
-        Height = 570
+        Height = 540
         DataSource = DSpadrao
         Columns = <
           item
@@ -113,37 +112,23 @@ inherited FormClientes: TFormClientes
       end
     end
     inherited TabCadastro: TTabSheet
+      ExplicitLeft = 4
+      ExplicitTop = 27
       ExplicitWidth = 1000
-      ExplicitHeight = 724
-      inherited Panel2: TPanel
-        Top = 670
+      ExplicitHeight = 694
+      inherited ToolBar2: TToolBar
+        Top = 655
         Width = 1000
         TabOrder = 3
-        ExplicitTop = 670
-        ExplicitWidth = 1000
-        inherited LbH: TLabel
-          Left = 154
-          ExplicitLeft = 154
-        end
-        inherited LbW: TLabel
-          Left = 194
-          ExplicitLeft = 194
-        end
-      end
-      inherited ToolBar2: TToolBar
-        Top = 629
-        Width = 1000
-        TabOrder = 4
-        ExplicitTop = 629
+        ExplicitTop = 655
         ExplicitWidth = 1000
       end
       object GroupBox1: TGroupBox
         AlignWithMargins = True
         Left = 3
-        Top = 3
+        Top = 1
         Width = 994
-        Height = 89
-        Align = alTop
+        Height = 88
         Caption = ' Identifica'#231#227'o '
         TabOrder = 0
         object DBText_ID: TDBText
@@ -270,10 +255,9 @@ inherited FormClientes: TFormClientes
       object GroupBox4: TGroupBox
         AlignWithMargins = True
         Left = 3
-        Top = 98
+        Top = 89
         Width = 994
         Height = 119
-        Align = alTop
         Caption = ' Nome Cliente '
         TabOrder = 1
         object Label7: TLabel
@@ -355,12 +339,11 @@ inherited FormClientes: TFormClientes
       end
       object PageControl2: TPageControl
         Left = 0
-        Top = 220
+        Top = 212
         Width = 1000
-        Height = 409
+        Height = 438
         Margins.Top = 0
         ActivePage = tabcadastro2
-        Align = alClient
         TabOrder = 2
         object tabcadastro2: TTabSheet
           Margins.Top = 0
@@ -371,48 +354,6 @@ inherited FormClientes: TFormClientes
             Width = 27
             Height = 16
             Caption = 'Cep:'
-          end
-          object btn_cons_cep: TSpeedButton
-            Left = 241
-            Top = 16
-            Width = 23
-            Height = 25
-            Glyph.Data = {
-              36040000424D3604000000000000360000002800000010000000100000000100
-              2000000000000004000000000000000000000000000000000000000000000000
-              0000000000000000000000000000000000000000000000000000000000000000
-              0000000000000000000000000000000000000000000000000000000000000000
-              0000000000000000000000000000000000000000000000000000000000000000
-              000000000000000000000000000000000060000000A000000000000000000000
-              0000000000000000000000000000000000000000000000000000000000000000
-              0000000000000000000000000060000000FF0000006000000000000000000000
-              0000000000000000000000000000000000000000000000000000000000000000
-              00000000000000000060000000FF000000600000000000000000000000000000
-              0000000000000000000000000060000000B000000080000000A0000000700000
-              001000000060000000FF00000060000000000000000000000000000000000000
-              000000000010000000B00000005F000000000000000000000000000000200000
-              00A0000000FF0000006000000000000000000000000000000000000000000000
-              0000000000B00000003000000000000000000000000000000000000000000000
-              0000000000A00000003000000000000000000000000000000000000000000000
-              0040000000600000000000000000000000000000000000000000000000000000
-              000000000010000000A000000000000000000000000000000000000000000000
-              00A0000000100000000000000000000000000000000000000000000000000000
-              000000000000000000A000000000000000000000000000000000000000000000
-              00C0000000000000000000000000000000000000000000000000000000000000
-              0000000000000000008000000020000000000000000000000000000000000000
-              00A0000000000000000000000000000000000000000000000000000000000000
-              0000000000000000009000000000000000000000000000000000000000000000
-              0060000000500000000000000000000000000000000000000000000000000000
-              000000000000000000B000000000000000000000000000000000000000000000
-              0000000000B00000001000000000000000000000000000000000000000000000
-              0000000000700000004000000000000000000000000000000000000000000000
-              000000000030000000B000000020000000000000000000000000000000100000
-              0080000000600000000000000000000000000000000000000000000000000000
-              000000000000000000100000008F000000B0000000A0000000C0000000A00000
-              0040000000000000000000000000000000000000000000000000000000000000
-              0000000000000000000000000000000000000000000000000000000000000000
-              0000000000000000000000000000000000000000000000000000}
-            OnClick = btn_cons_cepClick
           end
           object Label10: TLabel
             Left = 77
@@ -502,7 +443,7 @@ inherited FormClientes: TFormClientes
             Width = 429
             Height = 24
             CharCase = ecUpperCase
-            Color = 16773077
+            Color = clInfoBk
             DataField = 'NM_RUA'
             DataSource = DSpadrao
             Enabled = False
@@ -524,7 +465,7 @@ inherited FormClientes: TFormClientes
             Width = 429
             Height = 24
             CharCase = ecUpperCase
-            Color = 16773077
+            Color = clInfoBk
             DataField = 'NM_BAI'
             DataSource = DSpadrao
             Enabled = False
@@ -547,7 +488,7 @@ inherited FormClientes: TFormClientes
             Width = 429
             Height = 24
             CharCase = ecUpperCase
-            Color = 16773077
+            Color = clInfoBk
             DataField = 'NM_CID'
             DataSource = DSpadrao
             Enabled = False
@@ -560,7 +501,7 @@ inherited FormClientes: TFormClientes
             Width = 54
             Height = 24
             CharCase = ecUpperCase
-            Color = 16773077
+            Color = clInfoBk
             DataField = 'UF_CID'
             DataSource = DSpadrao
             Enabled = False
@@ -597,10 +538,9 @@ inherited FormClientes: TFormClientes
           end
           object GroupBox3: TGroupBox
             Left = 0
-            Top = 220
+            Top = 260
             Width = 992
             Height = 53
-            Align = alBottom
             Caption = 'Contatos Celular'
             TabOrder = 10
             object Label20: TLabel
@@ -671,10 +611,9 @@ inherited FormClientes: TFormClientes
           object GroupBox2: TGroupBox
             AlignWithMargins = True
             Left = 3
-            Top = 276
+            Top = 315
             Width = 986
-            Height = 99
-            Align = alBottom
+            Height = 93
             Caption = ' Inscri'#231#227'o '
             TabOrder = 11
             object Label24: TLabel
@@ -751,6 +690,17 @@ inherited FormClientes: TFormClientes
             ListSource = DS_PAISES
             TabOrder = 12
           end
+          object btn_cons_cep: TcxButton
+            Left = 244
+            Top = 16
+            Width = 31
+            Height = 24
+            OptionsImage.ImageIndex = 0
+            OptionsImage.Images = cxImagePadrao
+            SpeedButtonOptions.CanBeFocused = False
+            TabOrder = 13
+            OnClick = btn_cons_cepClick
+          end
         end
         object tabEndCob: TTabSheet
           Caption = 'Endere'#231'o cobran'#231'a'
@@ -768,48 +718,6 @@ inherited FormClientes: TFormClientes
               Width = 58
               Height = 16
               Caption = 'Endere'#231'o:'
-            end
-            object SpeedButton5: TSpeedButton
-              Left = 241
-              Top = 35
-              Width = 23
-              Height = 25
-              Glyph.Data = {
-                36040000424D3604000000000000360000002800000010000000100000000100
-                2000000000000004000000000000000000000000000000000000000000000000
-                0000000000000000000000000000000000000000000000000000000000000000
-                0000000000000000000000000000000000000000000000000000000000000000
-                0000000000000000000000000000000000000000000000000000000000000000
-                000000000000000000000000000000000060000000A000000000000000000000
-                0000000000000000000000000000000000000000000000000000000000000000
-                0000000000000000000000000060000000FF0000006000000000000000000000
-                0000000000000000000000000000000000000000000000000000000000000000
-                00000000000000000060000000FF000000600000000000000000000000000000
-                0000000000000000000000000060000000B000000080000000A0000000700000
-                001000000060000000FF00000060000000000000000000000000000000000000
-                000000000010000000B00000005F000000000000000000000000000000200000
-                00A0000000FF0000006000000000000000000000000000000000000000000000
-                0000000000B00000003000000000000000000000000000000000000000000000
-                0000000000A00000003000000000000000000000000000000000000000000000
-                0040000000600000000000000000000000000000000000000000000000000000
-                000000000010000000A000000000000000000000000000000000000000000000
-                00A0000000100000000000000000000000000000000000000000000000000000
-                000000000000000000A000000000000000000000000000000000000000000000
-                00C0000000000000000000000000000000000000000000000000000000000000
-                0000000000000000008000000020000000000000000000000000000000000000
-                00A0000000000000000000000000000000000000000000000000000000000000
-                0000000000000000009000000000000000000000000000000000000000000000
-                0060000000500000000000000000000000000000000000000000000000000000
-                000000000000000000B000000000000000000000000000000000000000000000
-                0000000000B00000001000000000000000000000000000000000000000000000
-                0000000000700000004000000000000000000000000000000000000000000000
-                000000000030000000B000000020000000000000000000000000000000100000
-                0080000000600000000000000000000000000000000000000000000000000000
-                000000000000000000100000008F000000B0000000A0000000C0000000A00000
-                0040000000000000000000000000000000000000000000000000000000000000
-                0000000000000000000000000000000000000000000000000000000000000000
-                0000000000000000000000000000000000000000000000000000}
-              OnClick = btn_cons_cepClick
             end
             object Label28: TLabel
               Left = 99
@@ -892,7 +800,7 @@ inherited FormClientes: TFormClientes
               Width = 429
               Height = 24
               CharCase = ecUpperCase
-              Color = 16773077
+              Color = clInfoBk
               DataField = 'COBNM_RUA'
               DataSource = DSpadrao
               Enabled = False
@@ -905,7 +813,7 @@ inherited FormClientes: TFormClientes
               Width = 429
               Height = 24
               CharCase = ecUpperCase
-              Color = 16773077
+              Color = clInfoBk
               DataField = 'COBNM_BAI'
               DataSource = DSpadrao
               Enabled = False
@@ -918,7 +826,7 @@ inherited FormClientes: TFormClientes
               Width = 429
               Height = 24
               CharCase = ecUpperCase
-              Color = 16773077
+              Color = clInfoBk
               DataField = 'COBNM_CID'
               DataSource = DSpadrao
               Enabled = False
@@ -950,7 +858,7 @@ inherited FormClientes: TFormClientes
               Width = 38
               Height = 24
               CharCase = ecUpperCase
-              Color = 16773077
+              Color = clInfoBk
               DataField = 'COBUF_CID'
               DataSource = DSpadrao
               Enabled = False
@@ -984,6 +892,17 @@ inherited FormClientes: TFormClientes
               DataSource = DSpadrao
               MaxLength = 15
               TabOrder = 9
+            end
+            object cxButton1: TcxButton
+              Left = 241
+              Top = 35
+              Width = 31
+              Height = 24
+              OptionsImage.ImageIndex = 0
+              OptionsImage.Images = cxImagePadrao
+              SpeedButtonOptions.CanBeFocused = False
+              TabOrder = 10
+              OnClick = btn_cons_cepClick
             end
           end
           object GroupBox6: TGroupBox
@@ -2181,7 +2100,7 @@ inherited FormClientes: TFormClientes
             Left = 0
             Top = 0
             Width = 992
-            Height = 378
+            Height = 407
             Align = alClient
             DataSource = DSpadrao
             TabOrder = 0
@@ -2194,7 +2113,7 @@ inherited FormClientes: TFormClientes
             Left = 0
             Top = 0
             Width = 992
-            Height = 378
+            Height = 407
             Align = alClient
             DataSource = DSpadrao
             TabOrder = 0
@@ -2217,48 +2136,6 @@ inherited FormClientes: TFormClientes
               Width = 27
               Height = 16
               Caption = 'Cep:'
-            end
-            object SpeedButton7: TSpeedButton
-              Left = 240
-              Top = 18
-              Width = 23
-              Height = 25
-              Glyph.Data = {
-                36040000424D3604000000000000360000002800000010000000100000000100
-                2000000000000004000000000000000000000000000000000000000000000000
-                0000000000000000000000000000000000000000000000000000000000000000
-                0000000000000000000000000000000000000000000000000000000000000000
-                0000000000000000000000000000000000000000000000000000000000000000
-                000000000000000000000000000000000060000000A000000000000000000000
-                0000000000000000000000000000000000000000000000000000000000000000
-                0000000000000000000000000060000000FF0000006000000000000000000000
-                0000000000000000000000000000000000000000000000000000000000000000
-                00000000000000000060000000FF000000600000000000000000000000000000
-                0000000000000000000000000060000000B000000080000000A0000000700000
-                001000000060000000FF00000060000000000000000000000000000000000000
-                000000000010000000B00000005F000000000000000000000000000000200000
-                00A0000000FF0000006000000000000000000000000000000000000000000000
-                0000000000B00000003000000000000000000000000000000000000000000000
-                0000000000A00000003000000000000000000000000000000000000000000000
-                0040000000600000000000000000000000000000000000000000000000000000
-                000000000010000000A000000000000000000000000000000000000000000000
-                00A0000000100000000000000000000000000000000000000000000000000000
-                000000000000000000A000000000000000000000000000000000000000000000
-                00C0000000000000000000000000000000000000000000000000000000000000
-                0000000000000000008000000020000000000000000000000000000000000000
-                00A0000000000000000000000000000000000000000000000000000000000000
-                0000000000000000009000000000000000000000000000000000000000000000
-                0060000000500000000000000000000000000000000000000000000000000000
-                000000000000000000B000000000000000000000000000000000000000000000
-                0000000000B00000001000000000000000000000000000000000000000000000
-                0000000000700000004000000000000000000000000000000000000000000000
-                000000000030000000B000000020000000000000000000000000000000100000
-                0080000000600000000000000000000000000000000000000000000000000000
-                000000000000000000100000008F000000B0000000A0000000C0000000A00000
-                0040000000000000000000000000000000000000000000000000000000000000
-                0000000000000000000000000000000000000000000000000000000000000000
-                0000000000000000000000000000000000000000000000000000}
-              OnClick = btn_cons_cepClick
             end
             object Label90: TLabel
               Left = 107
@@ -2341,7 +2218,7 @@ inherited FormClientes: TFormClientes
               Width = 429
               Height = 24
               CharCase = ecUpperCase
-              Color = 16773077
+              Color = clInfoBk
               DataField = 'AV1NM_RUA'
               DataSource = DSpadrao
               Enabled = False
@@ -2371,7 +2248,7 @@ inherited FormClientes: TFormClientes
               Width = 429
               Height = 24
               CharCase = ecUpperCase
-              Color = 16773077
+              Color = clInfoBk
               DataField = 'AV1NM_BAI'
               DataSource = DSpadrao
               Enabled = False
@@ -2384,7 +2261,7 @@ inherited FormClientes: TFormClientes
               Width = 429
               Height = 24
               CharCase = ecUpperCase
-              Color = 16773077
+              Color = clInfoBk
               DataField = 'AV1NM_CID'
               DataSource = DSpadrao
               Enabled = False
@@ -2397,7 +2274,7 @@ inherited FormClientes: TFormClientes
               Width = 54
               Height = 24
               CharCase = ecUpperCase
-              Color = 16773077
+              Color = clInfoBk
               DataField = 'AV1UF_CID'
               DataSource = DSpadrao
               Enabled = False
@@ -2432,6 +2309,17 @@ inherited FormClientes: TFormClientes
               ListField = 'NM_PAI;CD_PAI'
               ListSource = DS_PAISES
               TabOrder = 9
+            end
+            object cxButton2: TcxButton
+              Left = 240
+              Top = 18
+              Width = 31
+              Height = 24
+              OptionsImage.ImageIndex = 0
+              OptionsImage.Images = cxImagePadrao
+              SpeedButtonOptions.CanBeFocused = False
+              TabOrder = 10
+              OnClick = btn_cons_cepClick
             end
           end
           object GroupBox22: TGroupBox
@@ -2562,48 +2450,6 @@ inherited FormClientes: TFormClientes
               Height = 16
               Caption = 'Cep:'
             end
-            object SpeedButton8: TSpeedButton
-              Left = 240
-              Top = 26
-              Width = 23
-              Height = 24
-              Glyph.Data = {
-                36040000424D3604000000000000360000002800000010000000100000000100
-                2000000000000004000000000000000000000000000000000000000000000000
-                0000000000000000000000000000000000000000000000000000000000000000
-                0000000000000000000000000000000000000000000000000000000000000000
-                0000000000000000000000000000000000000000000000000000000000000000
-                000000000000000000000000000000000060000000A000000000000000000000
-                0000000000000000000000000000000000000000000000000000000000000000
-                0000000000000000000000000060000000FF0000006000000000000000000000
-                0000000000000000000000000000000000000000000000000000000000000000
-                00000000000000000060000000FF000000600000000000000000000000000000
-                0000000000000000000000000060000000B000000080000000A0000000700000
-                001000000060000000FF00000060000000000000000000000000000000000000
-                000000000010000000B00000005F000000000000000000000000000000200000
-                00A0000000FF0000006000000000000000000000000000000000000000000000
-                0000000000B00000003000000000000000000000000000000000000000000000
-                0000000000A00000003000000000000000000000000000000000000000000000
-                0040000000600000000000000000000000000000000000000000000000000000
-                000000000010000000A000000000000000000000000000000000000000000000
-                00A0000000100000000000000000000000000000000000000000000000000000
-                000000000000000000A000000000000000000000000000000000000000000000
-                00C0000000000000000000000000000000000000000000000000000000000000
-                0000000000000000008000000020000000000000000000000000000000000000
-                00A0000000000000000000000000000000000000000000000000000000000000
-                0000000000000000009000000000000000000000000000000000000000000000
-                0060000000500000000000000000000000000000000000000000000000000000
-                000000000000000000B000000000000000000000000000000000000000000000
-                0000000000B00000001000000000000000000000000000000000000000000000
-                0000000000700000004000000000000000000000000000000000000000000000
-                000000000030000000B000000020000000000000000000000000000000100000
-                0080000000600000000000000000000000000000000000000000000000000000
-                000000000000000000100000008F000000B0000000A0000000C0000000A00000
-                0040000000000000000000000000000000000000000000000000000000000000
-                0000000000000000000000000000000000000000000000000000000000000000
-                0000000000000000000000000000000000000000000000000000}
-              OnClick = btn_cons_cepClick
-            end
             object Label103: TLabel
               Left = 107
               Top = 60
@@ -2696,7 +2542,7 @@ inherited FormClientes: TFormClientes
               Width = 429
               Height = 24
               CharCase = ecUpperCase
-              Color = 16773077
+              Color = clInfoBk
               DataField = 'AV2NM_RUA'
               DataSource = DSpadrao
               Enabled = False
@@ -2726,7 +2572,7 @@ inherited FormClientes: TFormClientes
               Width = 429
               Height = 24
               CharCase = ecUpperCase
-              Color = 16773077
+              Color = clInfoBk
               DataField = 'AV2NM_BAI'
               DataSource = DSpadrao
               Enabled = False
@@ -2739,7 +2585,7 @@ inherited FormClientes: TFormClientes
               Width = 429
               Height = 24
               CharCase = ecUpperCase
-              Color = 16773077
+              Color = clInfoBk
               DataField = 'AV2NM_CID'
               DataSource = DSpadrao
               Enabled = False
@@ -2752,7 +2598,7 @@ inherited FormClientes: TFormClientes
               Width = 54
               Height = 24
               CharCase = ecUpperCase
-              Color = 16773077
+              Color = clInfoBk
               DataField = 'av2uf_cid'
               DataSource = DSpadrao
               Enabled = False
@@ -2776,6 +2622,17 @@ inherited FormClientes: TFormClientes
               MaxLength = 15
               TabOrder = 9
             end
+            object cxButton3: TcxButton
+              Left = 240
+              Top = 26
+              Width = 31
+              Height = 24
+              OptionsImage.ImageIndex = 0
+              OptionsImage.Images = cxImagePadrao
+              SpeedButtonOptions.CanBeFocused = False
+              TabOrder = 10
+              OnClick = btn_cons_cepClick
+            end
           end
         end
       end
@@ -2785,7 +2642,7 @@ inherited FormClientes: TFormClientes
     Left = 944
     Top = 440
     Bitmap = {
-      494C010108009000500010001000FFFFFFFF2110FFFFFFFFFFFFFFFF424D3600
+      494C010108009000600010001000FFFFFFFF2110FFFFFFFFFFFFFFFF424D3600
       0000000000003600000028000000400000003000000001002000000000000030
       0000000000000000000000000000000000000000000000000000000000000000
       0000000000000000000000000000000000000000000000000000000000000000
@@ -3209,6 +3066,47 @@ inherited FormClientes: TFormClientes
     StoredProcName = 'SP_GEN_DB_CLIENTE_ID'
     Left = 684
     Top = 646
+  end
+  inherited cxImagePadrao: TcxImageList
+    FormatVersion = 1
+    ImageInfo = <
+      item
+        Image.Data = {
+          36040000424D3604000000000000360000002800000010000000100000000100
+          2000000000000004000000000000000000000000000000000000000000000000
+          0000000000000000000000000000000000000000000000000000000000000000
+          000000000000000000020000000E0B14308329448DFB1D2F58A5000000000000
+          0000000000000000000000000000000000000000000000000000000000000000
+          0000000000020000000E0D1937883C6DB2FF5BB1F9FF325196F4000000000000
+          00000000000100000004000000090000000D0000000F0000000F0000000C0000
+          00070000000E0F1D3C864A7CBCFF73C4FFFF467CC3FF17254485000000000000
+          0002000000081C130F465A3B31BC7C5043F87F5244FF7B4E42FA57382FC11E14
+          1059112142875686C2FF88D0FFFF5186C7FF142343880000000F000000010302
+          02104A332C91946B5DFDC6ACA1FFE4D1C6FFEDDDD2FFE2D0C5FFC0A599FF855C
+          50FF6E6B7EFF98D4F8FF5B8ECBFF152545840000000D00000002000000076046
+          3DA6B39288FFE9DAD0FFDAC0A1FFCBA87AFFC49B66FFCCAA7EFFDCC2A5FFE5D2
+          C6FF9A766AFF736A77FF162747850000000E00000002000000002A201D4AAE88
+          7CFFEFE6DFFFCDA67CFFCDA26BFFE3C28CFFEDD5A2FFE7CD9EFFD3B182FFD0AE
+          88FFE7D5CAFF885F53FF25181464000000070000000000000000755B53ACDFCE
+          C9FFDDC1A8FFC99865FFE8BE83FFE9C388FFEDCA97FFEFD3A7FFF2D9B0FFD5B1
+          87FFDBBEA6FFC5ACA2FF5A3D33C10000000C0000000000000000A9877CE9F8F4
+          F2FFC79873FFDEAB77FFEFCDABFFF0D0B1FFEDC9A1FFECC69AFFEFCFA9FFE9C9
+          A4FFC89B77FFE6D6CEFF7C5448F10000000F0000000000000000C09C90FFFDFD
+          FCFFBE875FFFEDCFB9FFF5DFD2FFF2D6C1FFF1CFB4FFEDC6A4FFECC19BFFEFC8
+          A6FFC08B67FFF1E6DFFF8B6154FF0000000F0000000000000000AF9186E6F9F5
+          F4FFC69474FFE8CDC3FFF9E8E4FFF6DED2FFF3D4C2FFF0CBB2FFEBB78EFFE5B7
+          92FFC59172FFEBDFD9FF866055EE0000000D0000000000000000876F68B0E7D9
+          D4FFE2C6B7FFC89072FFFAEFF2FFF9E7E4FFF6DDD3FFF1C8B2FFEBAF88FFC98E
+          6CFFDCBBAAFFD3C0B7FF6B4F46BC00000009000000000000000026201E36CCAF
+          A7FAFBF8F7FFCF9F88FFC78E72FFE9CDC6FFEDC7B5FFDD9F79FFC88865FFCE9D
+          84FFF5EFEBFFB39387FF2A201D52000000040000000000000000000000036454
+          4F84D9C2BAFFFDFBFAFFE2C6B8FFCB977EFFC08163FFCB977DFFE0C4B4FFFAF6
+          F5FFC9B0A7FF6B564EA700000009000000010000000000000000000000000202
+          020762534D81CEB2A9FAEADDD8FFF9F5F4FFFFFFFFFFF9F5F4FFE9DCD7FFC8AC
+          A2FC62504B900404031000000002000000000000000000000000000000000000
+          000000000003241F1D3486726BADB69B91E6CCADA1FFB99C92E988736CB22822
+          1F3E000000060000000100000000000000000000000000000000}
+      end>
   end
   object DSCategoria: TDataSource
     DataSet = DMcadastro.CDSCategoria

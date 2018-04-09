@@ -12,7 +12,7 @@ uses
   dxSkinOffice2013LightGray, dxSkinVisualStudio2013Light, dxSkinWhiteprint,
   Vcl.DBCtrls, cxTextEdit, cxMaskEdit, cxDropDownEdit, cxCalendar, cxDBEdit,
   ACBrBase, ACBrValidador, IPPeerClient, REST.Client, Data.Bind.Components,
-  Data.Bind.ObjectScope, Vcl.Menus, Vcl.ToolWin;
+  Data.Bind.ObjectScope, Vcl.Menus, Vcl.ToolWin, cxButtons;
 
 type
   TFormClientes = class(TFormCadPadrao)
@@ -45,7 +45,6 @@ type
     TabAvalista1: TTabSheet;
     Label9: TLabel;
     DBEdit_ID_CEP: TDBEdit;
-    btn_cons_cep: TSpeedButton;
     Label10: TLabel;
     DBEdit_NM_RUA: TDBEdit;
     Label15: TLabel;
@@ -88,7 +87,6 @@ type
     DBEdit_ID_CEP_COB: TDBEdit;
     Label27: TLabel;
     DBEdit_NM_RUA_COB: TDBEdit;
-    SpeedButton5: TSpeedButton;
     Label28: TLabel;
     DBEdit_NM_BAI_COB: TDBEdit;
     Label29: TLabel;
@@ -247,7 +245,6 @@ type
     Label88: TLabel;
     Label89: TLabel;
     DBEdit_ID_CEP_AV: TDBEdit;
-    SpeedButton7: TSpeedButton;
     Label90: TLabel;
     Label91: TLabel;
     DBEdit_NM_RUA_AV1: TDBEdit;
@@ -274,7 +271,6 @@ type
     cxDBDateEdit15: TcxDBDateEdit;
     GroupBox24: TGroupBox;
     Label102: TLabel;
-    SpeedButton8: TSpeedButton;
     Label103: TLabel;
     Label104: TLabel;
     Label105: TLabel;
@@ -313,9 +309,13 @@ type
     Ds_Htr_tpc: TDataSource;
     PopupMenu1: TPopupMenu;
     Histricodotipodeconsumidor1: TMenuItem;
+    btn_cons_cep: TcxButton;
+    cxButton1: TcxButton;
+    cxButton2: TcxButton;
+    cxButton3: TcxButton;
     procedure AcIncluirExecute(Sender: TObject);
     procedure DBEdit_NO_CNP_CPFKeyPress(Sender: TObject; var Key: Char);
-    procedure btn_cons_cepClick(Sender: TObject);
+    procedure btn_cons_cep1Click(Sender: TObject);
     procedure FormCreate(Sender: TObject);
     procedure DBGrid1DblClick(Sender: TObject);
     procedure AcEditarExecute(Sender: TObject);
@@ -325,9 +325,11 @@ type
     procedure consultaCPFExistente;
     procedure AcertaCPFCNPJ;
     procedure CtaRecClientes(Sender : TOBject);
+    procedure btn_cons_cepClick(Sender: TObject);
   private
     procedure Endereco(sender: TObject);
     procedure RelatorioReceber(Sender: TObject);
+    procedure ConsultaCep;
 
     { Private declarations }
   public
@@ -417,7 +419,7 @@ if q.FieldByName('count').AsInteger >1  then
  end;
 end;
 
-procedure TFormClientes.btn_cons_cepClick(Sender: TObject);
+procedure TFormClientes.btn_cons_cep1Click(Sender: TObject);
 begin
   inherited;
   try
@@ -428,6 +430,12 @@ begin
   end;
   // criar a procedure la no formCep
   // e criar um evento no doubleclick do dbgrid no form cep
+end;
+
+procedure TFormClientes.btn_cons_cepClick(Sender: TObject);
+begin
+  inherited;
+  ConsultaCep;
 end;
 
 procedure TFormClientes.consultaCPFExistente;
@@ -492,6 +500,16 @@ begin
    finally
     q.Free;
    end;
+end;
+
+procedure TFormClientes.ConsultaCep;
+begin
+  try
+    Application.CreateForm(TFormCep, FormCep);
+    formCep.showmodal;
+  finally
+    formCep.Free;
+  end;
 end;
 
 

@@ -33,7 +33,6 @@ type
     frxDotMatrixExport1: TfrxDotMatrixExport;
     procedure TabCadastroShow(Sender: TObject);
     procedure TabConsultaShow(Sender: TObject);
-    procedure AcGravarExecute(Sender: TObject);
     procedure BtConsultarClick(Sender: TObject);
     procedure FormClose(Sender: TObject; var Action: TCloseAction);
     procedure FormCreate(Sender: TObject);
@@ -79,14 +78,6 @@ begin
   DMcadastro.sqlGeneroItem.CommandText := '';
   DMcadastro.sqlGeneroItem.CommandText := 'select * from DB_GEN_ITEM';
 //  DSPadrao.DataSet.Open;
-end;
-
-procedure TFormGeneroItem.AcGravarExecute(Sender: TObject);
-begin
- panel2.SetFocus;
- if Verifica_Campos_Em_Branco then begin
-  inherited;
- end;
 end;
 
 procedure TFormGeneroItem.BtConsultarClick(Sender: TObject);
@@ -204,20 +195,20 @@ end;
 procedure TFormGeneroItem.TabCadastroShow(Sender: TObject);
 begin
   inherited;
- FormGeneroItem.DBEdit_NM_GEN_ITE.SetFocus;
- FormGeneroItem.Width := 730;
- FormGeneroItem.Height := 230;
- FormGeneroItem.Top := (Screen.DesktopHeight - FormGeneroItem.Height) DIV 2;
- FormGeneroItem.Left := (Screen.DesktopWidth - FormGeneroItem.Width)  DIV 2;
+// FormGeneroItem.DBEdit_NM_GEN_ITE.SetFocus;
+// FormGeneroItem.Width := 730;
+// FormGeneroItem.Height := 230;
+// FormGeneroItem.Top := (Screen.DesktopHeight - FormGeneroItem.Height) DIV 2;
+// FormGeneroItem.Left := (Screen.DesktopWidth - FormGeneroItem.Width)  DIV 2;
 end;
 
 procedure TFormGeneroItem.TabConsultaShow(Sender: TObject);
 begin
   inherited;
- FormGeneroItem.Width := 1024;
- FormGeneroItem.Height := 768;
- FormGeneroItem.Top := (Screen.DesktopHeight - FormGeneroItem.Height) DIV 2;
- FormGeneroItem.Left := (Screen.DesktopWidth - FormGeneroItem.Width)  DIV 2;
+// FormGeneroItem.Width := 1024;
+// FormGeneroItem.Height := 768;
+// FormGeneroItem.Top := (Screen.DesktopHeight - FormGeneroItem.Height) DIV 2;
+// FormGeneroItem.Left := (Screen.DesktopWidth - FormGeneroItem.Width)  DIV 2;
 end;
 
 end.

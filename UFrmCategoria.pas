@@ -12,7 +12,7 @@ uses
   dxSkinVisualStudio2013Light, cxMaskEdit, cxDropDownEdit, cxDBEdit, cxTextEdit,
   Vcl.Mask, Vcl.DBCtrls, dxSkinWhiteprint, dxSkinLiquidSky,
   dxSkinOffice2007Black, dxSkinOffice2013LightGray, Vcl.Menus, frxClass,
-  frxDBSet, frxExportText, frxExportPDF, frxExportXLS, frxDMPExport;
+  frxDBSet, frxExportText, frxExportPDF, frxExportXLS, frxDMPExport, Vcl.ToolWin;
 
 type
   TFormCategoria = class(TFormCadPadrao)
@@ -42,7 +42,6 @@ type
     procedure AcIncluirExecute(Sender: TObject);
     procedure BtConsultarClick(Sender: TObject);
     procedure FormShow(Sender: TObject);
-    procedure AcGravarExecute(Sender: TObject);
     procedure btnImprimirClick(Sender: TObject);
     procedure ImpressoraLaser1Click(Sender: TObject);
     procedure FReport_CategoriaGetValue(const VarName: string;
@@ -54,9 +53,10 @@ type
       var Value: Variant);
     procedure cbConsultaSelect(Sender: TObject);
     procedure EdconsultaKeyPress(Sender: TObject; var Key: Char);
+    function Verifica_Campos_Em_Branco: Boolean;
   private
     { Private declarations }
-    function Verifica_Campos_Em_Branco: Boolean;
+
   public
     { Public declarations }
   end;
@@ -69,15 +69,6 @@ implementation
 {$R *.dfm}
 
 uses UDmCadastro, UFrmPrincipal;
-
-procedure TFormCategoria.AcGravarExecute(Sender: TObject);
-begin
- panel2.SetFocus;
- if Verifica_Campos_Em_Branco then begin
- inherited;
-
- end;
-end;
 
 procedure TFormCategoria.AcIncluirExecute(Sender: TObject);
 begin
