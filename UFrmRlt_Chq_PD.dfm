@@ -305,6 +305,7 @@ object FormRlt_Chq_PD: TFormRlt_Chq_PD
       Height = 33
       Caption = 'Cancelar'
       TabOrder = 4
+      OnClick = Button2Click
     end
   end
   object CdsRelatorio: TClientDataSet

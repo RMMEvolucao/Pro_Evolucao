@@ -69,6 +69,7 @@ type
     procedure frxReport_Rlt_chq_pd_MtxGetValue(const VarName: string;
       var Value: Variant);
     procedure EdMenorIgualChange(Sender: TObject);
+    procedure Button2Click(Sender: TObject);
 
 
   private
@@ -111,6 +112,12 @@ begin
 MontaRelatorio;
 end;
 
+procedure TFormRlt_Chq_PD.Button2Click(Sender: TObject);
+begin
+if Application.MessageBox('Deseja realmente sair ?','Aviso',MB_YESNO) =mrYes  then
+   close;
+end;
+
 procedure TFormRlt_Chq_PD.EdMenorIgualChange(Sender: TObject);
 begin
 EdMenorIgual.Text     := FormatoBanco(EdMenorIgual.Text);
@@ -135,8 +142,8 @@ end;
 
 procedure TFormRlt_Chq_PD.EdMaiorIgualChange(Sender: TObject);
 begin
-EdMaiorIgual.Text     := FormatoBanco(EdMaiorIgual.Text);
-EdMaiorIgual.SelStart := Length(EdMaiorIgual.Text);
+EdMaiorIgual.Text      := FormatoBanco(EdMaiorIgual.Text);
+EdMaiorIgual.SelStart  := Length(EdMaiorIgual.Text);
 end;
 
 procedure TFormRlt_Chq_PD.EdMaiorIgualKeyPress(Sender: TObject; var Key: Char);

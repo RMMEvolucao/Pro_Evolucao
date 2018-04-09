@@ -49,6 +49,7 @@ type
     CdsRelatorioBCOAGEN: TStringField;
     frxReport_Rlt_chq_DB: TfrxReport;
     frxDBDataset1: TfrxDBDataset;
+    frxReport_Rlt_chq_DB_Mtx: TfrxReport;
     procedure Button1Click(Sender: TObject);
     procedure FormShow(Sender: TObject);
     procedure EdMaiorIgualKeyPress(Sender: TObject; var Key: Char);
@@ -57,6 +58,8 @@ type
     procedure EdMenorIgualKeyPress(Sender: TObject; var Key: Char);
     procedure Button2Click(Sender: TObject);
     procedure frxReport_Rlt_chq_DBGetValue(const VarName: string;
+      var Value: Variant);
+    procedure frxReport_Rlt_chq_DB_MtxGetValue(const VarName: string;
       var Value: Variant);
   private
     procedure MontaRelatorio;
@@ -82,7 +85,8 @@ end;
 
 procedure TFormRlt_Chq_DB.Button2Click(Sender: TObject);
 begin
-close;
+if Application.MessageBox('Deseja realmente sair ?','Aviso',MB_YESNO) =mrYes  then
+   close;
 end;
 
 procedure TFormRlt_Chq_DB.EdMaiorIgualChange(Sender: TObject);
@@ -122,6 +126,16 @@ if VarName = 'DescRelatorio'  then
    value := 'Relação de Cheques Devolvidos baixados no periodo: '+ datetostr(DtIni.Date) + ' a ' + DateToStr(DtFim.Date) ;
 
 if VarName = 'NomeEmpresa' then
+   value :=  NM_empresa;
+end;
+
+procedure TFormRlt_Chq_DB.frxReport_Rlt_chq_DB_MtxGetValue(
+  const VarName: string; var Value: Variant);
+begin
+if VarName = 'desc'  then
+   value := 'Relação de Cheques Devolvidos baixados no periodo: '+ datetostr(DtIni.Date) + ' a ' + DateToStr(DtFim.Date) ;
+
+if VarName = 'nmEmp' then
    value :=  NM_empresa;
 end;
 
@@ -199,7 +213,7 @@ begin
 
      case CbTipoImpressora.ItemIndex of
        0: frxReport_Rlt_chq_DB.ShowReport();
-//       1: frxReport_Rlt_chq_bx_Mtx.ShowReport();
+       1: frxReport_Rlt_chq_DB_Mtx.ShowReport();
       end;
 
  finally

@@ -11,7 +11,7 @@ uses
   cxContainer, cxEdit, dxSkinsCore, dxSkinLiquidSky, dxSkinOffice2007Black,
   dxSkinOffice2013LightGray, dxSkinVisualStudio2013Light, dxSkinWhiteprint,
   Vcl.DBCtrls, cxLabel, cxDBLabel, frxClass, frxDBSet, Vcl.Menus, frxExportText,
-  frxExportXLS, frxExportPDF, frxDMPExport, frxHTTPClient;
+  frxExportXLS, frxExportPDF, frxDMPExport, frxHTTPClient, Vcl.ToolWin;
 
 type
   TFormGeneroItem = class(TFormCadPadrao)

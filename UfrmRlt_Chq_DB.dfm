@@ -518,7 +518,7 @@ object FormRlt_Chq_DB: TFormRlt_Chq_DB
         end
         object Line4: TfrxLineView
           Align = baWidth
-          Top = 75.720470000000010000
+          Top = 75.720470000000000000
           Width = 740.409927000000000000
           Color = clBlack
           Frame.Typ = [ftTop]
@@ -566,7 +566,7 @@ object FormRlt_Chq_DB: TFormRlt_Chq_DB
         end
         object frxDBDataset1Valor: TfrxMemoView
           Align = baRight
-          Left = 71.811033390000010000
+          Left = 71.811033390000000000
           Top = 0.779529999999994100
           Width = 83.149611180000000000
           Height = 11.338582680000000000
@@ -881,7 +881,7 @@ object FormRlt_Chq_DB: TFormRlt_Chq_DB
         object Memo11: TfrxMemoView
           Align = baLeft
           Left = 207.874150000000000000
-          Width = 71.811033390000010000
+          Width = 71.811033390000000000
           Height = 15.118110240000000000
           AutoWidth = True
           DataSet = frxDBDataset1
@@ -899,7 +899,7 @@ object FormRlt_Chq_DB: TFormRlt_Chq_DB
         object Memo12: TfrxMemoView
           Align = baLeft
           Left = 64.252010000000000000
-          Width = 94.488249999999990000
+          Width = 94.488250000000000000
           Height = 15.118110240000000000
           DisplayFormat.FormatStr = '%2.2n'
           DisplayFormat.Kind = fkNumeric
@@ -938,5 +938,383 @@ object FormRlt_Chq_DB: TFormRlt_Chq_DB
     BCDToCurrency = False
     Left = 448
     Top = 66
+  end
+  object frxReport_Rlt_chq_DB_Mtx: TfrxReport
+    Version = '5.4.6'
+    DotMatrixReport = True
+    IniFile = '\Software\Fast Reports'
+    PreviewOptions.Buttons = [pbPrint, pbLoad, pbSave, pbExport, pbZoom, pbFind, pbOutline, pbPageSetup, pbTools, pbEdit, pbNavigator, pbExportQuick]
+    PreviewOptions.Zoom = 1.000000000000000000
+    PrintOptions.Printer = 'Default'
+    PrintOptions.PrintOnSheet = 0
+    ReportOptions.CreateDate = 43195.573630289400000000
+    ReportOptions.LastChange = 43195.573630289400000000
+    ScriptLanguage = 'PascalScript'
+    ScriptText.Strings = (
+      'begin'
+      ''
+      'end.')
+    OnGetValue = frxReport_Rlt_chq_DB_MtxGetValue
+    Left = 184
+    Top = 72
+    Datasets = <
+      item
+        DataSet = frxDBDataset1
+        DataSetName = 'frxDBDataset1'
+      end>
+    Variables = <
+      item
+        Name = ' Titulo'
+        Value = Null
+      end
+      item
+        Name = 'nmEmp'
+        Value = ''
+      end
+      item
+        Name = 'desc'
+        Value = ''
+      end>
+    Style = <>
+    object Data: TfrxDataPage
+      Height = 1000.000000000000000000
+      Width = 1000.000000000000000000
+    end
+    object Page1: TfrxDMPPage
+      PaperWidth = 335.279783465139800000
+      PaperHeight = 278.870653229369800000
+      PaperSize = 256
+      FontStyle = []
+      object ReportTitle1: TfrxReportTitle
+        FillType = ftBrush
+        Height = 85.000000000000000000
+        Top = 17.000000000000000000
+        Width = 1267.200000000000000000
+        object nmEmp: TfrxDMPMemoView
+          Width = 76.800000000000000000
+          Height = 17.000000000000000000
+          AutoWidth = True
+          Memo.UTF8W = (
+            '[nmEmp]')
+          TruncOutboundText = False
+        end
+        object DMPMemo1: TfrxDMPMemoView
+          Align = baWidth
+          Top = 34.000000000000000000
+          Width = 1267.200000000000000000
+          Height = 17.000000000000000000
+          Memo.UTF8W = (
+            
+              '================================================================' +
+              '================================================================' +
+              '====')
+          TruncOutboundText = False
+        end
+        object desc: TfrxDMPMemoView
+          Top = 51.000000000000000000
+          Width = 76.800000000000000000
+          Height = 17.000000000000000000
+          AutoWidth = True
+          Memo.UTF8W = (
+            '[desc]')
+          TruncOutboundText = False
+        end
+        object Date: TfrxDMPMemoView
+          Left = 1142.400000000000000000
+          Top = 17.000000000000000000
+          Width = 76.800000000000000000
+          Height = 17.000000000000000000
+          AutoWidth = True
+          Memo.UTF8W = (
+            '[Date]')
+          TruncOutboundText = False
+        end
+        object DMPMemo2: TfrxDMPMemoView
+          Left = 1094.400000000000000000
+          Top = 17.000000000000000000
+          Width = 48.000000000000000000
+          Height = 17.000000000000000000
+          Memo.UTF8W = (
+            'Data:')
+          TruncOutboundText = False
+        end
+        object DMPMemo3: TfrxDMPMemoView
+          Left = 1075.200000000000000000
+          Width = 67.200000000000000000
+          Height = 17.000000000000000000
+          Memo.UTF8W = (
+            'Pagina:')
+          TruncOutboundText = False
+        end
+        object Page: TfrxDMPMemoView
+          Left = 1142.400000000000000000
+          Width = 76.800000000000000000
+          Height = 17.000000000000000000
+          Memo.UTF8W = (
+            '[Page]')
+          TruncOutboundText = False
+        end
+        object DMPMemo4: TfrxDMPMemoView
+          Align = baWidth
+          Top = 68.000000000000000000
+          Width = 1267.200000000000000000
+          Height = 17.000000000000000000
+          Memo.UTF8W = (
+            
+              '================================================================' +
+              '================================================================' +
+              '====')
+          TruncOutboundText = False
+        end
+      end
+      object GroupHeader1: TfrxGroupHeader
+        FillType = ftBrush
+        Top = 170.000000000000000000
+        Width = 1267.200000000000000000
+        Condition = 'frxDBDataset1."RECEBIDO"'
+      end
+      object MasterData1: TfrxMasterData
+        FillType = ftBrush
+        Height = 17.000000000000000000
+        Top = 187.000000000000000000
+        Width = 1267.200000000000000000
+        DataSet = frxDBDataset1
+        DataSetName = 'frxDBDataset1'
+        RowCount = 0
+        object frxDBDataset1RECEBIDO: TfrxDMPMemoView
+          Width = 86.400000000000000000
+          Height = 17.000000000000000000
+          DataSet = frxDBDataset1
+          DataSetName = 'frxDBDataset1'
+          HAlign = haRight
+          Memo.UTF8W = (
+            '[frxDBDataset1."RECEBIDO"]')
+          TruncOutboundText = False
+        end
+        object frxDBDataset1VALOR: TfrxDMPMemoView
+          Align = baLeft
+          Left = 86.400000000000000000
+          Width = 115.200000000000000000
+          Height = 17.000000000000000000
+          DataField = 'VALOR'
+          DataSet = frxDBDataset1
+          DataSetName = 'frxDBDataset1'
+          DisplayFormat.FormatStr = '%2.2n'
+          DisplayFormat.Kind = fkNumeric
+          HAlign = haRight
+          Memo.UTF8W = (
+            '[frxDBDataset1."VALOR"]')
+          TruncOutboundText = False
+        end
+        object frxDBDataset1CHEQUE: TfrxDMPMemoView
+          Align = baLeft
+          Left = 201.600000000000000000
+          Width = 134.400000000000000000
+          Height = 17.000000000000000000
+          DataField = 'CHEQUE'
+          DataSet = frxDBDataset1
+          DataSetName = 'frxDBDataset1'
+          HAlign = haCenter
+          Memo.UTF8W = (
+            '[frxDBDataset1."CHEQUE"]')
+          TruncOutboundText = False
+        end
+        object frxDBDataset1BCOAGEN: TfrxDMPMemoView
+          Left = 336.000000000000000000
+          Width = 124.800000000000000000
+          Height = 17.000000000000000000
+          DataField = 'BCOAGEN'
+          DataSet = frxDBDataset1
+          DataSetName = 'frxDBDataset1'
+          HAlign = haCenter
+          Memo.UTF8W = (
+            '[frxDBDataset1."BCOAGEN"]')
+          TruncOutboundText = False
+        end
+        object frxDBDataset1EMITENTE: TfrxDMPMemoView
+          Left = 460.800000000000000000
+          Width = 316.800000000000000000
+          Height = 17.000000000000000000
+          DataField = 'EMITENTE'
+          DataSet = frxDBDataset1
+          DataSetName = 'frxDBDataset1'
+          Memo.UTF8W = (
+            '[frxDBDataset1."EMITENTE"]')
+          TruncOutboundText = False
+        end
+        object frxDBDataset1CLIENTE: TfrxDMPMemoView
+          Left = 777.600000000000000000
+          Width = 316.800000000000000000
+          Height = 17.000000000000000000
+          DataField = 'CLIENTE'
+          DataSet = frxDBDataset1
+          DataSetName = 'frxDBDataset1'
+          Memo.UTF8W = (
+            '[frxDBDataset1."CLIENTE"]')
+          TruncOutboundText = False
+        end
+        object frxDBDataset1DEVOLUCAO: TfrxDMPMemoView
+          Left = 1094.400000000000000000
+          Width = 115.200000000000000000
+          Height = 17.000000000000000000
+          DataField = 'DEVOLUCAO'
+          DataSet = frxDBDataset1
+          DataSetName = 'frxDBDataset1'
+          HAlign = haCenter
+          Memo.UTF8W = (
+            '[frxDBDataset1."DEVOLUCAO"]')
+          TruncOutboundText = False
+        end
+        object frxDBDataset1T: TfrxDMPMemoView
+          Left = 1209.600000000000000000
+          Width = 19.200000000000000000
+          Height = 17.000000000000000000
+          DataField = 'T'
+          DataSet = frxDBDataset1
+          DataSetName = 'frxDBDataset1'
+          HAlign = haCenter
+          Memo.UTF8W = (
+            '[frxDBDataset1."T"]')
+          TruncOutboundText = False
+        end
+      end
+      object GroupFooter1: TfrxGroupFooter
+        FillType = ftBrush
+        Height = 51.000000000000000000
+        Top = 221.000000000000000000
+        Width = 1267.200000000000000000
+        object DMPMemo13: TfrxDMPMemoView
+          Align = baLeft
+          Top = 17.000000000000000000
+          Width = 96.000000000000000000
+          Height = 17.000000000000000000
+          Memo.UTF8W = (
+            'TT.Dia...')
+          TruncOutboundText = False
+        end
+        object DMPMemo14: TfrxDMPMemoView
+          Align = baLeft
+          Left = 96.000000000000000000
+          Top = 17.000000000000000000
+          Width = 96.000000000000000000
+          Height = 17.000000000000000000
+          AutoWidth = True
+          DisplayFormat.FormatStr = '%2.2n'
+          DisplayFormat.Kind = fkNumeric
+          HAlign = haRight
+          Memo.UTF8W = (
+            '[SUM(<frxDBDataset1."VALOR">,MasterData1)]')
+          TruncOutboundText = False
+        end
+        object DMPMemo15: TfrxDMPMemoView
+          Align = baLeft
+          Left = 192.000000000000000000
+          Top = 17.000000000000000000
+          Width = 96.000000000000000000
+          Height = 17.000000000000000000
+          DisplayFormat.FormatStr = '00000'
+          DisplayFormat.Kind = fkNumeric
+          HAlign = haRight
+          Memo.UTF8W = (
+            '([Count()])')
+          TruncOutboundText = False
+        end
+        object DMPMemo16: TfrxDMPMemoView
+          Align = baLeft
+          Left = 288.000000000000000000
+          Top = 17.000000000000000000
+          Width = 105.600000000000000000
+          Height = 17.000000000000000000
+          DataSet = frxDBDataset1
+          DataSetName = 'frxDBDataset1'
+          HAlign = haRight
+          Memo.UTF8W = (
+            '[frxDBDataset1."RECEBIDO"]')
+          TruncOutboundText = False
+        end
+      end
+      object PageHeader1: TfrxPageHeader
+        FillType = ftBrush
+        Height = 17.000000000000000000
+        Top = 119.000000000000000000
+        Width = 1267.200000000000000000
+        object DMPMemo5: TfrxDMPMemoView
+          Align = baLeft
+          Width = 86.400000000000000000
+          Height = 17.000000000000000000
+          Memo.UTF8W = (
+            'Recebido')
+          TruncOutboundText = False
+        end
+        object DMPMemo6: TfrxDMPMemoView
+          Align = baLeft
+          Left = 86.400000000000000000
+          Width = 115.200000000000000000
+          Height = 17.000000000000000000
+          HAlign = haRight
+          Memo.UTF8W = (
+            'Valor')
+          TruncOutboundText = False
+        end
+        object DMPMemo7: TfrxDMPMemoView
+          Align = baLeft
+          Left = 326.400000000000000000
+          Width = 134.400000000000000000
+          Height = 17.000000000000000000
+          HAlign = haCenter
+          Memo.UTF8W = (
+            'Ban/Agen')
+          TruncOutboundText = False
+        end
+        object DMPMemo8: TfrxDMPMemoView
+          Align = baLeft
+          Left = 460.800000000000000000
+          Width = 316.800000000000000000
+          Height = 34.000000000000000000
+          Memo.UTF8W = (
+            'Emitente')
+          TruncOutboundText = False
+        end
+        object DMPMemo9: TfrxDMPMemoView
+          Align = baLeft
+          Left = 777.600000000000000000
+          Width = 316.800000000000000000
+          Height = 34.000000000000000000
+          Memo.UTF8W = (
+            'Cliente')
+          TruncOutboundText = False
+        end
+        object DMPMemo10: TfrxDMPMemoView
+          Align = baLeft
+          Left = 1094.400000000000000000
+          Width = 115.200000000000000000
+          Height = 17.000000000000000000
+          HAlign = haCenter
+          Memo.UTF8W = (
+            'Devolu'#231#227'o')
+          TruncOutboundText = False
+        end
+        object DMPMemo11: TfrxDMPMemoView
+          Align = baLeft
+          Left = 1209.600000000000000000
+          Width = 19.200000000000000000
+          Height = 17.000000000000000000
+          HAlign = haCenter
+          Memo.UTF8W = (
+            'T')
+          TruncOutboundText = False
+        end
+        object DMPMemo12: TfrxDMPMemoView
+          Align = baLeft
+          Left = 201.600000000000000000
+          Width = 124.800000000000000000
+          Height = 17.000000000000000000
+          HAlign = haCenter
+          Memo.UTF8W = (
+            'Cheque')
+          TruncOutboundText = False
+        end
+      end
+    end
   end
 end

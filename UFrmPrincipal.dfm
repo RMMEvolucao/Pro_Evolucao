@@ -9135,7 +9135,7 @@ object FormPrincipal: TFormPrincipal
           Left = 0
           Top = 0
           Width = 237
-          Height = 671
+          Height = 0
           Visible = False
           AllowFloating = False
           AutoHide = True
@@ -9158,7 +9158,7 @@ object FormPrincipal: TFormPrincipal
           end
           object Panel4: TcxGroupBox
             Left = 0
-            Top = 602
+            Top = -41
             Align = alBottom
             PanelStyle.Active = True
             Style.BorderStyle = ebsNone
@@ -9172,7 +9172,7 @@ object FormPrincipal: TFormPrincipal
           Left = 0
           Top = 0
           Width = 237
-          Height = 671
+          Height = 0
           Visible = False
           ActiveChildIndex = 1
           AllowFloating = False
@@ -9188,7 +9188,7 @@ object FormPrincipal: TFormPrincipal
             Left = 0
             Top = 0
             Width = 233
-            Height = 643
+            Height = 0
             AllowFloating = True
             AutoHide = False
             Caption = 'Solution Explorer'
@@ -9202,7 +9202,7 @@ object FormPrincipal: TFormPrincipal
               Left = 0
               Top = 0
               Width = 233
-              Height = 643
+              Height = 0
               Align = alClient
               TabOrder = 0
               ReadOnly = True
@@ -9212,7 +9212,7 @@ object FormPrincipal: TFormPrincipal
             Left = 0
             Top = 0
             Width = 233
-            Height = 643
+            Height = 0
             AllowFloating = True
             AutoHide = False
             Caption = 'Class View'
@@ -9226,7 +9226,7 @@ object FormPrincipal: TFormPrincipal
               Left = 0
               Top = 0
               Width = 233
-              Height = 643
+              Height = 0
               Align = alClient
               TabOrder = 0
             end
@@ -9238,7 +9238,7 @@ object FormPrincipal: TFormPrincipal
       Left = -170
       Top = 0
       Width = 170
-      Height = 573
+      Height = 0
       Visible = False
       AllowFloating = True
       AutoHide = True
@@ -9392,7 +9392,6 @@ object FormPrincipal: TFormPrincipal
         end
         object NavBarCategoria: TdxNavBarItem
           Action = ActCadCategoria
-          Caption = 'Categoria'
         end
         object dxNavBar1Item2: TdxNavBarItem
           Caption = 'dxNavBar1Item2'
@@ -9497,15 +9496,13 @@ object FormPrincipal: TFormPrincipal
         OnClick = ActCadClientesExecute
       end
       object Fornecedores1: TMenuItem
-        Caption = 'ActCadFornecedor'
-        OnClick = ActCadFornecedorExecute
+        Action = ActCadFornecedor
       end
       object N2: TMenuItem
         Caption = '-'
       end
       object N1: TMenuItem
-        Caption = 'ActCadCategoria'
-        OnClick = ActCadCategoriaExecute
+        Action = ActCadCategoria
       end
       object DiversosEndereos1: TMenuItem
         Caption = 'Diversos Endere'#231'os'
@@ -9590,8 +9587,7 @@ object FormPrincipal: TFormPrincipal
           OnClick = GrupodeProdutos1Click
         end
         object UnidadedeProdutos: TMenuItem
-          Caption = 'ActUnidadeProduto'
-          OnClick = ActCadUnidadeProdutoExecute
+          Action = ActUFederativa
         end
         object EmbalagemProduto1: TMenuItem
           Caption = 'Embalagem de Produto'
@@ -9601,8 +9597,7 @@ object FormPrincipal: TFormPrincipal
           Caption = '-'
         end
         object GnerodeItemdeMercadoriaServio1: TMenuItem
-          Caption = 'ActCadGenItem'
-          OnClick = ActCadGenItemExecute
+          Action = ActCadGenItem
         end
         object N10: TMenuItem
           Caption = '-'
@@ -10238,7 +10233,6 @@ object FormPrincipal: TFormPrincipal
     end
     object BtnFornecedor: TdxBarLargeButton
       Action = ActCadFornecedor
-      Caption = 'Fornecedor'
       Category = 0
       Glyph.Data = {
         36100000424D3610000000000000360000002800000020000000200000000100
@@ -11982,7 +11976,7 @@ object FormPrincipal: TFormPrincipal
     Left = 72
     Top = 529
     Bitmap = {
-      494C010109005000FC0210001000FFFFFFFFFF10FFFFFFFFFFFFFFFF424D3600
+      494C010109005000040310001000FFFFFFFFFF10FFFFFFFFFFFFFFFF424D3600
       0000000000003600000028000000400000003000000001002000000000000030
       0000000000000000000000000000000000000000000000000000000000000000
       0000000000000000000000000000000000000000000000000000000000000000
@@ -12398,19 +12392,19 @@ object FormPrincipal: TFormPrincipal
       OnExecute = AcEmpresaExecute
     end
     object ActCadCep: TAction
-      Caption = 'ActCadCep'
+      Caption = 'CEP'
       OnExecute = ActCadCepExecute
     end
     object ActCadCategoria: TAction
-      Caption = 'ActCadCategoria'
+      Caption = 'Categorias'
       OnExecute = ActCadCategoriaExecute
     end
     object ActCadFornecedor: TAction
-      Caption = 'ActCadFornecedor'
+      Caption = 'Fornecedor'
       OnExecute = ActCadFornecedorExecute
     end
     object ActRepresentantes: TAction
-      Caption = 'ActRepresentantes'
+      Caption = 'Representante de fornecedor'
       OnExecute = ActRepresentantesExecute
     end
     object ActLocalCobranca: TAction
@@ -12418,11 +12412,11 @@ object FormPrincipal: TFormPrincipal
       OnExecute = ActLocalCobrancaExecute
     end
     object ActCadGenItem: TAction
-      Caption = 'ActCadGenItem'
+      Caption = 'G'#234'nero de item de mercadoria/servi'#231'o'
       OnExecute = ActCadGenItemExecute
     end
     object ActCadUnidadeProduto: TAction
-      Caption = 'ActUnidadeProduto'
+      Caption = 'Cadastro Unidade produto'
       OnExecute = ActCadUnidadeProdutoExecute
     end
     object ActCadEmbalagem: TAction
@@ -12438,7 +12432,7 @@ object FormPrincipal: TFormPrincipal
       OnExecute = ActCadSetorExecute
     end
     object ActCadFuncionario: TAction
-      Caption = 'Cadastro de Funcion'#225'rios'
+      Caption = 'Funcion'#225'rios'
       OnExecute = ActCadFuncionarioExecute
     end
     object ActPais: TAction
