@@ -13,7 +13,7 @@ uses
   cxDropDownEdit, cxLookupEdit, cxDBLookupEdit, cxDBLookupComboBox, Vcl.DBCtrls,
   cxTextEdit, cxMaskEdit, cxCalendar, cxDBEdit, Vcl.Menus, cxButtons,
   cxHyperLinkEdit, ACBrBase, ACBrValidador, frxClass, frxDBSet, frxExportPDF,
-  frxExportXLS, frxDMPExport;
+  frxExportXLS, frxDMPExport, Vcl.ToolWin;
 
 type
   TFormFuncionario = class(TFormCadPadrao)

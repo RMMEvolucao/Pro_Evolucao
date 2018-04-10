@@ -7,7 +7,7 @@ uses
   Vcl.Controls, Vcl.Forms, Vcl.Dialogs, UfrmCadpadrao, Data.DB, Data.FMTBcd,
   Data.SqlExpr, System.Actions, Vcl.ActnList, System.ImageList, Vcl.ImgList,
   Vcl.Grids, Vcl.DBGrids, Vcl.Buttons, Vcl.StdCtrls, Vcl.Mask, Vcl.ExtCtrls,
-  Vcl.ComCtrls, Vcl.DBCtrls;
+  Vcl.ComCtrls, Vcl.DBCtrls, cxGraphics, Vcl.ToolWin;
 
 type
   TFormAliquota = class(TFormCadPadrao)

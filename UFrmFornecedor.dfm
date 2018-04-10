@@ -1,9 +1,9 @@
 inherited FormFornecedor: TFormFornecedor
   Caption = 'Cadastro de Fornecedores'
-  ClientHeight = 731
+  ClientHeight = 680
   ClientWidth = 1018
   ExplicitWidth = 1024
-  ExplicitHeight = 760
+  ExplicitHeight = 709
   PixelsPerInch = 96
   TextHeight = 16
   object Img_fundo: TcxImage [0]
@@ -164,16 +164,16 @@ inherited FormFornecedor: TFormFornecedor
   end
   inherited PageControl1: TPageControl
     Width = 1018
-    Height = 731
+    Height = 680
     Margins.Left = 0
     Margins.Top = 0
     Margins.Right = 0
     Margins.Bottom = 0
     ExplicitWidth = 1018
-    ExplicitHeight = 734
+    ExplicitHeight = 731
     inherited TabConsulta: TTabSheet
       ExplicitWidth = 1010
-      ExplicitHeight = 703
+      ExplicitHeight = 700
       inherited PanelConsulta: TPanel
         Width = 1010
         ExplicitWidth = 1010
@@ -202,7 +202,7 @@ inherited FormFornecedor: TFormFornecedor
       end
       inherited DBGrid1: TDBGrid
         Width = 1010
-        Height = 546
+        Height = 495
         DataSource = DSpadrao
         Columns = <
           item
@@ -272,13 +272,15 @@ inherited FormFornecedor: TFormFornecedor
       end
     end
     inherited TabCadastro: TTabSheet
+      ExplicitLeft = 4
+      ExplicitTop = 27
       ExplicitWidth = 1010
-      ExplicitHeight = 703
+      ExplicitHeight = 700
       inherited ToolBar2: TToolBar
-        Top = 661
+        Top = 610
         Width = 1010
         TabOrder = 3
-        ExplicitTop = 612
+        ExplicitTop = 661
         ExplicitWidth = 1010
       end
       object PageControlCadastro: TPageControl
@@ -287,7 +289,7 @@ inherited FormFornecedor: TFormFornecedor
         Top = 197
         Width = 1004
         Height = 406
-        ActivePage = TabSheetObservacao
+        ActivePage = TabSheetCadastro
         Align = alTop
         TabOrder = 2
         object TabSheetCadastro: TTabSheet
@@ -482,7 +484,7 @@ inherited FormFornecedor: TFormFornecedor
               TabOrder = 8
             end
             object DBEdit_NM_BAI: TDBEdit
-              Left = 641
+              Left = 633
               Top = 151
               Width = 272
               Height = 24
@@ -502,7 +504,7 @@ inherited FormFornecedor: TFormFornecedor
               TabOrder = 10
             end
             object DBEdit_NO_CEL: TDBEdit
-              Left = 641
+              Left = 633
               Top = 217
               Width = 140
               Height = 24
@@ -512,7 +514,7 @@ inherited FormFornecedor: TFormFornecedor
               TabOrder = 11
             end
             object DBEdit_NO_INS_EST: TDBEdit
-              Left = 641
+              Left = 633
               Top = 52
               Width = 160
               Height = 24
@@ -578,21 +580,21 @@ inherited FormFornecedor: TFormFornecedor
             Caption = 'Dados da Internet'
             TabOrder = 1
             object Label18: TLabel
-              Left = 88
+              Left = 85
               Top = 26
               Width = 71
               Height = 16
               Caption = 'Home-Page:'
             end
             object Label19: TLabel
-              Left = 118
+              Left = 115
               Top = 57
               Width = 41
               Height = 16
               Caption = 'E-mail:'
             end
             object DBEdit_E_MAIL_CTT: TDBEdit
-              Left = 166
+              Left = 163
               Top = 54
               Width = 439
               Height = 24
@@ -603,7 +605,7 @@ inherited FormFornecedor: TFormFornecedor
               OnKeyPress = DBEdit_E_MAIL_CTTKeyPress
             end
             object cxDBHomePage: TcxDBHyperLinkEdit
-              Left = 166
+              Left = 163
               Top = 23
               DataBinding.DataField = 'HOME_PAGE'
               DataBinding.DataSource = DSpadrao
@@ -1064,7 +1066,7 @@ inherited FormFornecedor: TFormFornecedor
     Left = 576
     Top = 648
     Bitmap = {
-      494C010108005000340010001000FFFFFFFF2110FFFFFFFFFFFFFFFF424D3600
+      494C010108005000380010001000FFFFFFFF2110FFFFFFFFFFFFFFFF424D3600
       0000000000003600000028000000400000003000000001002000000000000030
       0000000000000000000000000000000000000000000000000000000000000000
       0000000000000000000000000000000000000000000000000000000000000000

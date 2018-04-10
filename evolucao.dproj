@@ -296,6 +296,10 @@
             <Form>FormRlt_Chq_DB</Form>
             <FormType>dfm</FormType>
         </DCCReference>
+        <DCCReference Include="UfrmNTFENT.pas">
+            <Form>FormNTFENT</Form>
+            <FormType>dfm</FormType>
+        </DCCReference>
         <BuildConfiguration Include="Release">
             <Key>Cfg_2</Key>
             <CfgParent>Base</CfgParent>

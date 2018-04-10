@@ -11,7 +11,7 @@ uses
   cxControls, cxLookAndFeels, cxLookAndFeelPainters, cxContainer, cxEdit,
   dxSkinsCore, dxSkinGlassOceans, dxSkinOffice2013White,
   dxSkinVisualStudio2013Light, cxTextEdit, cxDBEdit, dxSkinWhiteprint,
-  dxSkinLiquidSky, dxSkinOffice2007Black, dxSkinOffice2013LightGray;
+  dxSkinLiquidSky, dxSkinOffice2007Black, dxSkinOffice2013LightGray, Vcl.ToolWin;
 
 type
   TFormCep = class(TFormCadPadrao)

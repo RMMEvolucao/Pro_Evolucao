@@ -48,7 +48,6 @@ type
     CDS_CepNM_CID: TStringField;
     CDS_CepUF_CID: TStringField;
     CDS_CepCEP_ID: TIntegerField;
-    cxGroupBox1: TcxGroupBox;
     PageControl2: TPageControl;
     TabSheet1: TTabSheet;
     Label6: TLabel;

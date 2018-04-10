@@ -2,7 +2,6 @@ inherited FormCadProduto: TFormCadProduto
   Caption = 'Cadastro de produto'
   ClientHeight = 708
   ClientWidth = 856
-  ExplicitTop = -44
   ExplicitWidth = 862
   ExplicitHeight = 737
   PixelsPerInch = 96

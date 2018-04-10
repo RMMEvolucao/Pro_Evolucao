@@ -13,7 +13,7 @@ uses
   Vcl.DBCtrls, cxTextEdit, cxMaskEdit, cxDropDownEdit, cxCalendar, cxDBEdit,
   cxHyperLinkEdit, ACBrBase, ACBrValidador, frxClass, frxDBSet, Vcl.Menus,
   frxExportPDF, dxGDIPlusClasses, cxImage, cxGroupBox, cxButtons, frxExportXLS,
-  frxDMPExport;
+  frxDMPExport, Vcl.ToolWin;
 
 type
   TFormTransportadora = class(TFormCadPadrao)

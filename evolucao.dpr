@@ -56,7 +56,8 @@ uses
   UFrmTransPPparaDV in 'UFrmTransPPparaDV.pas' {FormTransPPparaDV},
   UFrmRlt_Chq_PD in 'UFrmRlt_Chq_PD.pas' {FormRlt_Chq_PD},
   UfrmRlt_Chq_BX in 'UfrmRlt_Chq_BX.pas' {FormRlt_Chq_BX},
-  UfrmRlt_Chq_DB in 'UfrmRlt_Chq_DB.pas' {FormRlt_Chq_DB};
+  UfrmRlt_Chq_DB in 'UfrmRlt_Chq_DB.pas' {FormRlt_Chq_DB},
+  UfrmNTFENT in 'UfrmNTFENT.pas' {FormNTFENT};
 
 {$R *.res}
 
@@ -67,5 +68,6 @@ begin
   Application.CreateForm(TFormCadPadrao, FormCadPadrao);
   Application.CreateForm(TDMcadastro, DMcadastro);
   Application.CreateForm(TFormUsuario, FormUsuario);
+  Application.CreateForm(TFormNTFENT, FormNTFENT);
   Application.Run;
 end.

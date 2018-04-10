@@ -9260,4 +9260,342 @@ object DMcadastro: TDMcadastro
       Size = 2
     end
   end
+  object SQLNTFENT: TSQLDataSet
+    CommandText = 'select * from DB_NFTENT'#13#10'WHERE ID = 0'
+    MaxBlobSize = 1
+    Params = <>
+    SQLConnection = SQLConnection1
+    Left = 312
+    Top = 568
+    object SQLNTFENTID: TIntegerField
+      FieldName = 'ID'
+      Required = True
+    end
+    object SQLNTFENTID_FORNECEDOR: TIntegerField
+      FieldName = 'ID_FORNECEDOR'
+      Required = True
+    end
+    object SQLNTFENTNO_NTF: TStringField
+      FieldName = 'NO_NTF'
+      Required = True
+      Size = 9
+    end
+    object SQLNTFENTID_NFE: TStringField
+      FieldName = 'ID_NFE'
+      Required = True
+      Size = 44
+    end
+    object SQLNTFENTDS_SER_NTF: TStringField
+      FieldName = 'DS_SER_NTF'
+      Size = 3
+    end
+    object SQLNTFENTDS_MOD_NTF: TStringField
+      FieldName = 'DS_MOD_NTF'
+      Size = 2
+    end
+    object SQLNTFENTCD_SIT_NTF: TStringField
+      FieldName = 'CD_SIT_NTF'
+      Size = 2
+    end
+    object SQLNTFENTTP_LCT: TStringField
+      FieldName = 'TP_LCT'
+      Size = 1
+    end
+    object SQLNTFENTCD_CFO: TStringField
+      FieldName = 'CD_CFO'
+      Size = 5
+    end
+    object SQLNTFENTCD_CFO_2: TStringField
+      FieldName = 'CD_CFO_2'
+      Size = 5
+    end
+    object SQLNTFENTCD_CFO_3: TStringField
+      FieldName = 'CD_CFO_3'
+      Size = 5
+    end
+    object SQLNTFENTDT_MOV_NTF: TSQLTimeStampField
+      FieldName = 'DT_MOV_NTF'
+    end
+    object SQLNTFENTDT_EMS_NTF: TSQLTimeStampField
+      FieldName = 'DT_EMS_NTF'
+    end
+    object SQLNTFENTVR_TOT_PDT: TIntegerField
+      FieldName = 'VR_TOT_PDT'
+    end
+    object SQLNTFENTVR_CTB_NTF: TIntegerField
+      FieldName = 'VR_CTB_NTF'
+    end
+    object SQLNTFENTVR_BDC_ICM: TIntegerField
+      FieldName = 'VR_BDC_ICM'
+    end
+    object SQLNTFENTVR_ICM_DEB: TIntegerField
+      FieldName = 'VR_ICM_DEB'
+    end
+    object SQLNTFENTAL_ICM: TIntegerField
+      FieldName = 'AL_ICM'
+    end
+    object SQLNTFENTVR_BDC_ICR: TIntegerField
+      FieldName = 'VR_BDC_ICR'
+    end
+    object SQLNTFENTVR_ICR_DEB: TIntegerField
+      FieldName = 'VR_ICR_DEB'
+    end
+    object SQLNTFENTTP_PGT_ICR: TStringField
+      FieldName = 'TP_PGT_ICR'
+      Size = 1
+    end
+    object SQLNTFENTVR_ICM_ISN: TIntegerField
+      FieldName = 'VR_ICM_ISN'
+    end
+    object SQLNTFENTVR_ICM_OUT: TIntegerField
+      FieldName = 'VR_ICM_OUT'
+    end
+    object SQLNTFENTVR_BDC_IPI: TIntegerField
+      FieldName = 'VR_BDC_IPI'
+    end
+    object SQLNTFENTVR_IPI_DEB: TIntegerField
+      FieldName = 'VR_IPI_DEB'
+    end
+    object SQLNTFENTVR_IPI_ISN: TIntegerField
+      FieldName = 'VR_IPI_ISN'
+    end
+    object SQLNTFENTVR_IPI_OUT: TIntegerField
+      FieldName = 'VR_IPI_OUT'
+    end
+    object SQLNTFENTSN_MOV_ETQ: TStringField
+      FieldName = 'SN_MOV_ETQ'
+      Size = 1
+    end
+    object SQLNTFENTSN_DIF_ICM: TStringField
+      FieldName = 'SN_DIF_ICM'
+      Size = 1
+    end
+    object SQLNTFENTVR_ENC_NTF: TIntegerField
+      FieldName = 'VR_ENC_NTF'
+    end
+    object SQLNTFENTCD_BAS_CRD: TStringField
+      FieldName = 'CD_BAS_CRD'
+      Size = 2
+    end
+    object SQLNTFENTID_NAT_FRT: TStringField
+      FieldName = 'ID_NAT_FRT'
+      Size = 2
+    end
+    object SQLNTFENTTP_FRT: TStringField
+      FieldName = 'TP_FRT'
+      Size = 1
+    end
+    object SQLNTFENTVR_FRT_NTF: TIntegerField
+      FieldName = 'VR_FRT_NTF'
+    end
+    object SQLNTFENTAL_ICM_FRT: TIntegerField
+      FieldName = 'AL_ICM_FRT'
+    end
+    object SQLNTFENTVR_SEG: TIntegerField
+      FieldName = 'VR_SEG'
+    end
+    object SQLNTFENTVR_DCT: TIntegerField
+      FieldName = 'VR_DCT'
+    end
+    object SQLNTFENTVR_OUT_DPS: TIntegerField
+      FieldName = 'VR_OUT_DPS'
+    end
+    object SQLNTFENTNO_PED_CMP: TStringField
+      FieldName = 'NO_PED_CMP'
+      Size = 10
+    end
+    object SQLNTFENTDT_PED_CMP: TSQLTimeStampField
+      FieldName = 'DT_PED_CMP'
+    end
+    object SQLNTFENTCD_PLN_PGT: TStringField
+      FieldName = 'CD_PLN_PGT'
+      Size = 3
+    end
+    object SQLNTFENTUF_FOR: TStringField
+      FieldName = 'UF_FOR'
+      Size = 2
+    end
+    object SQLNTFENTDS_OBS: TBlobField
+      FieldName = 'DS_OBS'
+      Size = 1
+    end
+    object SQLNTFENTCD_USU: TStringField
+      FieldName = 'CD_USU'
+      Size = 18
+    end
+    object SQLNTFENTID_VER_ATU: TIntegerField
+      FieldName = 'ID_VER_ATU'
+    end
+  end
+  object DSPNTFENT: TDataSetProvider
+    DataSet = SQLNTFENT
+    Left = 312
+    Top = 624
+  end
+  object CDSNTFENT: TClientDataSet
+    Aggregates = <>
+    Params = <>
+    ProviderName = 'DSPNTFENT'
+    Left = 312
+    Top = 680
+    object CDSNTFENTID: TIntegerField
+      FieldName = 'ID'
+      Required = True
+    end
+    object CDSNTFENTID_FORNECEDOR: TIntegerField
+      FieldName = 'ID_FORNECEDOR'
+      Required = True
+    end
+    object CDSNTFENTNO_NTF: TStringField
+      FieldName = 'NO_NTF'
+      Required = True
+      Size = 9
+    end
+    object CDSNTFENTID_NFE: TStringField
+      FieldName = 'ID_NFE'
+      Required = True
+      Size = 44
+    end
+    object CDSNTFENTDS_SER_NTF: TStringField
+      FieldName = 'DS_SER_NTF'
+      Size = 3
+    end
+    object CDSNTFENTDS_MOD_NTF: TStringField
+      FieldName = 'DS_MOD_NTF'
+      Size = 2
+    end
+    object CDSNTFENTCD_SIT_NTF: TStringField
+      FieldName = 'CD_SIT_NTF'
+      Size = 2
+    end
+    object CDSNTFENTTP_LCT: TStringField
+      FieldName = 'TP_LCT'
+      Size = 1
+    end
+    object CDSNTFENTCD_CFO: TStringField
+      FieldName = 'CD_CFO'
+      Size = 5
+    end
+    object CDSNTFENTCD_CFO_2: TStringField
+      FieldName = 'CD_CFO_2'
+      Size = 5
+    end
+    object CDSNTFENTCD_CFO_3: TStringField
+      FieldName = 'CD_CFO_3'
+      Size = 5
+    end
+    object CDSNTFENTDT_MOV_NTF: TSQLTimeStampField
+      FieldName = 'DT_MOV_NTF'
+    end
+    object CDSNTFENTDT_EMS_NTF: TSQLTimeStampField
+      FieldName = 'DT_EMS_NTF'
+    end
+    object CDSNTFENTVR_TOT_PDT: TIntegerField
+      FieldName = 'VR_TOT_PDT'
+    end
+    object CDSNTFENTVR_CTB_NTF: TIntegerField
+      FieldName = 'VR_CTB_NTF'
+    end
+    object CDSNTFENTVR_BDC_ICM: TIntegerField
+      FieldName = 'VR_BDC_ICM'
+    end
+    object CDSNTFENTVR_ICM_DEB: TIntegerField
+      FieldName = 'VR_ICM_DEB'
+    end
+    object CDSNTFENTAL_ICM: TIntegerField
+      FieldName = 'AL_ICM'
+    end
+    object CDSNTFENTVR_BDC_ICR: TIntegerField
+      FieldName = 'VR_BDC_ICR'
+    end
+    object CDSNTFENTVR_ICR_DEB: TIntegerField
+      FieldName = 'VR_ICR_DEB'
+    end
+    object CDSNTFENTTP_PGT_ICR: TStringField
+      FieldName = 'TP_PGT_ICR'
+      Size = 1
+    end
+    object CDSNTFENTVR_ICM_ISN: TIntegerField
+      FieldName = 'VR_ICM_ISN'
+    end
+    object CDSNTFENTVR_ICM_OUT: TIntegerField
+      FieldName = 'VR_ICM_OUT'
+    end
+    object CDSNTFENTVR_BDC_IPI: TIntegerField
+      FieldName = 'VR_BDC_IPI'
+    end
+    object CDSNTFENTVR_IPI_DEB: TIntegerField
+      FieldName = 'VR_IPI_DEB'
+    end
+    object CDSNTFENTVR_IPI_ISN: TIntegerField
+      FieldName = 'VR_IPI_ISN'
+    end
+    object CDSNTFENTVR_IPI_OUT: TIntegerField
+      FieldName = 'VR_IPI_OUT'
+    end
+    object CDSNTFENTSN_MOV_ETQ: TStringField
+      FieldName = 'SN_MOV_ETQ'
+      Size = 1
+    end
+    object CDSNTFENTSN_DIF_ICM: TStringField
+      FieldName = 'SN_DIF_ICM'
+      Size = 1
+    end
+    object CDSNTFENTVR_ENC_NTF: TIntegerField
+      FieldName = 'VR_ENC_NTF'
+    end
+    object CDSNTFENTCD_BAS_CRD: TStringField
+      FieldName = 'CD_BAS_CRD'
+      Size = 2
+    end
+    object CDSNTFENTID_NAT_FRT: TStringField
+      FieldName = 'ID_NAT_FRT'
+      Size = 2
+    end
+    object CDSNTFENTTP_FRT: TStringField
+      FieldName = 'TP_FRT'
+      Size = 1
+    end
+    object CDSNTFENTVR_FRT_NTF: TIntegerField
+      FieldName = 'VR_FRT_NTF'
+    end
+    object CDSNTFENTAL_ICM_FRT: TIntegerField
+      FieldName = 'AL_ICM_FRT'
+    end
+    object CDSNTFENTVR_SEG: TIntegerField
+      FieldName = 'VR_SEG'
+    end
+    object CDSNTFENTVR_DCT: TIntegerField
+      FieldName = 'VR_DCT'
+    end
+    object CDSNTFENTVR_OUT_DPS: TIntegerField
+      FieldName = 'VR_OUT_DPS'
+    end
+    object CDSNTFENTNO_PED_CMP: TStringField
+      FieldName = 'NO_PED_CMP'
+      Size = 10
+    end
+    object CDSNTFENTDT_PED_CMP: TSQLTimeStampField
+      FieldName = 'DT_PED_CMP'
+    end
+    object CDSNTFENTCD_PLN_PGT: TStringField
+      FieldName = 'CD_PLN_PGT'
+      Size = 3
+    end
+    object CDSNTFENTUF_FOR: TStringField
+      FieldName = 'UF_FOR'
+      Size = 2
+    end
+    object CDSNTFENTDS_OBS: TBlobField
+      FieldName = 'DS_OBS'
+      Size = 1
+    end
+    object CDSNTFENTCD_USU: TStringField
+      FieldName = 'CD_USU'
+      Size = 18
+    end
+    object CDSNTFENTID_VER_ATU: TIntegerField
+      FieldName = 'ID_VER_ATU'
+    end
+  end
 end

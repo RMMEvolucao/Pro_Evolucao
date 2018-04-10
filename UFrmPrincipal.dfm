@@ -454,6 +454,8 @@ object FormPrincipal: TFormPrincipal
               OptionsView.CenterContentHorz = True
               OptionsView.CenterContentVert = True
               TabOrder = 0
+              ExplicitLeft = -78
+              ExplicitTop = 170
               object dxTileControl1Group1: TdxTileControlGroup
                 Index = 0
               end
@@ -9172,7 +9174,7 @@ object FormPrincipal: TFormPrincipal
           Left = 0
           Top = 0
           Width = 237
-          Height = 504
+          Height = 0
           Visible = False
           ActiveChildIndex = 1
           AllowFloating = False
@@ -9238,7 +9240,7 @@ object FormPrincipal: TFormPrincipal
       Left = -170
       Top = 0
       Width = 170
-      Height = 573
+      Height = 0
       Visible = False
       AllowFloating = True
       AutoHide = True
@@ -11976,7 +11978,7 @@ object FormPrincipal: TFormPrincipal
     Left = 72
     Top = 529
     Bitmap = {
-      494C010109005000080310001000FFFFFFFFFF10FFFFFFFFFFFFFFFF424D3600
+      494C0101090050000C0310001000FFFFFFFFFF10FFFFFFFFFFFFFFFF424D3600
       0000000000003600000028000000400000003000000001002000000000000030
       0000000000000000000000000000000000000000000000000000000000000000
       0000000000000000000000000000000000000000000000000000000000000000
